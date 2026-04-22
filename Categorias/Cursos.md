@@ -1,3 +1,5 @@
 ---
 tags:
+  - categorias
 ---
+![[Cursos.base]]

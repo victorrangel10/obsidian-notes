@@ -7,7 +7,7 @@ Um homem simples é um homem que não tem dobras.
 
 O que é prudência? 
 
-São Tomás a define como -  *a reta razão no agir* 
+[[São Tomás de Aquino]] a define como -  *a reta razão no agir* 
 
 Agir no sentido de atos que modificam a pessoa, e não um objeto externo
 

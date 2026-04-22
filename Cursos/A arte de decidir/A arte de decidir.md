@@ -1,4 +1,3 @@
 ---
-tags:
-cate:
+Categorias:
 ---

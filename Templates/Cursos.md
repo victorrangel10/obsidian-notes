@@ -1,4 +1,0 @@
----
-Categorias:
-- "[[Curso]]"
----

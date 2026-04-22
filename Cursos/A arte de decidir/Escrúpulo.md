@@ -1,3 +1,6 @@
+---
+Curso: "[[A Arte de Decidir]]"
+---
 
 
 O que move o escrupuloso é o amor próprio. O que importa é o que ELE faz. O amor próprio o faz ter medo de ir ao inferno, o que causa essa autoconcentração absurda.

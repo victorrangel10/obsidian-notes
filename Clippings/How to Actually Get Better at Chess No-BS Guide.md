@@ -17,7 +17,7 @@ tags:
 
 ### Strategy #1
 
-Jogar sempre as mesmas [[aberturas]] e memorizar padrões e repostas aos movimentos mais comuns. Assim você limita as possibilidades de coisas novas e aumenta sua taxa de sucesso. Bem parecido com a lógica de porquê ser um [[monochampion]] no LoL
+Jogar sempre as mesmas [[aberturas]] e memorizar padrões e repostas aos movimentos mais comuns. Assim você limita as possibilidades de coisas novas e aumenta sua taxa de sucesso. Bem parecido com a lógica de porquê ser um [[Monochampion]] no LoL
 
 Não precisa decorar toda a teoria e todas as aberturas, só precisa entender os conceitos principais:
 - Desenvolva suas peças (começando pelas mais leves)

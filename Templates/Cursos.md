@@ -1,4 +1,4 @@
 ---
 Categorias:
-	- "[]"
+- "[[Curso]]"
 ---

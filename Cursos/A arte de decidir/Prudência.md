@@ -1,3 +1,6 @@
+---
+Curso: "[[A Arte de Decidir]]"
+---
 Os 3 atos que constituem a virtude da prudencia são 
 
 deliberação - o estudo da matéria

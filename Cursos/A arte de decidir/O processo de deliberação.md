@@ -1,3 +1,6 @@
+---
+Curso: "[[A Arte de Decidir]]"
+---
 
 Exemplo: um rapaz que está deliberando sobre ser sacerdote mas começa a namorar com uma garota 
 

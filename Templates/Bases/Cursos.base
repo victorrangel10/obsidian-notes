@@ -1,3 +1,6 @@
 views:
   - type: table
     name: Table
+    filters:
+      and:
+        - Categorias.contains(link("Cursos"))

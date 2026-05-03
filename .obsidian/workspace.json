@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Manifesto.md",
+                "file": "Categorias/Organização.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Manifesto"
+              "title": "Organização"
             }
           }
         ]
@@ -247,15 +247,20 @@
   },
   "active": "248ec4ff91e3c6b2",
   "lastOpenFiles": [
+    "Categorias/Metas.md",
+    "Categorias/Saúde.md",
+    "Categorias/Organização.md",
+    "Categorias/Diário.md",
+    "Categorias/Finanças.md",
+    "Templates/Bases/Organização.base",
+    "Manifesto.md",
     "Treino PPL.md",
     "README.md",
     "Dieta.md",
-    "Manifesto.md",
     "Templates/Bases/Saúde.base",
     "Templates/Bases/Metas.base",
     "Áreas/Finanças/Plano Financeiro.md",
     "Manifesto.md.tmp.3515.1777829351217",
-    "Categorias/Saúde.md",
     "Categorias/Áreas.md",
     "Templates/Semanal.md",
     "Templates/Semanal.md.tmp.3515.1777828477173",
@@ -269,11 +274,7 @@
     "Projetos/Perder 7kg.md.tmp.3515.1777828170068",
     "Templates/Semanal.md.tmp.3515.1777828161951",
     "Templates/Daily.md.tmp.3515.1777828139608",
-    "Categorias/Metas.md",
-    "Templates/Bases/Semana.base",
     "Untitled.md",
-    "Categorias/Diário.md",
-    "Categorias/Finanças.md",
     "Categorias/Semanas.md",
     "Categorias/Tarefas.md",
     "Projetos/Casamento - Juntar 50%.md",
@@ -282,7 +283,6 @@
     "Categorias/Vídeos.md",
     "Templates/Bases/Untitled.md",
     "Anexos/Pasted image 20260421211254.png",
-    "Referências/Cursos/A arte de decidir/AULA 1.md",
     "obsidian/Anexos/Pasted image 20260421211254.png",
     "Untitled.canvas"
   ]

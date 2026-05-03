@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diário/2026-05-03.md",
+                "file": "Templates/Semanal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-03"
+              "title": "Semanal"
             }
           }
         ]
@@ -245,10 +245,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c59d8e69de0e54d",
+  "active": "7a26ad8e6ed91d93",
   "lastOpenFiles": [
-    "Templates/Daily.md",
     "Templates/Template de Curso.md",
+    "Diário/2026-05-03.md",
+    "Templates/Daily.md",
     "Categorias/Gastos.md",
     "Manifesto.md.tmp.57748.1777832356689",
     "Manifesto.md.tmp.57748.1777832305152",
@@ -280,7 +281,6 @@
     "Categorias/Áreas.md",
     "Templates/Semanal.md",
     "Templates/Meta.md",
-    "Diário/2026-05-03.md",
     "Categorias/Semanas.md",
     "Categorias/Tarefas.md",
     "Anexos/Pasted image 20260421211254.png",

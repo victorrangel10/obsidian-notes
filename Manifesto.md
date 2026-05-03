@@ -141,6 +141,7 @@ Categorias:
 | `[[Finanças]]` | Notas relacionadas a finanças (plano financeiro) |
 | `[[Cursos]]` | Notas/anotações de cursos |
 | `[[Vídeos]]` | Vídeos pra ver |
+| `[[Gasto]]` | Cada nota de gasto individual em `Gastos/` |
 | `[[Organização]]` | Meta-notas sobre o vault (manifesto, skills) |
 | Livre (`[[Pessoa]]`, `[[Tema]]`) | Referências de conhecimento |
 
@@ -277,12 +278,21 @@ Workflow:
 
 ### Tracking de metas
 
-Cada meta tem tracker block embutido lendo properties das dailies:
+Cada meta tem tracker block embutido lendo properties das notas relevantes:
 
-- **Casamento - Juntar 50%** → `gasto` cumulativo (bar chart)
-- **Perder 7kg** → `peso` ao longo do tempo (line chart)
+- **Casamento - Juntar 50%** → `valor` cumulativo das notas em `Gastos/` (bar chart)
+- **Perder 7kg** → `peso` ao longo do tempo, das dailies (line chart)
 
-O ato de preencher peso/gasto na daily alimenta automaticamente os gráficos de meta.
+Logar gasto via `Gastos/` (Templater hotkey) alimenta automaticamente o tracker da Casamento. Preencher peso na daily alimenta o tracker de Perder 7kg.
+
+### Logar gastos
+
+Hotkey configurada (Settings → Hotkeys → "Templater: Create new note from template Gasto") dispara prompts em sequência:
+1. Valor (R$)
+2. Descrição
+3. Categoria (dropdown: alimentação, transporte, lazer, etc)
+
+Templater cria a nota em `Gastos/<data> - <descricao>.md` automaticamente. Você nunca abre o arquivo. Visão consolidada em `Categorias/Gasto.md`.
 
 ---
 

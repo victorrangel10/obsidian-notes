@@ -1,0 +1,11 @@
+{
+  "delay": 470,
+  "key": "ShiftLeft",
+  "shortcuts": [
+    {
+      "command": "global-search:open",
+      "key": "ShiftLeft",
+      "lastKeyUpTime": 0
+    }
+  ]
+}

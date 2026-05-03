@@ -14,9 +14,9 @@
               "type": "bases",
               "state": {
                 "file": "Templates/Bases/Metas.base",
-                "viewName": ""
+                "viewName": "Todas"
               },
-              "icon": "lucide-layout-list",
+              "icon": "lucide-table",
               "title": "Metas"
             }
           }
@@ -246,6 +246,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Templates/Bases/Metas.base.tmp.3515.1777827747285",
+    "Templates/Bases/Metas.base.tmp.3515.1777827724916",
     "Templates/Bases/Finanças.base",
     "Templates/Bases/Metas.base",
     "Templates/Bases/Metas.base.tmp.3515.1777827683742",
@@ -268,8 +270,6 @@
     "Categorias/Vídeos.md",
     "Templates/Bases/Untitled.md",
     "Categorias/Diário.md",
-    "Áreas/Finanças.md.tmp.3515.1777822740731",
-    "Áreas/Saúde.md.tmp.3515.1777822736082",
     "Áreas/Saúde/Dieta Recomposição.md",
     "Áreas/Saúde/Treino PPL.md",
     "Anexos/Pasted image 20260421211254.png",

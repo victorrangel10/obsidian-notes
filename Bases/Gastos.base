@@ -1,3 +1,5 @@
+formulas:
+  Total: valor
 views:
   - type: table
     name: Todos
@@ -17,11 +19,15 @@ views:
         direction: ASC
       - property: data
         direction: DESC
-  - type: list
+  - type: table
     name: Todos 2
     filters:
       and:
         - Categorias.contains(link("Gastos"))
+    order:
+      - file.name
+      - valor
+      - formula.Total
     sort:
       - property: data
         direction: DESC

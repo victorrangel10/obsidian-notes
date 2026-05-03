@@ -15,7 +15,7 @@ Categorias:
 ```tracker
 searchType: frontmatter
 searchTarget: peso
-folder: obsidian/Diário
+folder: Diário
 startDate: <% moment().day(0).format("YYYY-MM-DD") %>
 endDate: <% moment().day(6).format("YYYY-MM-DD") %>
 line:

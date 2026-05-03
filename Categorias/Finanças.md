@@ -1,7 +1,7 @@
 ---
 type: area
 Categorias:
-  - "[[Área]]"
+  - "[[Áreas]]"
 ---
 
 # Finanças

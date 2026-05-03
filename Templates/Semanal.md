@@ -3,7 +3,7 @@ semana: 2026-W19
 inicio: 2026-05-03
 fim: 2026-05-09
 Categorias:
-  - "[[Semana]]"
+  - "[[Semanas]]"
 ---
 
 # Semana 19/2026

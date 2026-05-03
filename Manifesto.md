@@ -102,6 +102,12 @@ Templater templates pra criação automática de novos arquivos:
 
 Imagens e binários colados em notas.
 
+### `Gastos/`
+
+Pasta de notas de gasto individual. Cada gasto = uma nota com frontmatter (`valor`, `descricao`, `data`, `categoria_gasto`). Criadas via Templater hotkey + prompts (sem fricção). Visão consolidada em `Categorias/Gasto.md`. Tracker da meta Casamento lê dessa pasta.
+
+Convenção: você nunca abre os arquivos individuais. Sempre acessa via view consolidada.
+
 ### Notas no vault root
 
 Documentos de longa duração que pertencem a uma ou mais categorias mas não cabem em uma subpasta específica vivem na raiz do vault com `Categorias: ["[[Saúde]]"]` (ou outra categoria). Exemplos atuais: `Treino PPL.md`, `Dieta.md`, `Plano Financeiro.md`. Acessíveis via `Categorias/<X>.md`.
@@ -174,7 +180,6 @@ Não em `Categorias` — estado muda, classificação não.
 date: YYYY-MM-DD
 data_criacao: YYYY-MM-DD HH:mm
 peso: 76.6        # número, kg
-gasto: 0          # número, R$
 agua: 0           # número 0-3, litros
 treino: false     # bool
 dieta: false      # bool
@@ -183,6 +188,8 @@ Categorias:
   - "[[Diário]]"
 ---
 ```
+
+> Nota: `gasto` removido. Gastos viraram notas individuais em `Gastos/` (ver schema abaixo).
 
 ### Weekly (`Diário/YYYY-Www.md`)
 
@@ -209,6 +216,21 @@ alvo: <número>
 status: ativa
 Categorias:
   - "[[Meta]]"
+---
+```
+
+### Gasto (`Gastos/<data> - <descricao>.md`)
+
+```yaml
+---
+type: gasto
+data: YYYY-MM-DD
+data_criacao: YYYY-MM-DD HH:mm
+valor: 25.50              # número, R$
+descricao: Almoço shopping
+categoria_gasto: alimentação    # alimentação | transporte | lazer | roupa | moto | saúde | desenvolvimento | outros
+Categorias:
+  - "[[Gasto]]"
 ---
 ```
 

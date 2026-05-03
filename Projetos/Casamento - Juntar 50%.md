@@ -19,9 +19,9 @@ Casamento previsto para abril/2028. Meta de R$ 25.000 (com folga pra inflação 
 **Estratégia:**
 - Aporte inicial de R$ 2.800 em Tesouro Selic 2028
 - Aportes mensais de R$ 1.000 a partir do mês 1
-- Acompanhamento via property `gasto` nas dailies (manter dentro do orçamento mensal R$ 1.500 destinado pra gastos discricionários)
+- Acompanhamento via notas em `Gastos/` (cada gasto = nota individual com property `valor`). Manter dentro do orçamento mensal R$ 1.500 destinado pra gastos discricionários.
 
-Plano detalhado em [[Plano Financeiro]] (Áreas/Finanças).
+Plano detalhado em [[Plano Financeiro]].
 
 ## Marcos
 
@@ -35,8 +35,9 @@ Plano detalhado em [[Plano Financeiro]] (Áreas/Finanças).
 
 ```tracker
 searchType: frontmatter
-searchTarget: gasto
-folder: Diário
+searchTarget: valor
+folder: Gastos
+dateField: data
 accum: true
 bar:
     title: "Gasto cumulativo"

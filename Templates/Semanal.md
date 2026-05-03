@@ -28,8 +28,9 @@ line:
 
 ```tracker
 searchType: frontmatter
-searchTarget: gasto
-folder: Diário
+searchTarget: valor
+folder: Gastos
+dateField: data
 startDate: 2026-05-03
 endDate: 2026-05-09
 accum: true

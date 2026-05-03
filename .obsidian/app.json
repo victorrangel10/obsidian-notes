@@ -1,8 +1,8 @@
 {
   "promptDelete": true,
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "obsidian/Anexos",
+  "attachmentFolderPath": "Anexos",
   "newFileLocation": "folder",
-  "newFileFolderPath": "obsidian",
+  "newFileFolderPath": "/",
   "showLineNumber": false
 }

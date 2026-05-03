@@ -1,6 +1,8 @@
 ---
 type: manifesto
 data_criacao: 2026-05-03
+Categorias:
+  - "[[Organização]]"
 ---
 
 # Manifesto do Vault

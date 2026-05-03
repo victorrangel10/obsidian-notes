@@ -2,6 +2,23 @@ formulas:
   Total: valor
 views:
   - type: table
+    name: Todos
+    filters:
+      and:
+        - Categorias.contains(link("Gastos"))
+    order:
+      - valor
+      - descricao
+      - categoria_gasto
+      - data_criacao
+    sort:
+      - property: valor
+        direction: DESC
+      - property: formula.Total
+        direction: DESC
+      - property: data
+        direction: DESC
+  - type: table
     name: Por categoria
     filters:
       and:
@@ -9,22 +26,5 @@ views:
     sort:
       - property: categoria_gasto
         direction: ASC
-      - property: data
-        direction: DESC
-  - type: table
-    name: Todos
-    filters:
-      and:
-        - Categorias.contains(link("Gastos"))
-    order:
-      - data_criacao
-      - valor
-      - descricao
-      - categoria_gasto
-    sort:
-      - property: valor
-        direction: DESC
-      - property: formula.Total
-        direction: DESC
       - property: data
         direction: DESC

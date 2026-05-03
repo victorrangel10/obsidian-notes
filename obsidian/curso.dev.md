@@ -1,0 +1,9 @@
+---
+Categorias: "[[Cursos]]"
+Autor: "[[Filipe Deschamps]]"
+Data de compra: ""
+Data de início: ""
+Data de finalização: ""
+Data de expiração: ""
+Nota:
+---

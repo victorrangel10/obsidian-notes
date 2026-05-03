@@ -1,5 +1,5 @@
 ---
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: <% tp.file.title %>
 data_criacao: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 peso: 76.6
 agua: 0
@@ -10,9 +10,9 @@ Categorias:
   - "[[Diário]]"
 ---
 
-# <% moment().locale("pt-br").format("dddd, DD [de] MMMM").replace(/^./, c => c.toUpperCase()) %>
+# <% moment(tp.file.title, "YYYY-MM-DD").locale("pt-br").format("dddd, DD [de] MMMM").replace(/^./, c => c.toUpperCase()) %>
 
-⬅️ [[<% tp.date.now("YYYY-MM-DD", -1) %>|Ontem]] | [[<% tp.date.now("YYYY-[W]ww") %>|Semana]] | [[<% tp.date.now("YYYY-MM-DD", 1) %>|Amanhã]] ➡️
+⬅️ [[<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") %>|Ontem]] | [[<% tp.date.now("YYYY-[W]ww", 0, tp.file.title, "YYYY-MM-DD") %>|Semana]] | [[<% tp.date.now("YYYY-MM-DD", 1, tp.file.title, "YYYY-MM-DD") %>|Amanhã]] ➡️
 
 ## Notas livres
 

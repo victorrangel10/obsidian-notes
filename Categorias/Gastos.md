@@ -11,6 +11,7 @@ Categorias:
 searchType: frontmatter
 searchTarget: valor
 folder: Anexos/Gastos
+dateField: data
 summary:
     template: "**R$ {{sum()}}**"
 ```

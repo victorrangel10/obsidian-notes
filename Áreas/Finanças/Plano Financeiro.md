@@ -103,7 +103,6 @@ Use **Nubank Caixinhas** ou **Inter Meus Objetivos**:
 - [ ] Distribuir salário 🔁 every month on the 5th 📅 2026-05-05
 
 > Ao marcar como feito, obsidian-tasks recria automaticamente pro mês seguinte. Valores na seção 2. Após distribuir, registra na daily de hoje em "Notas livres".
-
 ---
 
 > Plano pessoal · Revisar trimestralmente · Ajustar ao surgirem mudanças de renda, meta ou prazo.

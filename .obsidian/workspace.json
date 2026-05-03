@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Daily.md",
+                "file": "Templates/Gasto.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily"
+              "title": "Gasto"
             }
           }
         ]
@@ -245,8 +245,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c59d8e69de0e54d",
+  "active": "7a26ad8e6ed91d93",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Templates/Daily.md",
     "Templates/Gasto.md",
     "Templates/Semanal.md",
     "Manifesto.md.tmp.57748.1777832544404",
@@ -255,7 +257,6 @@
     "Bases/Gastos.base.tmp.57748.1777832524140",
     "Templates/Template de Curso.md",
     "Diário/2026-05-03.md",
-    "Templates/Daily.md",
     "Categorias/Gastos.md",
     "Manifesto.md.tmp.57748.1777832356689",
     "Manifesto.md.tmp.57748.1777832305152",

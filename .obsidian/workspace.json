@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "2026-05-03"
             }
+          },
+          {
+            "id": "bae8706c816effe3",
+            "type": "leaf",
+            "state": {
+              "type": "planner-weekly",
+              "state": {},
+              "icon": "table-2",
+              "title": "May, 3–May, 5"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -232,7 +243,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 394.5
+    "width": 484.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,9 +265,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "bae8706c816effe3",
   "lastOpenFiles": [
     "Diário/2026-05-03.md",
+    "Diário/2026-05-04.md",
     "Untitled.md",
     "Dieta.md",
     "Templates/Daily.md.tmp.57748.1777834836281",
@@ -288,7 +300,6 @@
     "Referências/São Tomás de Aquino.md",
     "Referências/A arte de decidir/Os conselheiros da prudência.md",
     "Referências/A arte de decidir/O processo de deliberação.md",
-    "Referências/A arte de decidir/Escrúpulo.md",
     "Templates/Gasto.md.tmp.57748.1777833065646",
     "Templates/Gasto.md.tmp.57748.1777832937493",
     "Manifesto.md.tmp.57748.1777832903349",

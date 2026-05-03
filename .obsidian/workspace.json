@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Categorias/Gastos.md",
+                "file": "Diário/2026-05-03.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gastos"
+              "title": "2026-05-03"
             }
           }
         ]
@@ -245,8 +245,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "7a26ad8e6ed91d93",
+  "active": "3c59d8e69de0e54d",
   "lastOpenFiles": [
+    "Templates/Daily.md",
+    "Templates/Template de Curso.md",
+    "Categorias/Gastos.md",
     "Manifesto.md.tmp.57748.1777832356689",
     "Manifesto.md.tmp.57748.1777832305152",
     "Manifesto.md.tmp.57748.1777832281589",
@@ -257,9 +260,7 @@
     "Projetos/Casamento - Juntar 50%.md.tmp.57748.1777832205690",
     "Templates/Daily.md.tmp.57748.1777832190504",
     "Gastos/2026-05-03 - null.md",
-    "Categorias/Gastos.md",
     "Templates/Gasto.md.tmp.57748.1777832177268",
-    "Gasto.base",
     "Untitled.canvas",
     "Manifesto.md",
     "Lista de Compras.md",
@@ -279,8 +280,6 @@
     "Categorias/Áreas.md",
     "Templates/Semanal.md",
     "Templates/Meta.md",
-    "Templates/Template de Curso.md",
-    "Templates/Daily.md",
     "Diário/2026-05-03.md",
     "Categorias/Semanas.md",
     "Categorias/Tarefas.md",

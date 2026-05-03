@@ -42,7 +42,7 @@ folder: Diário
 startDate: 2026-05-03
 endDate: 2026-05-09
 summary:
-    template: "Treino: {{sum}}/7 dias"
+    template: "Treino: {{sum()}}/7 dias"
 ```
 
 ```tracker
@@ -52,7 +52,7 @@ folder: Diário
 startDate: 2026-05-03
 endDate: 2026-05-09
 summary:
-    template: "Dieta: {{sum}}/7 dias"
+    template: "Dieta: {{sum()}}/7 dias"
 ```
 
 ```tracker
@@ -62,7 +62,7 @@ folder: Diário
 startDate: 2026-05-03
 endDate: 2026-05-09
 summary:
-    template: "Leitura: {{sum}}/7 dias"
+    template: "Leitura: {{sum()}}/7 dias"
 ```
 
 ## Inbox

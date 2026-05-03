@@ -2,6 +2,7 @@
 semana: 2026-W19
 inicio: 2026-05-03
 fim: 2026-05-09
+data_criacao: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 Categorias:
   - "[[Semanas]]"
 ---

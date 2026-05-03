@@ -1,5 +1,6 @@
 ---
 type: meta
+data_criacao: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 area: 
 prazo: 
 alvo: 
@@ -28,4 +29,6 @@ searchTarget:
 folder: Diário
 line:
     title: "Evolução"
+    yAxisTickLabelFormat: ".1f"
+    xAxisTickLabelFormat: "DD/MM"
 ```

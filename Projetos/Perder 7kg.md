@@ -41,4 +41,6 @@ folder: Diário
 line:
     title: "Evolução do peso"
     yAxisLabel: "kg"
+    yAxisTickLabelFormat: ".1f"
+    xAxisTickLabelFormat: "DD/MM"
 ```

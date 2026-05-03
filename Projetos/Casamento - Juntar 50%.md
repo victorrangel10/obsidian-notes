@@ -41,4 +41,6 @@ accum: true
 bar:
     title: "Gasto cumulativo"
     yAxisLabel: "R$"
+    yAxisTickLabelFormat: ".0f"
+    xAxisTickLabelFormat: "DD/MM"
 ```

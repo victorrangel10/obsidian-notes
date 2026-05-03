@@ -1,13 +1,13 @@
 ---
-title: "Stop chasing original ideas—here’s what actually makes you creative"
-source: "https://www.youtube.com/watch?v=1hQLp2Cl49Q&t=294s"
+title: Stop chasing original ideas—here’s what actually makes you creative
+source: https://www.youtube.com/watch?v=1hQLp2Cl49Q&t=294s
 author:
   - "[[Lofi Cinema]]"
 published: 2025-04-24
 created: 2026-04-22
 description: "Check out our masterclass available on Patreon: https://www.patreon.com/posts/work-your-ideas-150674674We often think of creativity as the need to invent something completely original. But the truth"
 tags:
-  - "clippings"
+  - clippings
 ---
 ![](https://www.youtube.com/watch?v=1hQLp2Cl49Q)
 

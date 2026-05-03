@@ -17,10 +17,6 @@
     {
       "folder": "Diário",
       "template": "Templates/Daily.md"
-    },
-    {
-      "folder": "",
-      "template": ""
     }
   ],
   "enable_file_templates": false,

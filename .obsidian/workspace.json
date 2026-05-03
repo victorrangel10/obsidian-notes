@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Categorias/Gastos.md",
+                "file": "Templates/Daily.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gastos"
+              "title": "Daily"
             }
           }
         ]
@@ -247,15 +247,16 @@
   },
   "active": "7a26ad8e6ed91d93",
   "lastOpenFiles": [
+    "Diário/2026-05-02.md",
+    "Bases/Diário.base",
+    "Categorias/Gastos.md",
     "Anexos/Gastos/2026-05-03 - The Best Açaí.md",
     "Categorias/Gastos.md.tmp.57748.1777834392693",
     "Anexos/Gastos/2026-05-03 - Uber.md",
     "Anexos/Gastos/2026-05-03 - Van Convento.md",
-    "Categorias/Gastos.md",
     "Categorias/Gastos.md.tmp.57748.1777834240309",
     "Manifesto.md.tmp.57748.1777834133839",
     "Categorias/Gastos.md.tmp.57748.1777834108467",
-    "Diário/2026-05-02.md",
     "Diário/2026-05-03.md",
     "Categorias/Diário.md",
     "Bases/Gastos.base",
@@ -281,7 +282,6 @@
     "Templates/Gasto.md.tmp.57748.1777832937493",
     "Manifesto.md.tmp.57748.1777832903349",
     "Templates/Semanal.md.tmp.57748.1777832895789",
-    "Projetos/Casamento - Juntar 50%.md.tmp.57748.1777832891860",
     "Untitled.canvas",
     "Anexos/Pasted image 20260421211254.png",
     "obsidian/Anexos/Pasted image 20260421211254.png"

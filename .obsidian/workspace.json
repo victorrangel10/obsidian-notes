@@ -11,10 +11,14 @@
             "id": "d353c006098d733f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Lista de Compras.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Lista de Compras"
             }
           }
         ]
@@ -243,6 +247,7 @@
   },
   "active": "d353c006098d733f",
   "lastOpenFiles": [
+    "Lista de Compras.md",
     "Categorias/Diário.md",
     "Referências/Skill - Obsidian Vault.md.tmp.3515.1777830292772",
     "Manifesto.md.tmp.3515.1777830204303",
@@ -273,7 +278,6 @@
     "Templates/Template de Curso.md",
     "Templates/Daily.md",
     "Diário/2026-05-03.md",
-    "Untitled.md",
     "Categorias/Semanas.md",
     "Categorias/Tarefas.md",
     "Áreas/Finanças.md",

@@ -1,5 +1,5 @@
 ---
-C:
+Curso: "[[Testo 1k]]"
 ---
 
 ## Sono de qualidade

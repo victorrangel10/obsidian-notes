@@ -1,3 +1,6 @@
+---
+Curso: "[[Testo 1k]]"
+---
 
 ### Como treinar pesado
 

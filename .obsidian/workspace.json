@@ -25,10 +25,14 @@
             "id": "bae8706c816effe3",
             "type": "leaf",
             "state": {
-              "type": "planner-weekly",
-              "state": {},
-              "icon": "table-2",
-              "title": "May, 3–May, 5"
+              "type": "markdown",
+              "state": {
+                "file": "Diário/2026-04-30.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-04-30"
             }
           }
         ],
@@ -267,6 +271,8 @@
   },
   "active": "bae8706c816effe3",
   "lastOpenFiles": [
+    "Diário/2026-04-30.md",
+    "Diário/2026-05-11.md",
     "Diário/2026-05-03.md",
     "Diário/2026-05-04.md",
     "Untitled.md",
@@ -298,8 +304,6 @@
     "Referências/Monochampion.md",
     "Referências/Como aumentar a testosterona na prática.md",
     "Referências/São Tomás de Aquino.md",
-    "Referências/A arte de decidir/Os conselheiros da prudência.md",
-    "Referências/A arte de decidir/O processo de deliberação.md",
     "Templates/Gasto.md.tmp.57748.1777833065646",
     "Templates/Gasto.md.tmp.57748.1777832937493",
     "Manifesto.md.tmp.57748.1777832903349",

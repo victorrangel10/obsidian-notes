@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7de0724c9399268a",
+        "id": "3c8b7af878685750",
         "type": "tabs",
         "children": [
           {
-            "id": "248ec4ff91e3c6b2",
+            "id": "d353c006098d733f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projetos/Casamento - Juntar 50%.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Casamento - Juntar 50%"
+              "title": "New tab"
             }
           }
         ]
@@ -245,23 +241,25 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "248ec4ff91e3c6b2",
+  "active": "3c59d8e69de0e54d",
   "lastOpenFiles": [
-    "Projetos/Perder 7kg.md",
+    "Manifesto.md.tmp.3515.1777830204303",
+    "Bases/Áreas.base",
+    "Bases/Cursos.base",
+    "Bases/Organização.base",
     "Projetos/Casamento - Juntar 50%.md",
+    "Projetos/Perder 7kg.md",
     "Manifesto.md",
     "Dieta.md",
     "Treino PPL.md",
     "Plano Financeiro.md",
     "Bases/Finanças.base",
     "Bases/Metas.base",
-    "Bases/Áreas.base",
     "Referências/Skill - Obsidian Vault.md",
     "Referências/São Tomás de Aquino.md",
     "Referências/Skill - Obsidian Vault.md.tmp.3515.1777829908900",
     "Manifesto.md.tmp.3515.1777829762763",
     "README.md",
-    "Bases/Organização.base",
     "Categorias/Organização.md",
     "Categorias/Metas.md",
     "Categorias/Saúde.md",
@@ -276,7 +274,6 @@
     "Templates/Template de Curso.md",
     "Templates/Daily.md",
     "Diário/2026-05-03.md",
-    "Projetos/Casamento - Juntar 50%.md.tmp.3515.1777828185505",
     "Untitled.md",
     "Categorias/Semanas.md",
     "Categorias/Tarefas.md",

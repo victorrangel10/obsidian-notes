@@ -9,9 +9,36 @@ Categorias:
 
 ## O que é
 
-Vault Obsidian que serve como tracker de vida — aglutina conhecimento, hábitos diários, metas de longo prazo, finanças e listas. Organização baseada em **PARA leve** (Projects / Areas / Resources / Archives), com property `Categorias` (array de wiki links no frontmatter) fazendo o trabalho transversal de classificação.
+Vault Obsidian que serve como tracker de vida — aglutina conhecimento, hábitos diários, metas de longo prazo, finanças e listas. Organização baseada em **categorias unificadas**: toda nota carrega uma property `Categorias` (array de wiki links), e essas categorias se tornam views navegáveis via Bases.
 
 A vault está em `/home/vrangel/Documents/Obsidian Vault/obsidian/`, que também é o root do repositório git.
+
+---
+
+## Como Bases viram Views (o coração da navegação)
+
+O fluxo central do vault é uma cadeia transparente: `Base → Categoria → Notas`.
+
+```
+Bases/<Nome>.base              ← filtro: Categorias contém [[Nome]]
+        ▲
+        │ embed via ![[Nome.base]]
+        │
+Categorias/<Nome>.md           ← view navegável (lista todas as notas filtradas)
+        ▲
+        │ inclusão automática via property
+        │
+notas espalhadas pelo vault    ← com Categorias: ["[[Nome]]"]
+```
+
+### Criar uma nova categoria do zero
+
+1. **Filtro:** cria `Bases/<Nome>.base` com `filters: { and: [Categorias.contains(link("Nome"))] }`
+2. **View:** cria `Categorias/<Nome>.md` com `tags: [categorias]` no frontmatter e `![[<Nome>.base]]` no body
+3. **Inclusão:** notas que devem aparecer ganham `Categorias: ["[[Nome]]"]` no frontmatter
+4. Abrir `Categorias/<Nome>.md` mostra todas elas em tabela
+
+Categorias é o sistema unificado de classificação. As "áreas de responsabilidade" do PARA (Saúde, Finanças, Carreira) são apenas categorias específicas — não pastas.
 
 ---
 
@@ -19,41 +46,41 @@ A vault está em `/home/vrangel/Documents/Obsidian Vault/obsidian/`, que também
 
 ### `Inbox/`
 
-Captura rápida. Tudo que entra na cabeça e não tem casa óbvia: ideia solta, link salvo, recomendação de livro, anotação de meio do dia. Cria nota com nome livre, joga aqui sem categorizar.
+Captura rápida. Tudo que entra na cabeça e não tem casa óbvia: ideia solta, link salvo, recomendação de livro. Cria nota com nome livre, joga aqui sem categorizar.
 
-Esvazia toda semana no weekly review — cada item passa por uma decisão: vira Projeto, vira nota de Área, vira Referência, ou vai pro lixo. Inbox sempre termina vazia.
+Esvazia toda semana no weekly review — cada item vira Projeto, vira Referência, ganha categoria existente, ou vai pro lixo.
 
 ### `Diário/`
 
-Destino do plugin Periodic Notes. Recebe dois tipos de nota:
+Destino do plugin Periodic Notes. Recebe:
 
-- **Daily** (`YYYY-MM-DD.md`) — uma por dia. Frontmatter contém as métricas quotidianas (peso, gasto, água, treino, dieta, leitura) que alimentam trackers de metas. Body tem espaço pra notas livres do dia e duas perguntas de reflexão.
-- **Weekly** (`YYYY-Www.md`) — uma por semana. Métricas agregadas via tracker blocks, processamento do Inbox, reflexão semanal (3 perguntas), planejamento de prioridades pra próxima semana.
+- **Daily** (`YYYY-MM-DD.md`) — frontmatter com métricas quotidianas (peso, gasto, água, treino, dieta, leitura) que alimentam trackers de metas. Body com notas livres e reflexão.
+- **Weekly** (`YYYY-Www.md`) — métricas agregadas via tracker blocks, processamento do Inbox, reflexão semanal, planejamento da próxima.
 
 ### `Projetos/`
 
-Metas com prazo definido (PARA P). Toda nota aqui tem `prazo`, `alvo` e `status` (`ativa` / `pausada` / `concluida`) no frontmatter. Inclui tracker block embedado puxando dados das dailies pra renderizar progresso visual.
+Metas com prazo definido. Toda nota aqui tem `prazo`, `alvo` e `status` (`ativa` / `pausada` / `concluida`) no frontmatter. Inclui tracker block embutido lendo dados das dailies.
 
-Quando uma meta termina (atinge o alvo ou é abandonada), `status` muda pra `concluida` e ela some das views ativas mas continua acessível via Base de Metas.
-
-### `Áreas/`
-
-Containers permanentes de responsabilidade (PARA A) — Saúde, Finanças, Carreira, etc. Não terminam, evoluem com o tempo. A nota raiz da área é um índice (`Áreas/Saúde.md`) que aponta pra documentos de detalhamento na subpasta (`Áreas/Saúde/Treino PPL.md`, `Áreas/Saúde/Dieta Recomposição.md`).
+Quando uma meta termina, `status` muda pra `concluida` — some das views ativas mas continua acessível via `Categorias/Metas.md`.
 
 ### `Referências/`
 
-Material de consulta (PARA R) — conhecimento estável e de longo prazo. Subpastas:
+Material de consulta de longa duração. Subpastas:
 
-- `Cursos/` — anotações de cursos (índice em `Categorias/Cursos.md`)
-- `Clippings/` — destino do Web Clipper
-- `Listas/` — placeholder pra listas curadas (livros pra ler, vídeos, compras, etc)
+- `Cursos/` — anotações de cursos
+- `Capturas/` — destino do Web Clipper
+- `Listas/` — listas curadas (livros pra ler, vídeos, compras)
 - Notas soltas no nível da pasta — anotações sobre pessoas, temas, conceitos
 
-Sem prazo. Cresce conforme se aprende.
+### `Bases/`
+
+Arquivos `.base` — definições de filtro/view. Cada `.base` define UM filtro, geralmente sobre a property `Categorias`. Exemplo: `Bases/Saúde.base` filtra notas onde `Categorias.contains(link("Saúde"))`.
+
+Os `.base` não são abertos diretamente. São consumidos via transclusão (`![[X.base]]`) por notas em `Categorias/`.
 
 ### `Categorias/`
 
-Notas-índice com Bases embedadas. Cada arquivo aqui é uma view navegável de notas do vault filtradas por uma categoria.
+Notas-índice — cada arquivo é uma view navegável de notas filtradas por uma categoria.
 
 Padrão da nota:
 ```markdown
@@ -64,20 +91,20 @@ tags:
 ![[NomeDaBase.base]]
 ```
 
-A Base correspondente vive em `Templates/Bases/` e contém o filtro real (ex: `Categorias.contains(link("Meta"))`).
-
 ### `Templates/`
 
 Templater templates pra criação automática de novos arquivos:
-- `Daily.md` — usado pelo Periodic Notes daily
-- `Semanal.md` — usado pelo Periodic Notes weekly
-- `Meta.md` — usado quando se cria nova meta em `Projetos/`
-
-A subpasta `Templates/Bases/` armazena os arquivos `.base` (definições de filtro/views consumidas pelas notas em `Categorias/`).
+- `Daily.md` — Periodic Notes daily
+- `Semanal.md` — Periodic Notes weekly
+- `Meta.md` — novas metas em `Projetos/`
 
 ### `Anexos/`
 
-Imagens e binários colados em notas. Destino padrão de attachments do Obsidian.
+Imagens e binários colados em notas.
+
+### Notas no vault root
+
+Documentos de longa duração que pertencem a uma ou mais categorias mas não cabem em uma subpasta específica vivem na raiz do vault com `Categorias: ["[[Saúde]]"]` (ou outra categoria). Exemplos atuais: `Treino PPL.md`, `Dieta.md`, `Plano Financeiro.md`. Acessíveis via `Categorias/<X>.md`.
 
 ---
 
@@ -87,15 +114,15 @@ Toda nota relevante carrega uma property `Categorias` no frontmatter como **arra
 
 ```yaml
 Categorias:
-  - "[[Diário]]"
+  - "[[Saúde]]"
 ```
 
 **Não usar:**
-- ❌ Strings: `Categorias: [diário]`
-- ❌ Tags inline no body: `#diário`
-- ❌ A property `tags` nativa do Obsidian (substituída por Categorias pra alinhar com a estrutura `Categorias/`)
+- ❌ Strings: `Categorias: [saúde]`
+- ❌ Tags inline no body: `#saúde`
+- ❌ A property `tags` nativa do Obsidian
 
-**Por que wiki links:** os filters de Bases usam `Categorias.contains(link("X"))`. Cada categoria é uma nota em `Categorias/` com Base embedada mostrando todas as notas filtradas. Backlinks vêm de graça.
+**Por que wiki links:** os filters de Bases usam `Categorias.contains(link("X"))`. Cada link aponta pra uma nota em `Categorias/` que embeda a Base. Backlinks aparecem de graça.
 
 **Valores convencionados:**
 
@@ -103,15 +130,21 @@ Categorias:
 |---|---|
 | `[[Diário]]` | Toda nota daily |
 | `[[Semanas]]` | Toda nota weekly |
-| `[[Meta]]` | Toda nota em Projetos/ |
-| `[[Área]]` | Toda nota raiz de área |
-| Livre (`[[Pessoa]]`, `[[Tema]]`, `[[Filosofia]]`) | Notas em Referências/ |
+| `[[Meta]]` | Toda nota em `Projetos/` |
+| `[[Saúde]]` | Notas relacionadas a saúde (treino, dieta, exames) |
+| `[[Finanças]]` | Notas relacionadas a finanças (plano financeiro) |
+| `[[Cursos]]` | Notas/anotações de cursos |
+| `[[Vídeos]]` | Vídeos pra ver |
+| `[[Organização]]` | Meta-notas sobre o vault (manifesto, skills) |
+| Livre (`[[Pessoa]]`, `[[Tema]]`) | Referências de conhecimento |
 
-**Estado de meta** vai numa property separada:
+Uma nota pode ter múltiplas categorias. Ex: nota de treino que também é referência sobre fisiologia → `Categorias: ["[[Saúde]]", "[[Tema]]"]`. Aparece em ambas as views.
+
+**Estado de meta** vai em property separada:
 ```yaml
 status: ativa | pausada | concluida
 ```
-Não em `Categorias` — porque estado muda, e Categorias é classificação.
+Não em `Categorias` — estado muda, classificação não.
 
 ---
 
@@ -119,16 +152,16 @@ Não em `Categorias` — porque estado muda, e Categorias é classificação.
 
 | Plugin | Função |
 |---|---|
-| **Bases** (core) | Views/queries dinâmicas de notas filtradas por property/categoria |
-| **obsidian-tracker** | Gráficos numéricos (line, bar, summary) lendo properties das dailies |
-| **Templater** | Templates dinâmicos com tokens de data/locale/lógica processados na criação do arquivo |
+| **Bases** (core) | Views/queries dinâmicas via `.base` files |
+| **obsidian-tracker** | Gráficos numéricos (line/bar/summary) lendo properties das dailies |
+| **Templater** | Templates dinâmicos com tokens processados na criação |
 | **Periodic Notes** | Cria daily e weekly automáticos com template aplicado |
-| **obsidian-tasks-plugin** | Tasks com prazo, recorrência (`🔁`), queries inline |
-| **kanban-bases-view** | Adiciona view tipo kanban dentro de Bases |
+| **obsidian-tasks-plugin** | Tasks com prazo, recorrência (`🔁`), queries |
+| **kanban-bases-view** | Adiciona view kanban dentro de Bases |
 | **obsidian-kanban** | Boards manuais standalone |
-| **obsidian-git** | Sync via git pra versionamento e backup |
+| **obsidian-git** | Sync via git |
 | **calendar** | Navegação visual de datas |
-| **homepage** | Define nota de abertura ao iniciar Obsidian |
+| **homepage** | Nota de abertura ao iniciar Obsidian |
 
 ---
 
@@ -172,20 +205,23 @@ type: meta
 data_criacao: YYYY-MM-DD HH:mm
 area: saúde | finanças | carreira | ...
 prazo: YYYY-MM-DD
-alvo: <número>          # R$ pra finanças, kg pra fitness, etc
-status: ativa           # | pausada | concluida
+alvo: <número>
+status: ativa
 Categorias:
   - "[[Meta]]"
 ---
 ```
 
-### Área (`Áreas/<nome>.md`)
+### Documento de categoria (vault root, Referências, etc)
+
+Pra qualquer nota persistente que pertence a uma ou mais categorias:
 
 ```yaml
 ---
-type: area
+type: documento
+data_criacao: YYYY-MM-DD HH:mm
 Categorias:
-  - "[[Área]]"
+  - "[[Saúde]]"     # uma ou mais categorias existentes
 ---
 ```
 
@@ -196,21 +232,21 @@ Categorias:
 ### Daily flow
 
 1. `Cmd+P` → "Periodic Notes: Open today's daily note"
-2. Properties view do Obsidian: preencher peso/gasto/agua, togglar treino/dieta/leitura
-3. Body: anotar coisas livres do dia em "Notas livres"
+2. Properties view: preencher peso/gasto/agua, togglar treino/dieta/leitura
+3. Body: anotar coisas livres em "Notas livres"
 4. Antes de dormir: responder as duas perguntas de "Reflexão"
 
 ### Weekly review
 
 1. `Cmd+P` → "Periodic Notes: Open this week's note"
-2. Tracker blocks renderizam métricas da semana automaticamente (peso, gasto cumulativo, contagem de hábitos)
-3. **Processar `Inbox/`:** para cada item, decidir destino (Projeto, Área, Referência, lixo). Inbox termina vazia.
+2. Tracker blocks renderizam métricas da semana automaticamente
+3. **Processar `Inbox/`:** cada item vira Projeto, Referência, ganha categoria existente, ou vai pro lixo. Inbox termina vazia.
 4. Reflexão (3 prompts): rolou bem / podia ter sido melhor / aprendi
 5. Anotar 1-3 prioridades pra próxima semana
 
 ### Distribuição mensal do salário
 
-Recurring task em `Áreas/Finanças/Plano Financeiro.md` (seção 9): dispara dia 5 todo mês.
+Recurring task em `Plano Financeiro.md` (seção 9) — dispara dia 5 todo mês.
 
 Workflow:
 1. Distribuir salário conforme tabela (seção 2 do mesmo doc): poupança primeiro, gastos depois
@@ -219,12 +255,12 @@ Workflow:
 
 ### Tracking de metas
 
-Cada meta tem tracker block embutido:
+Cada meta tem tracker block embutido lendo properties das dailies:
 
-- **Casamento - Juntar 50%** → `gasto` cumulativo das dailies (bar chart)
+- **Casamento - Juntar 50%** → `gasto` cumulativo (bar chart)
 - **Perder 7kg** → `peso` ao longo do tempo (line chart)
 
-Os trackers leem as dailies via `searchType: frontmatter`. Ou seja: o ato de preencher peso/gasto na daily alimenta automaticamente os gráficos de meta.
+O ato de preencher peso/gasto na daily alimenta automaticamente os gráficos de meta.
 
 ---
 
@@ -239,7 +275,7 @@ Toda configuração de tracker block deve seguir:
 | `yAxisTickLabelFormat` | `".0f"` | Inteiros (R$, contagens) |
 | Locale moment | `pt-br` | Datas e dias da semana em português |
 
-Para summary trackers de hábitos (treino, dieta, leitura), usar `{{sum()}}` (com parênteses — sintaxe atual do plugin).
+Para summary trackers de hábitos (treino, dieta, leitura), usar `{{sum()}}` com parênteses — sintaxe atual do plugin.
 
 ---
 

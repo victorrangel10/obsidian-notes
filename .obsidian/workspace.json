@@ -39,14 +39,12 @@
             "id": "08ccd9e45b1e3866",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Diário/2026-05-01.md",
-                "mode": "source",
-                "source": false
+                "file": "Anexos/Pasted image 20260421211254.png"
               },
-              "icon": "lucide-file",
-              "title": "2026-05-01"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260421211254"
             }
           }
         ],
@@ -284,11 +282,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "08ccd9e45b1e3866",
+  "active": "3c59d8e69de0e54d",
   "lastOpenFiles": [
     "Diário/2026-05-01.md",
-    "Diário/2026-05-02.md",
     "Diário/2026-04-30.md",
+    "Anexos/Pasted image 20260421211254.png",
+    "obsidian/Anexos/Pasted image 20260503161159.jpg",
+    "obsidian/Anexos",
+    "obsidian",
+    "Diário/2026-05-02.md",
     "Diário/2026-05-04.md",
     "Diário/2026-05-03.md",
     "Diário/2026-05-11.md",
@@ -318,12 +320,8 @@
     "Referências/Treino de força.md",
     "Referências/Skill - Obsidian Vault.md",
     "Referências/Monochampion.md",
-    "Referências/Como aumentar a testosterona na prática.md",
     "Templates/Gasto.md.tmp.57748.1777833065646",
-    "Templates/Gasto.md.tmp.57748.1777832937493",
-    "Manifesto.md.tmp.57748.1777832903349",
     "Untitled.canvas",
-    "Anexos/Pasted image 20260421211254.png",
     "obsidian/Anexos/Pasted image 20260421211254.png"
   ]
 }

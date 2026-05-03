@@ -17,6 +17,10 @@
     {
       "folder": "Diário",
       "template": "Templates/Daily.md"
+    },
+    {
+      "folder": "Anexos/Gastos",
+      "template": "Templates/Gasto.md"
     }
   ],
   "enable_file_templates": false,

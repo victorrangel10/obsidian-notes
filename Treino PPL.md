@@ -5,7 +5,7 @@ tags:
   - treino
 Categorias:
   - "[[Saúde]]"
-  - "[[Nutrição]]"
+  - "[[Treino]]"
 ---
 
 # Treino PPL 2x — Recomposição Corporal

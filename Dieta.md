@@ -5,6 +5,7 @@ tags:
   - dieta
 Categorias:
   - "[[Saúde]]"
+  - "[[Nutrição]]"
 ---
 
 # Dieta — Recomposição Corporal

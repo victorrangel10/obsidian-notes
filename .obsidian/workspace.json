@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Treino PPL.md",
+                "file": "Dieta.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Treino PPL"
+              "title": "Dieta"
             }
           }
         ]
@@ -247,9 +247,9 @@
   },
   "active": "248ec4ff91e3c6b2",
   "lastOpenFiles": [
-    "Manifesto.md",
     "Treino PPL.md",
     "Dieta.md",
+    "Manifesto.md",
     "README.md",
     "Templates/Bases/Organização.base",
     "Categorias/Organização.md",

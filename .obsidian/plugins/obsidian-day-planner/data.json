@@ -35,7 +35,7 @@
   "sortTasksInPlanAfterEdit": false,
   "firstDayOfWeek": "monday",
   "multiDayRange": "full-week",
-  "showTimeTracker": false,
+  "showTimeTracker": true,
   "showActiveClocks": false,
   "rawIcals": []
 }

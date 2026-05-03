@@ -27,22 +27,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diário/2026-05-03.md",
+                "file": "Diário/2026-05-02.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-03"
+              "title": "2026-05-02"
             }
           },
           {
-            "id": "9a6e939a1ede209c",
+            "id": "08ccd9e45b1e3866",
             "type": "leaf",
             "state": {
               "type": "planner-weekly",
               "state": {},
               "icon": "table-2",
-              "title": "May, 3–May, 5"
+              "title": "Apr, 27–May, 3"
             }
           }
         ],
@@ -257,8 +257,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 484.5,
-    "collapsed": true
+    "width": 484.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -280,13 +279,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "9a6e939a1ede209c",
+  "active": "08ccd9e45b1e3866",
   "lastOpenFiles": [
-    "Diário/2026-05-03.md",
     "Diário/2026-05-02.md",
     "Diário/2026-04-30.md",
-    "Diário/2026-05-11.md",
     "Diário/2026-05-04.md",
+    "Diário/2026-05-03.md",
+    "Diário/2026-05-11.md",
     "Untitled.md",
     "Dieta.md",
     "Templates/Daily.md.tmp.57748.1777834836281",

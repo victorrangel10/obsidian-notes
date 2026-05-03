@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anexos/Gastos/2026-05-03 - Uber.md",
+                "file": "Templates/Gasto.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-03 - Uber"
+              "title": "Gasto"
             }
           }
         ]
@@ -247,17 +247,18 @@
   },
   "active": "7a26ad8e6ed91d93",
   "lastOpenFiles": [
-    "Anexos/Gastos/2026-05-03 - Van Convento.md",
+    "Templates/Daily.md",
+    "Templates/Gasto.md",
     "Anexos/Gastos/2026-05-03 - Uber.md",
     "Anexos/Gastos/2026-05-03 - The Best Açaí.md",
+    "Anexos/Gastos/2026-05-03 - Van Convento.md",
+    "Templates/Gasto.md.tmp.57748.1777833065646",
     "Templates/Template de Curso.md",
     "Templates/Gasto.md.tmp.57748.1777832937493",
     "Manifesto.md.tmp.57748.1777832903349",
     "Templates/Semanal.md.tmp.57748.1777832895789",
     "Projetos/Casamento - Juntar 50%.md.tmp.57748.1777832891860",
     "Templates/Gasto.md.tmp.57748.1777832887186",
-    "Templates/Gasto.md",
-    "Templates/Daily.md",
     "Templates/Semanal.md",
     "Manifesto.md.tmp.57748.1777832544404",
     "Manifesto.md.tmp.57748.1777832540020",
@@ -265,7 +266,6 @@
     "Bases/Gastos.base.tmp.57748.1777832524140",
     "Diário/2026-05-03.md",
     "Categorias/Gastos.md",
-    "Manifesto.md.tmp.57748.1777832356689",
     "Gastos/2026-05-03 - null.md",
     "Untitled.canvas",
     "Manifesto.md",
@@ -283,7 +283,6 @@
     "Categorias/Metas.md",
     "Categorias/Saúde.md",
     "Categorias/Finanças.md",
-    "Categorias/Áreas.md",
     "Anexos/Pasted image 20260421211254.png",
     "obsidian/Anexos/Pasted image 20260421211254.png"
   ]

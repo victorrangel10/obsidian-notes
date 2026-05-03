@@ -30,6 +30,7 @@
     "Data de início": "date",
     "Data de finalização": "date",
     "Data de expiração": "date",
-    "Nota": "number"
+    "Nota": "number",
+    "valor": "number"
   }
 }

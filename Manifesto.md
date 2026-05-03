@@ -160,6 +160,7 @@ Não em `Categorias` — estado muda, classificação não.
 | Plugin | Função |
 |---|---|
 | **Bases** (core) | Views/queries dinâmicas via `.base` files |
+| **dataview** | Queries SQL-like pra agregações cross-folder (sum, group by, médias) que Bases não cobre nativamente |
 | **obsidian-tracker** | Gráficos numéricos (line/bar/summary) lendo properties das dailies |
 | **Templater** | Templates dinâmicos com tokens processados na criação |
 | **Periodic Notes** | Cria daily e weekly automáticos com template aplicado |

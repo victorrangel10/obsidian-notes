@@ -1,6 +1,8 @@
 ---
 type: skill
 data_criacao: 2026-05-03
+Categorias:
+  - "[[Organização]]"
 ---
 
 # Skill: Obsidian Vault
@@ -15,7 +17,7 @@ data_criacao: 2026-05-03
 
 ```yaml
 name: obsidian-vault
-description: Use ao trabalhar no vault Obsidian do usuário em /home/vrangel/Documents/Obsidian Vault/obsidian/. Cobre tracker de vida (hábitos diários, metas, finanças, conhecimento, listas) com PARA + Bases + obsidian-tracker + Templater. Aplica-se a qualquer ação no vault: criar/editar notas, ajustar templates, configurar Bases, modificar trackers.
+description: Use ao trabalhar no vault Obsidian do usuário em /home/vrangel/Documents/Obsidian Vault/obsidian/. Cobre tracker de vida (hábitos diários, metas, finanças, conhecimento, listas) com Categorias unificadas + Bases + obsidian-tracker + Templater. Aplica-se a qualquer ação no vault: criar/editar notas, ajustar templates, configurar Bases, modificar trackers.
 ```
 
 ---
@@ -36,24 +38,44 @@ Se o Manifesto não existir ou estiver inacessível, parar e avisar o usuário a
 
 Sempre **PT-BR** — folders, properties, conteúdo, nomes de arquivo, mensagens. Inglês só quando inevitável (ex: nomes de plugins, tokens de Templater).
 
-## Property `Categorias` (a tag-substituta do vault)
+## Modelo central: Base → Categoria → Notas
+
+O vault é navegado por categorias unificadas. A cadeia é:
+
+```
+Bases/<X>.base                 ← filtro: Categorias contém [[X]]
+        ▲ embed
+Categorias/<X>.md              ← view navegável (consome a base)
+        ▲ inclusão via property
+notas espalhadas pelo vault    ← com Categorias: ["[[X]]"]
+```
+
+Pra criar uma nova categoria:
+1. Cria `Bases/<Nome>.base` com filtro
+2. Cria `Categorias/<Nome>.md` com `tags: [categorias]` + transclusão da base
+3. Notas que devem aparecer ganham `Categorias: ["[[Nome]]"]` no frontmatter
+
+Áreas de responsabilidade (Saúde, Finanças, Carreira) **não são pastas** — são categorias.
+
+## Property `Categorias`
 
 - Array de **wiki links** no frontmatter:
 
 ```yaml
 Categorias:
-  - "[[Meta]]"
+  - "[[Saúde]]"
 ```
 
 - **NUNCA usar:**
-  - Strings: `Categorias: [meta]`
-  - Tags inline no body: `#meta`
+  - Strings: `Categorias: [saúde]`
+  - Tags inline no body: `#saúde`
   - A property `tags` nativa do Obsidian
-- **Estado de meta** vai em property separada `status` (`ativa` / `pausada` / `concluida`), não em Categorias.
+- **Múltiplas categorias OK** — uma nota pode estar em várias views
+- **Estado de meta** vai em property separada `status` (`ativa` / `pausada` / `concluida`), não em Categorias
 
 ## Bases (`.base` files)
 
-- Vivem em `Templates/Bases/`
+- Vivem em `Bases/` (top-level no vault root)
 - Embedded em notas de `Categorias/` via transclusão (`![[NomeDaBase.base]]`)
 - Filter syntax: `Categorias.contains(link("Nome"))`
 - **Kanban view: criar via UI do Obsidian, não escrever YAML manual** — schema do plugin `kanban-bases-view` é instável e não documentado. Tentar adivinhar gera erros tipo `groupBy must be an object`.
@@ -122,7 +144,7 @@ Marcar como done (`[x]`) faz o plugin recriar a próxima ocorrência automaticam
 | Tracker mostra ano `2026-05-03` no eixo X | Falta `xAxisTickLabelFormat` | Adicionar `xAxisTickLabelFormat: "DD/MM"` |
 | Tracker mostra data em inglês | moment default locale | Forçar `.locale("pt-br")` em cada chamada |
 | Habit tracker dá erro `deprecated 'sum'` | Sintaxe antiga | Usar `{{sum()}}` com parênteses |
-| Wiki link `[[Diário]]` quebrado em property | Folder também chama `Diário` | Clicar no link, escolher nota correta uma vez (Obsidian aprende) |
+| Wiki link de categoria quebrado | Categoria não existe ainda em `Categorias/` | Criar `Bases/<X>.base` + `Categorias/<X>.md` antes de usar |
 
 ## Movimentação de arquivos
 
@@ -130,19 +152,19 @@ Marcar como done (`[x]`) faz o plugin recriar a próxima ocorrência automaticam
 
 ## Antes de criar feature nova
 
-Sempre brainstorm com user. Nunca presumir estrutura. Princípio: PARA-first, hábito-driven.
+Sempre brainstorm com user. Nunca presumir estrutura.
 
 Pergunta antes de criar:
-- Onde encaixa na estrutura PARA (Inbox / Projetos / Áreas / Referências)?
-- Precisa de nova Categoria? Nova Base? Novo template?
-- Tem Categoria existente que serve?
+- A nota pertence a alguma categoria existente? (ver `Categorias/`)
+- Precisa criar nova categoria? (Base + Categoria + property)
+- Onde a nota deve ficar fisicamente? (Inbox, Projetos, Referências, raiz)
 
 ## Verificação obrigatória pós-mudança
 
-Após qualquer edição que afete schema, template ou Base:
+Após qualquer edição que afete schema, template, Base ou Categoria:
 
 1. Criar/abrir uma nota de teste afetada
-2. Confirmar que a Base correspondente em `Categorias/` lista a nota
+2. Confirmar que a Categoria correspondente em `Categorias/` lista a nota
 3. Confirmar que tracker block (se houver) renderiza sem erro
 4. Confirmar que Templater processou todos os tokens (sem syntax literal sobrando)
 

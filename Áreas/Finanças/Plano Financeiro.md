@@ -98,6 +98,12 @@ Use **Nubank Caixinhas** ou **Inter Meus Objetivos**:
 - [ ] Agendar transferência automática dia 5: R$ 1.000 casamento + R$ 500 longo prazo
 - [ ] Anotar todos os gastos por 30 dias pra validar orçamento
 
+## 9. Rotina mensal (recorrente)
+
+- [ ] Distribuir salário 🔁 every month on the 5th 📅 2026-05-05
+
+> Ao marcar como feito, obsidian-tasks recria automaticamente pro mês seguinte. Valores na seção 2. Após distribuir, registra na daily de hoje em "Notas livres".
+
 ---
 
 > Plano pessoal · Revisar trimestralmente · Ajustar ao surgirem mudanças de renda, meta ou prazo.

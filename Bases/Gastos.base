@@ -2,14 +2,6 @@ formulas:
   Total: valor
 views:
   - type: table
-    name: Todos
-    filters:
-      and:
-        - Categorias.contains(link("Gastos"))
-    sort:
-      - property: data
-        direction: DESC
-  - type: table
     name: Por categoria
     filters:
       and:
@@ -20,7 +12,7 @@ views:
       - property: data
         direction: DESC
   - type: table
-    name: Todos 2
+    name: Todos
     filters:
       and:
         - Categorias.contains(link("Gastos"))

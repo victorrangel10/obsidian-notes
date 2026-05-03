@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "7de0724c9399268a",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "248ec4ff91e3c6b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -245,13 +245,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "248ec4ff91e3c6b2",
   "lastOpenFiles": [
-    "Dieta Recomposição.md",
+    "Treino PPL.md",
+    "README.md",
+    "Dieta.md",
+    "Manifesto.md",
     "Templates/Bases/Saúde.base",
     "Templates/Bases/Metas.base",
-    "Treino PPL.md",
-    "Manifesto.md",
     "Áreas/Finanças/Plano Financeiro.md",
     "Manifesto.md.tmp.3515.1777829351217",
     "Categorias/Saúde.md",
@@ -282,7 +283,6 @@
     "Templates/Bases/Untitled.md",
     "Anexos/Pasted image 20260421211254.png",
     "Referências/Cursos/A arte de decidir/AULA 1.md",
-    "README.md",
     "obsidian/Anexos/Pasted image 20260421211254.png",
     "Untitled.canvas"
   ]

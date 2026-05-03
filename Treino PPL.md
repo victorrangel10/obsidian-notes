@@ -130,6 +130,6 @@ Categorias:
 
 ## Links relacionados
 
-- [[Dieta Recomposição]]
+- [[Dieta]]
 - [[Perder 7kg]]
 - [[Saúde]]

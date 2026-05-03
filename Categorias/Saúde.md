@@ -11,7 +11,7 @@ Categorias:
 ## Documentos ativos
 
 - [[Treino PPL]] — rotina PPL 2x (Push/Pull/Legs Força + Hipertrofia)
-- [[Dieta Recomposição]] — meta 2.100 kcal / 145g proteína / deficit 400-500 kcal
+- [[Dieta]] — meta 2.100 kcal / 145g proteína / deficit 400-500 kcal
 
 ## Metas vinculadas
 

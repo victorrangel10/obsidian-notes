@@ -17,7 +17,7 @@ Recomposição corporal: reduzir gordura preservando massa muscular. Partindo de
 
 **Estratégia:**
 - **Treino:** PPL 2x (Push/Pull/Legs A+B), 4-6x/semana — ver [[Treino PPL]]
-- **Dieta:** ~2.100 kcal/dia, ~145g proteína/dia, deficit de 400-500 kcal — ver [[Dieta Recomposição]]
+- **Dieta:** ~2.100 kcal/dia, ~145g proteína/dia, deficit de 400-500 kcal — ver [[Dieta]]
 - **Cardio:** 20-30 min zone 2 nos dias de Push/Pull, caminhada leve nos dias de descanso
 - **Sono:** mínimo 7h (crítico em deficit calórico)
 

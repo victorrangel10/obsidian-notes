@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "772a49dd652d0258",
+        "id": "4640d0bb5ff84def",
         "type": "tabs",
         "children": [
           {
-            "id": "7a26ad8e6ed91d93",
+            "id": "775a4610c600a6ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -245,8 +245,10 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "7a26ad8e6ed91d93",
+  "active": "775a4610c600a6ca",
   "lastOpenFiles": [
+    "asdsad.md",
+    "Templates/Daily.md",
     "Diário/2026-05-02.md",
     "Bases/Diário.base",
     "Categorias/Gastos.md",
@@ -277,7 +279,6 @@
     "Referências/A arte de decidir/A Arte de Decidir.md",
     "Manifesto.md",
     "Templates/Gasto.md",
-    "Templates/Daily.md",
     "Templates/Gasto.md.tmp.57748.1777833065646",
     "Templates/Gasto.md.tmp.57748.1777832937493",
     "Manifesto.md.tmp.57748.1777832903349",

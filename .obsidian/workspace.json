@@ -11,10 +11,12 @@
             "id": "8da5ed9f878db6cf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "image",
+              "state": {
+                "file": "Anexos/Pasted image 20260421211254.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260421211254"
             }
           }
         ]
@@ -241,12 +243,12 @@
       "obsidian-day-planner:Open Multi-Day View": false
     }
   },
-  "active": "8da5ed9f878db6cf",
+  "active": "3c59d8e69de0e54d",
   "lastOpenFiles": [
+    "Categorias/Cursos.md",
     "Áreas/Saúde.md",
     "Categorias/Área.md",
     "Categorias/Diário.md",
-    "Categorias/Cursos.md",
     "Categorias/Meta.md",
     "Categorias/Semana.md",
     "Categorias/Vídeos.md",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Áreas/Finanças/Plano Financeiro.md",
+                "file": "Categorias/Finanças.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Plano Financeiro"
+              "title": "Finanças"
             }
           }
         ]
@@ -247,6 +247,9 @@
   },
   "active": "8da5ed9f878db6cf",
   "lastOpenFiles": [
+    "Categorias/Área.md",
+    "Categorias/Finanças.md",
+    "Áreas/Finanças/Plano Financeiro.md",
     "Áreas/Finanças.md",
     "Categorias/Semana.md",
     "Categorias/Cursos.md",
@@ -256,7 +259,6 @@
     "Áreas/Saúde.md.tmp.3515.1777822736082",
     "Projetos/Perder 7kg.md.tmp.3515.1777822728932",
     "Projetos/Casamento - Juntar 50%.md.tmp.3515.1777822710694",
-    "Áreas/Finanças/Plano Financeiro.md",
     "Áreas/Finanças/Plano Financeiro.md.tmp.3515.1777822688979",
     "Áreas/Saúde/Dieta Recomposição.md",
     "Áreas/Saúde/Dieta Recomposição.md.tmp.3515.1777822651598",
@@ -267,7 +269,6 @@
     "Projetos/Casamento - Juntar 50%.md",
     "Anexos/Pasted image 20260421211254.png",
     "Áreas/Saúde.md",
-    "Categorias/Área.md",
     "Categorias/Meta.md",
     "Categorias/Vídeos.md",
     "Templates/Daily.md",
@@ -283,7 +284,6 @@
     "obsidian/Templates/Daily.md",
     "obsidian/Diário/2026-05-03.md",
     "obsidian/Categorias/Vídeos.md",
-    "obsidian/Categorias/Diário.md",
     "obsidian/Anexos/Pasted image 20260421211254.png",
     "Untitled.canvas"
   ]

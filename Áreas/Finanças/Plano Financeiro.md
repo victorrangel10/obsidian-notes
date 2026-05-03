@@ -4,6 +4,7 @@ area: finanças
 horizonte: 24 meses
 tags:
   - plano-financeiro
+Categorias:
 ---
 
 # Plano Financeiro Pessoal
@@ -103,4 +104,4 @@ Use **Nubank Caixinhas** ou **Inter Meus Objetivos**:
 ## Links relacionados
 
 - [[Casamento - Juntar 50%]]
-- [[Finanças]]
+- [[Áreas/Finanças]]

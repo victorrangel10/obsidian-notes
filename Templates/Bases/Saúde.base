@@ -3,6 +3,4 @@ views:
     name: Table
     filters:
       and:
-        - |-
-          Categorias.contains("Saúde
-          ")
+        - Categorias.contains(link("Saúde"))

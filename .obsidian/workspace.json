@@ -11,13 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Templates/Bases/Saúde.base",
-                "viewName": "Table"
+                "file": "Manifesto.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "Saúde"
+              "icon": "lucide-file",
+              "title": "Manifesto"
             }
           }
         ]
@@ -246,13 +247,14 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Manifesto.md",
+    "Dieta Recomposição.md",
     "Templates/Bases/Saúde.base",
+    "Templates/Bases/Metas.base",
+    "Treino PPL.md",
+    "Manifesto.md",
     "Áreas/Finanças/Plano Financeiro.md",
-    "Áreas/Saúde/Treino PPL.md",
-    "Áreas/Saúde/Dieta Recomposição.md",
     "Manifesto.md.tmp.3515.1777829351217",
-    "Áreas/Saúde.md",
+    "Categorias/Saúde.md",
     "Categorias/Áreas.md",
     "Templates/Semanal.md",
     "Templates/Semanal.md.tmp.3515.1777828477173",
@@ -267,7 +269,6 @@
     "Templates/Semanal.md.tmp.3515.1777828161951",
     "Templates/Daily.md.tmp.3515.1777828139608",
     "Categorias/Metas.md",
-    "Templates/Bases/Metas.base",
     "Templates/Bases/Semana.base",
     "Untitled.md",
     "Categorias/Diário.md",

@@ -3,6 +3,8 @@ type: area-doc
 area: saúde
 tags:
   - treino
+Categorias:
+  - "[[Saúde]]"
 ---
 
 # Treino PPL 2x — Recomposição Corporal

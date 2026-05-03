@@ -3,6 +3,8 @@ type: area-doc
 area: saúde
 tags:
   - dieta
+Categorias:
+  - "[[Saúde]]"
 ---
 
 # Dieta — Recomposição Corporal

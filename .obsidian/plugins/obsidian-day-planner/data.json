@@ -34,8 +34,8 @@
   "eventFormatOnCreation": "task",
   "sortTasksInPlanAfterEdit": false,
   "firstDayOfWeek": "monday",
-  "multiDayRange": "full-week",
-  "showTimeTracker": true,
+  "multiDayRange": "work-week",
+  "showTimeTracker": false,
   "showActiveClocks": false,
   "rawIcals": []
 }

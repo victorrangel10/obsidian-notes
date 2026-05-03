@@ -39,10 +39,14 @@
             "id": "08ccd9e45b1e3866",
             "type": "leaf",
             "state": {
-              "type": "planner-weekly",
-              "state": {},
-              "icon": "table-2",
-              "title": "Apr, 27–May, 3"
+              "type": "markdown",
+              "state": {
+                "file": "Diário/2026-05-01.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-05-01"
             }
           }
         ],
@@ -257,7 +261,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 484.5
+    "width": 484.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -281,6 +286,7 @@
   },
   "active": "08ccd9e45b1e3866",
   "lastOpenFiles": [
+    "Diário/2026-05-01.md",
     "Diário/2026-05-02.md",
     "Diário/2026-04-30.md",
     "Diário/2026-05-04.md",
@@ -313,7 +319,6 @@
     "Referências/Skill - Obsidian Vault.md",
     "Referências/Monochampion.md",
     "Referências/Como aumentar a testosterona na prática.md",
-    "Referências/São Tomás de Aquino.md",
     "Templates/Gasto.md.tmp.57748.1777833065646",
     "Templates/Gasto.md.tmp.57748.1777832937493",
     "Manifesto.md.tmp.57748.1777832903349",

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d792a122b1c07e49",
+        "id": "772a49dd652d0258",
         "type": "tabs",
         "children": [
           {
-            "id": "bd57f42e3f6e7e6f",
+            "id": "7a26ad8e6ed91d93",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Manifesto.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Manifesto"
+              "title": "New tab"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "manife",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -246,8 +242,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "bd57f42e3f6e7e6f",
+  "active": "7a26ad8e6ed91d93",
   "lastOpenFiles": [
+    "Manifesto.md",
+    "Bases/Gasto.base",
+    "Bases/Gasto.base.tmp.57748.1777832106894",
+    "Gastos",
     "Untitled.canvas",
     "Lista de Compras.md",
     "Categorias/Diário.md",
@@ -258,7 +258,6 @@
     "Bases/Organização.base",
     "Projetos/Casamento - Juntar 50%.md",
     "Projetos/Perder 7kg.md",
-    "Manifesto.md",
     "Dieta.md",
     "Treino PPL.md",
     "Plano Financeiro.md",
@@ -266,14 +265,11 @@
     "Bases/Metas.base",
     "Referências/Skill - Obsidian Vault.md",
     "Referências/São Tomás de Aquino.md",
-    "Referências/Skill - Obsidian Vault.md.tmp.3515.1777829908900",
-    "Manifesto.md.tmp.3515.1777829762763",
     "README.md",
     "Categorias/Organização.md",
     "Categorias/Metas.md",
     "Categorias/Saúde.md",
     "Categorias/Finanças.md",
-    "Bases/Saúde.base",
     "Categorias/Áreas.md",
     "Templates/Semanal.md",
     "Templates/Meta.md",

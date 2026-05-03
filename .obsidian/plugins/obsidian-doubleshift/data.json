@@ -3,7 +3,7 @@
   "key": "ShiftLeft",
   "shortcuts": [
     {
-      "command": "global-search:open",
+      "command": "omnisearch:show-modal",
       "key": "ShiftLeft",
       "lastKeyUpTime": 0
     }

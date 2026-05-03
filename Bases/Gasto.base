@@ -1,0 +1,19 @@
+views:
+  - type: table
+    name: Todos
+    filters:
+      and:
+        - Categorias.contains(link("Gasto"))
+    sort:
+      - property: data
+        direction: DESC
+  - type: table
+    name: Por categoria
+    filters:
+      and:
+        - Categorias.contains(link("Gasto"))
+    sort:
+      - property: categoria_gasto
+        direction: ASC
+      - property: data
+        direction: DESC

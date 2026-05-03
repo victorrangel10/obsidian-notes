@@ -1,7 +1,7 @@
 {
   "lightStyle": "minimal-light",
   "darkStyle": "minimal-dark",
-  "lightScheme": "minimal-default-light",
+  "lightScheme": "minimal-flexoki-light",
   "darkScheme": "minimal-flexoki-dark",
   "editorFont": "",
   "lineHeight": 1.5,
@@ -18,7 +18,7 @@
   "chartWidth": "chart-default-width",
   "colorfulHeadings": false,
   "colorfulFrame": false,
-  "colorfulActiveStates": false,
+  "colorfulActiveStates": true,
   "trimNames": true,
   "labeledNav": false,
   "fullWidthMedia": true,

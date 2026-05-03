@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: Áreas
+    filters:
+      and:
+        - Categorias.contains(link("Área"))

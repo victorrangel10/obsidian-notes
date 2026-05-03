@@ -1,0 +1,18 @@
+views:
+  - type: table
+    name: Todas
+    filters:
+      and:
+        - Categorias.contains(link("Meta"))
+  - type: table
+    name: Ativas
+    filters:
+      and:
+        - Categorias.contains(link("Meta"))
+        - status == "ativa"
+  - type: table
+    name: Concluídas
+    filters:
+      and:
+        - Categorias.contains(link("Meta"))
+        - status == "concluida"

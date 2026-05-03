@@ -10,7 +10,7 @@ Categorias:
   - "[[Diário]]"
 ---
 
-# <% tp.date.now("dddd, DD [de] MMMM") %>
+# <% moment().locale("pt-br").format("dddd, DD [de] MMMM").replace(/^./, c => c.toUpperCase()) %>
 
 ⬅️ [[<% tp.date.now("YYYY-MM-DD", -1) %>|Ontem]] | [[<% tp.date.now("YYYY-[W]ww") %>|Semana]] | [[<% tp.date.now("YYYY-MM-DD", 1) %>|Amanhã]] ➡️
 

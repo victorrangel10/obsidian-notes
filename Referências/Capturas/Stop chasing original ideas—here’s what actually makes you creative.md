@@ -8,6 +8,7 @@ created: 2026-04-22
 description: "Check out our masterclass available on Patreon: https://www.patreon.com/posts/work-your-ideas-150674674We often think of creativity as the need to invent something completely original. But the truth"
 tags:
   - clippings
+Categorias: "[[Vídeos]]"
 ---
 ![](https://www.youtube.com/watch?v=1hQLp2Cl49Q)
 

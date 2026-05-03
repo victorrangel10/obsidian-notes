@@ -9,6 +9,7 @@ description: "How to Actually Get Better at Chess No-BS GuideChapters:0:00 - 0:2
 tags:
   - clippings
   - chess
+Categorias: "[[Vídeos]]"
 ---
 ![](https://www.youtube.com/watch?v=Vlpx04FeELI)
 

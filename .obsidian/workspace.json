@@ -11,13 +11,14 @@
             "id": "051df4c535026df9",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Templates/Bases/Áreas.base",
-                "viewName": "Áreas"
+                "file": "Diário/2026-05-03.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "Áreas"
+              "icon": "lucide-file",
+              "title": "2026-05-03"
             }
           }
         ]
@@ -246,6 +247,9 @@
   },
   "active": "3c59d8e69de0e54d",
   "lastOpenFiles": [
+    "Projetos/Perder 7kg.md",
+    "Projetos/Casamento - Juntar 50%.md",
+    "Templates/Bases/Áreas.base",
     "Templates/Bases/Cursos.base",
     "Templates/Bases/Diário.base",
     "Templates/Bases/Finanças.base",
@@ -267,8 +271,6 @@
     "Áreas/Saúde/Dieta Recomposição.md",
     "Áreas/Saúde/Dieta Recomposição.md.tmp.3515.1777822651598",
     "Áreas/Saúde/Treino PPL.md",
-    "Áreas/Saúde/Treino PPL.md.tmp.3515.1777822632848",
-    "Projetos/Casamento - Juntar 50%.md",
     "Anexos/Pasted image 20260421211254.png",
     "Áreas/Saúde.md",
     "Categorias/Meta.md",

@@ -3,5 +3,5 @@ views:
     name: Table
     filters:
       and:
-        - Categorias.contains(link("Áreas/Finanças", "Finanças"))
+        - Categorias.contains(link("Finanças"))
     sort: []

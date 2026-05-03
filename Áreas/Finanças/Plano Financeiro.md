@@ -5,7 +5,7 @@ horizonte: 24 meses
 tags:
   - plano-financeiro
 Categorias:
-  - "[[Finanças|Finanças]]"
+  - "[[Finanças]]"
 ---
 
 # Plano Financeiro Pessoal

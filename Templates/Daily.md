@@ -1,7 +1,7 @@
 ---
 date: <% tp.date.now("YYYY-MM-DD") %>
-peso: 
-gasto: 
+peso: "76.6"
+gasto: "0"
 agua: 0
 treino: false
 dieta: false

@@ -11,13 +11,12 @@
             "id": "8da5ed9f878db6cf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "Categorias/Finanças.md",
-                "mode": "source",
-                "source": false
+                "file": "Templates/Bases/Finanças.base",
+                "viewName": "Table"
               },
-              "icon": "lucide-file",
+              "icon": "lucide-table",
               "title": "Finanças"
             }
           }
@@ -247,8 +246,12 @@
   },
   "active": "8da5ed9f878db6cf",
   "lastOpenFiles": [
-    "Categorias/Área.md",
+    "Templates/Bases/Diário.base",
+    "Templates/Bases/Cursos.base",
+    "Templates/Bases/Finanças.base",
     "Categorias/Finanças.md",
+    "Templates/Bases/Untitled.md",
+    "Categorias/Área.md",
     "Áreas/Finanças/Plano Financeiro.md",
     "Áreas/Finanças.md",
     "Categorias/Semana.md",
@@ -265,7 +268,6 @@
     "Áreas/Saúde/Treino PPL.md",
     "Áreas/Saúde/Treino PPL.md.tmp.3515.1777822632848",
     "Áreas/Finanças",
-    "Áreas/Saúde",
     "Projetos/Casamento - Juntar 50%.md",
     "Anexos/Pasted image 20260421211254.png",
     "Áreas/Saúde.md",
@@ -275,15 +277,12 @@
     "Templates/Meta.md",
     "Templates/Semanal.md",
     "Referências/Cursos/A arte de decidir/AULA 1.md",
-    "Templates/Semanal.md.tmp.3515.1777821643000",
     "Templates/Template de Curso.md",
     "README.md",
     "obsidian/Templates/Template de Curso.md",
     "obsidian/Templates/Semanal.md",
     "obsidian/Templates/Meta.md",
     "obsidian/Templates/Daily.md",
-    "obsidian/Diário/2026-05-03.md",
-    "obsidian/Categorias/Vídeos.md",
     "obsidian/Anexos/Pasted image 20260421211254.png",
     "Untitled.canvas"
   ]

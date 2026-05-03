@@ -1,0 +1,7 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Categorias.contains(link("Áreas/Finanças", "Finanças"))
+    sort: []

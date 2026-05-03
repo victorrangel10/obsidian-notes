@@ -9,16 +9,16 @@
   );
 
   tR += `---
-  type: gasto
-  data: ${data}
-  data_criacao: ${dataCriacao}
-  valor: ${valor}
-  descricao: ${descricao}
-  categoria_gasto: ${categoria}
-  Categorias:
-    - "[[Gastos]]"
-  ---
-  `;
+type: gasto
+data: ${data}
+data_criacao: ${dataCriacao}
+valor: ${valor}
+descricao: ${descricao}
+categoria_gasto: ${categoria}
+Categorias:
+  - "[[Gastos]]"
+---
+`;
 
   await tp.file.move(`Anexos/Gastos/${data} - ${descricao}`);
   %>

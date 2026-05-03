@@ -2,4 +2,4 @@
 tags:
   - categorias
 ---
-![[Cursos.base]]
+![[Cursos.base]][[Monochampion]]

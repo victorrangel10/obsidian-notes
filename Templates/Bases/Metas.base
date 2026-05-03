@@ -17,7 +17,10 @@ views:
         - Categorias.contains(link("Meta"))
         - status == "concluida"
   - type: kanban-view
-    name: View
+    name: Kanban
+    filters:
+      and:
+        - Categorias.contains(link("Meta"))
     columnOrders:
       file.file:
         - Anexos/Pasted image 20260421211254.png
@@ -65,11 +68,14 @@ views:
         - Áreas/Saúde/Dieta Recomposição.md
         - Áreas/Saúde/Treino PPL.md
       note.status:
-        - Uncategorized
         - ativa
     cardOrders:
       file.file: {}
-      note.status: {}
+      note.status:
+        ativa:
+          - Projetos/Casamento - Juntar 50%.md
+          - Templates/Meta.md
+          - Projetos/Perder 7kg.md
     columnColors:
       file.file: {}
       note.status: {}

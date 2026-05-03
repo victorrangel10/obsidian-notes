@@ -3,14 +3,14 @@
   "hasMigratedDailyNoteSettings": true,
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
-    "folder": "obsidian/Diário",
-    "template": "obsidian/Templates/Daily.md",
+    "folder": "Diário",
+    "template": "Templates/Daily.md",
     "enabled": true
   },
   "weekly": {
     "format": "yyyy-[W]ww",
-    "template": "obsidian/Templates/Semanal.md",
-    "folder": "obsidian/Diário",
+    "template": "Templates/Semanal.md",
+    "folder": "Diário",
     "enabled": true
   },
   "monthly": {

@@ -7,13 +7,12 @@ Categorias:
 
 ## Total geral
 
-```tracker
-searchType: frontmatter
-searchTarget: valor
-folder: Anexos/Gastos
-dateField: data
-summary:
-    template: "**R$ {{sum()}}**"
+```dataview
+TABLE WITHOUT ID
+  sum(rows.valor) AS "Total (R$)",
+  length(rows) AS "Qtd"
+FROM "Anexos/Gastos"
+GROUP BY ""
 ```
 
 ## Por categoria

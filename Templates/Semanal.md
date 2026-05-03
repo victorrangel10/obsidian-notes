@@ -22,6 +22,8 @@ endDate: 2026-05-09
 line:
     title: "Peso"
     yAxisLabel: "kg"
+    yAxisTickLabelFormat: ".1f"
+    xAxisTickLabelFormat: "DD/MM"
 ```
 
 ```tracker
@@ -34,6 +36,8 @@ accum: true
 bar:
     title: "Gasto cumulativo"
     yAxisLabel: "R$"
+    yAxisTickLabelFormat: ".0f"
+    xAxisTickLabelFormat: "DD/MM"
 ```
 
 ```tracker

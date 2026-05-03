@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: Diário
+    filters:
+      and:
+        - Categorias.contains(link("Diário"))

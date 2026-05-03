@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: Semana
+    filters:
+      and:
+        - Categorias.contains(link("Semana"))

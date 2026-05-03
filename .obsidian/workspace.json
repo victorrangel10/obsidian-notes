@@ -39,12 +39,14 @@
             "id": "08ccd9e45b1e3866",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Anexos/Pasted image 20260421211254.png"
+                "file": "Diário/2026-05-01.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260421211254"
+              "icon": "lucide-file",
+              "title": "2026-05-01"
             }
           }
         ],
@@ -282,11 +284,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c59d8e69de0e54d",
+  "active": "08ccd9e45b1e3866",
   "lastOpenFiles": [
-    "Diário/2026-05-01.md",
     "Diário/2026-04-30.md",
     "Anexos/Pasted image 20260421211254.png",
+    "Diário/2026-05-01.md",
     "obsidian/Anexos/Pasted image 20260503161159.jpg",
     "obsidian/Anexos",
     "obsidian",

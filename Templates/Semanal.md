@@ -1,14 +1,14 @@
 ---
-semana: <% tp.date.now("YYYY-[W]ww") %>
-inicio: <% moment().day(0).format("YYYY-MM-DD") %>
-fim: <% moment().day(6).format("YYYY-MM-DD") %>
+semana: 2026-W19
+inicio: 2026-05-03
+fim: 2026-05-09
 Categorias:
   - "[[Semana]]"
 ---
 
-# Semana <% tp.date.now("ww/YYYY") %>
+# Semana 19/2026
 
-⬅️ [[<% tp.date.now("YYYY-[W]ww", -7) %>|Anterior]] | [[<% tp.date.now("YYYY-[W]ww", 7) %>|Próxima]] ➡️
+⬅️ [[2026-W18|Anterior]] | [[2026-W20|Próxima]] ➡️
 
 ## Métricas da semana
 
@@ -16,8 +16,8 @@ Categorias:
 searchType: frontmatter
 searchTarget: peso
 folder: Diário
-startDate: <% moment().day(0).format("YYYY-MM-DD") %>
-endDate: <% moment().day(6).format("YYYY-MM-DD") %>
+startDate: 2026-05-03
+endDate: 2026-05-09
 line:
     title: "Peso"
     yAxisLabel: "kg"
@@ -27,8 +27,8 @@ line:
 searchType: frontmatter
 searchTarget: gasto
 folder: Diário
-startDate: <% moment().day(0).format("YYYY-MM-DD") %>
-endDate: <% moment().day(6).format("YYYY-MM-DD") %>
+startDate: 2026-05-03
+endDate: 2026-05-09
 accum: true
 bar:
     title: "Gasto cumulativo"
@@ -39,8 +39,8 @@ bar:
 searchType: frontmatter
 searchTarget: treino
 folder: Diário
-startDate: <% moment().day(0).format("YYYY-MM-DD") %>
-endDate: <% moment().day(6).format("YYYY-MM-DD") %>
+startDate: 2026-05-03
+endDate: 2026-05-09
 summary:
     template: "Treino: {{sum}}/7 dias"
 ```
@@ -49,8 +49,8 @@ summary:
 searchType: frontmatter
 searchTarget: dieta
 folder: Diário
-startDate: <% moment().day(0).format("YYYY-MM-DD") %>
-endDate: <% moment().day(6).format("YYYY-MM-DD") %>
+startDate: 2026-05-03
+endDate: 2026-05-09
 summary:
     template: "Dieta: {{sum}}/7 dias"
 ```
@@ -59,8 +59,8 @@ summary:
 searchType: frontmatter
 searchTarget: leitura
 folder: Diário
-startDate: <% moment().day(0).format("YYYY-MM-DD") %>
-endDate: <% moment().day(6).format("YYYY-MM-DD") %>
+startDate: 2026-05-03
+endDate: 2026-05-09
 summary:
     template: "Leitura: {{sum}}/7 dias"
 ```

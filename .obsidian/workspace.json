@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Meta.md",
+                "file": "Templates/Semanal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Meta"
+              "title": "Semanal"
             }
           }
         ]
@@ -247,9 +247,9 @@
   },
   "active": "68206ec9108092aa",
   "lastOpenFiles": [
+    "Templates/Meta.md",
     "Templates/Semanal.md",
     "Templates/Template de Curso.md",
-    "Templates/Meta.md",
     "Templates/Daily.md",
     "Projetos/Casamento - Juntar 50%.md",
     "Templates/Semanal.md.tmp.3515.1777821453611",

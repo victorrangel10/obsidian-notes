@@ -11,14 +11,13 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "Categorias/Tarefas.md",
-                "mode": "source",
-                "source": false
+                "file": "Templates/Bases/Metas.base",
+                "viewName": ""
               },
-              "icon": "lucide-file",
-              "title": "Tarefas"
+              "icon": "lucide-layout-list",
+              "title": "Metas"
             }
           }
         ]
@@ -247,8 +246,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Categorias/Semana.md",
+    "Templates/Bases/Finanças.base",
+    "Templates/Bases/Metas.base",
+    "Templates/Bases/Metas.base.tmp.3515.1777827683742",
     "Categorias/Tarefas.md",
+    "Templates/Bases/Metas.base.tmp.3515.1777827641978",
+    "Categorias/Semana.md",
     "Áreas/Finanças/Plano Financeiro.md",
     "Categorias/Tarefas.md.tmp.3515.1777827477646",
     "Áreas/Finanças/Plano Financeiro.md.tmp.3515.1777827136946",
@@ -258,7 +261,6 @@
     "Templates/Bases/Áreas.base",
     "Templates/Bases/Cursos.base",
     "Templates/Bases/Diário.base",
-    "Templates/Bases/Finanças.base",
     "Áreas/Finanças.md",
     "Categorias/Área.md",
     "Categorias/Finanças.md",
@@ -268,8 +270,6 @@
     "Categorias/Diário.md",
     "Áreas/Finanças.md.tmp.3515.1777822740731",
     "Áreas/Saúde.md.tmp.3515.1777822736082",
-    "Projetos/Perder 7kg.md.tmp.3515.1777822728932",
-    "Projetos/Casamento - Juntar 50%.md.tmp.3515.1777822710694",
     "Áreas/Saúde/Dieta Recomposição.md",
     "Áreas/Saúde/Treino PPL.md",
     "Anexos/Pasted image 20260421211254.png",
@@ -283,7 +283,6 @@
     "README.md",
     "obsidian/Templates/Template de Curso.md",
     "obsidian/Templates/Semanal.md",
-    "obsidian/Templates/Meta.md",
     "obsidian/Anexos/Pasted image 20260421211254.png",
     "Untitled.canvas"
   ]

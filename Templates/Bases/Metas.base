@@ -1,4 +1,11 @@
 views:
+  - type: kanban
+    name: Kanban
+    filters:
+      and:
+        - Categorias.contains(link("Meta"))
+    groupBy:
+      property: status
   - type: table
     name: Todas
     filters:

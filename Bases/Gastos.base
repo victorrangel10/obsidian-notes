@@ -25,9 +25,14 @@ views:
       and:
         - Categorias.contains(link("Gastos"))
     order:
-      - file.name
+      - data_criacao
       - valor
-      - formula.Total
+      - descricao
+      - categoria_gasto
     sort:
+      - property: valor
+        direction: DESC
+      - property: formula.Total
+        direction: DESC
       - property: data
         direction: DESC

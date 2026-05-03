@@ -3,5 +3,6 @@
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "obsidian/Anexos",
   "newFileLocation": "folder",
-  "newFileFolderPath": "obsidian"
+  "newFileFolderPath": "obsidian",
+  "showLineNumber": false
 }

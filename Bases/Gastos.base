@@ -3,7 +3,7 @@ views:
     name: Todos
     filters:
       and:
-        - Categorias.contains(link("Gasto"))
+        - Categorias.contains(link("Gastos"))
     sort:
       - property: data
         direction: DESC
@@ -11,7 +11,7 @@ views:
     name: Por categoria
     filters:
       and:
-        - Categorias.contains(link("Gasto"))
+        - Categorias.contains(link("Gastos"))
     sort:
       - property: categoria_gasto
         direction: ASC

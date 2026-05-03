@@ -141,7 +141,7 @@ Categorias:
 | `[[Finanças]]` | Notas relacionadas a finanças (plano financeiro) |
 | `[[Cursos]]` | Notas/anotações de cursos |
 | `[[Vídeos]]` | Vídeos pra ver |
-| `[[Gasto]]` | Cada nota de gasto individual em `Gastos/` |
+| `[[Gastos]]` | Cada nota de gasto individual em `Gastos/` |
 | `[[Organização]]` | Meta-notas sobre o vault (manifesto, skills) |
 | Livre (`[[Pessoa]]`, `[[Tema]]`) | Referências de conhecimento |
 
@@ -231,7 +231,7 @@ valor: 25.50              # número, R$
 descricao: Almoço shopping
 categoria_gasto: alimentação    # alimentação | transporte | lazer | roupa | moto | saúde | desenvolvimento | outros
 Categorias:
-  - "[[Gasto]]"
+  - "[[Gastos]]"
 ---
 ```
 

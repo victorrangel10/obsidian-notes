@@ -1,10 +1,24 @@
----
-type: gasto
-data: <% tp.date.now("YYYY-MM-DD") %>
-data_criacao: <% tp.date.now("YYYY-MM-DD HH:mm") %>
-valor: <% await tp.system.prompt("Valor (R$)") %>
-descricao: <% await tp.system.prompt("Descrição") %>
-categoria_gasto: <% await tp.system.suggester(["alimentação", "transporte", "lazer", "roupa", "moto", "saúde", "desenvolvimento", "outros"], ["alimentação", "transporte", "lazer", "roupa", "moto", "saúde", "desenvolvimento", "outros"]) %>
-Categorias:
-  - "[[Gastos]]"
----
+<%*
+  const data = tp.date.now("YYYY-MM-DD");
+  const dataCriacao = tp.date.now("YYYY-MM-DD HH:mm");
+  const valor = await tp.system.prompt("Valor (R$)");
+  const descricao = await tp.system.prompt("Descrição");
+  const categoria = await tp.system.suggester(
+    ["alimentação", "transporte", "lazer", "roupa", "moto", "saúde", "desenvolvimento", "outros"],
+    ["alimentação", "transporte", "lazer", "roupa", "moto", "saúde", "desenvolvimento", "outros"]
+  );
+
+  tR += `---
+  type: gasto
+  data: ${data}
+  data_criacao: ${dataCriacao}
+  valor: ${valor}
+  descricao: ${descricao}
+  categoria_gasto: ${categoria}
+  Categorias:
+    - "[[Gastos]]"
+  ---
+  `;
+
+  await tp.file.move(`Gastos/${data} - ${descricao}`);
+  %>

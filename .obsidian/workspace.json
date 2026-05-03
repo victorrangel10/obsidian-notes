@@ -11,14 +11,13 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "Áreas/Saúde/Dieta Recomposição.md",
-                "mode": "source",
-                "source": false
+                "file": "Templates/Bases/Saúde.base",
+                "viewName": "Table"
               },
-              "icon": "lucide-file",
-              "title": "Dieta Recomposição"
+              "icon": "lucide-table",
+              "title": "Saúde"
             }
           }
         ]
@@ -245,15 +244,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c59d8e69de0e54d",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Manifesto.md",
+    "Templates/Bases/Saúde.base",
+    "Áreas/Finanças/Plano Financeiro.md",
     "Áreas/Saúde/Treino PPL.md",
     "Áreas/Saúde/Dieta Recomposição.md",
-    "Manifesto.md",
     "Manifesto.md.tmp.3515.1777829351217",
     "Áreas/Saúde.md",
     "Categorias/Áreas.md",
-    "Áreas/Finanças/Plano Financeiro.md",
     "Templates/Semanal.md",
     "Templates/Semanal.md.tmp.3515.1777828477173",
     "Templates/Meta.md",
@@ -273,7 +273,6 @@
     "Categorias/Diário.md",
     "Categorias/Finanças.md",
     "Categorias/Semanas.md",
-    "Templates/Bases/Metas.base.tmp.3515.1777827747285",
     "Categorias/Tarefas.md",
     "Projetos/Casamento - Juntar 50%.md",
     "Áreas/Finanças.md",
@@ -283,7 +282,6 @@
     "Anexos/Pasted image 20260421211254.png",
     "Referências/Cursos/A arte de decidir/AULA 1.md",
     "README.md",
-    "obsidian/Templates/Template de Curso.md",
     "obsidian/Anexos/Pasted image 20260421211254.png",
     "Untitled.canvas"
   ]

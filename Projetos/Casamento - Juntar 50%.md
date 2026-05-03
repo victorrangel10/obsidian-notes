@@ -36,7 +36,7 @@ Plano detalhado em [[Plano Financeiro]].
 ```tracker
 searchType: frontmatter
 searchTarget: valor
-folder: Gastos
+folder: Anexos/Gastos
 dateField: data
 accum: true
 bar:

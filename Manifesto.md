@@ -102,9 +102,9 @@ Templater templates pra criação automática de novos arquivos:
 
 Imagens e binários colados em notas.
 
-### `Gastos/`
+### `Anexos/Gastos/`
 
-Pasta de notas de gasto individual. Cada gasto = uma nota com frontmatter (`valor`, `descricao`, `data`, `categoria_gasto`). Criadas via Templater hotkey + prompts (sem fricção). Visão consolidada em `Categorias/Gasto.md`. Tracker da meta Casamento lê dessa pasta.
+Pasta de notas de gasto individual. Cada gasto = uma nota com frontmatter (`valor`, `descricao`, `data`, `categoria_gasto`). Criadas via Templater hotkey + prompts (sem fricção). Visão consolidada em `Categorias/Gastos.md`. Tracker da meta Casamento lê dessa pasta.
 
 Convenção: você nunca abre os arquivos individuais. Sempre acessa via view consolidada.
 

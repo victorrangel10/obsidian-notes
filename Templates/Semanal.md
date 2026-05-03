@@ -29,7 +29,7 @@ line:
 ```tracker
 searchType: frontmatter
 searchTarget: valor
-folder: Gastos
+folder: Anexos/Gastos
 dateField: data
 startDate: 2026-05-03
 endDate: 2026-05-09

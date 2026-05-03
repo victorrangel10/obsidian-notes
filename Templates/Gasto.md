@@ -20,5 +20,5 @@
   ---
   `;
 
-  await tp.file.move(`Gastos/${data} - ${descricao}`);
+  await tp.file.move(`Anexos/Gastos/${data} - ${descricao}`);
   %>

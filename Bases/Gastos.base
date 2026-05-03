@@ -17,3 +17,11 @@ views:
         direction: ASC
       - property: data
         direction: DESC
+  - type: list
+    name: Todos 2
+    filters:
+      and:
+        - Categorias.contains(link("Gastos"))
+    sort:
+      - property: data
+        direction: DESC

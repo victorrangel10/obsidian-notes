@@ -11,12 +11,14 @@
             "id": "8da5ed9f878db6cf",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Anexos/Pasted image 20260421211254.png"
+                "file": "Diário/2026-05-03.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260421211254"
+              "icon": "lucide-file",
+              "title": "2026-05-03"
             }
           }
         ]
@@ -243,8 +245,10 @@
       "obsidian-day-planner:Open Multi-Day View": false
     }
   },
-  "active": "3c59d8e69de0e54d",
+  "active": "8da5ed9f878db6cf",
   "lastOpenFiles": [
+    "Projetos/Casamento - Juntar 50%.md",
+    "Anexos/Pasted image 20260421211254.png",
     "Categorias/Cursos.md",
     "Áreas/Saúde.md",
     "Categorias/Área.md",
@@ -259,7 +263,6 @@
     "Referências/Cursos/A arte de decidir/AULA 1.md",
     "Templates/Semanal.md.tmp.3515.1777821643000",
     "Templates/Template de Curso.md",
-    "Projetos/Casamento - Juntar 50%.md",
     "Templates/Semanal.md.tmp.3515.1777821453611",
     "README.md",
     "obsidian/Templates/Daily.md.tmp.3515.1777821112296",
@@ -275,7 +278,6 @@
     "obsidian/Áreas/Finanças.md.tmp.3515.1777820328201",
     "obsidian/Áreas/Saúde.md",
     "obsidian/Áreas/Saúde.md.tmp.3515.1777820325577",
-    "obsidian/Projetos/Perder 7kg.md",
     "obsidian/Projetos/Perder 7kg.md.tmp.3515.1777820322741",
     "obsidian/Projetos/Casamento - Juntar 50%.md.tmp.3515.1777820317677",
     "obsidian/Templates/Meta.md.tmp.3515.1777820312137",

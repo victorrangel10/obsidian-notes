@@ -16,7 +16,7 @@ Reservar 50% da renda mensal. Acompanhamento via property `gasto` nas dailies.
 
 ## Marcos
 
-- [ ] R$ 25.000 (25%)
+- [ ] R$ 25.000 (25%) 
 - [ ] R$ 50.000 (50%)
 - [ ] R$ 75.000 (75%)
 - [ ] R$ 100.000 (100%)

@@ -100,7 +100,6 @@ Use **Nubank Caixinhas** ou **Inter Meus Objetivos**:
 
 ## 9. Rotina mensal (recorrente)
 
-- [ ] Distribuir salário 🔁 every month on the 5th 📅 2026-06-05
 - [ ] Distribuir salário 🔁 every month on the 5th 📅 2026-05-05
 
 > Ao marcar como feito, obsidian-tasks recria automaticamente pro mês seguinte. Valores na seção 2. Após distribuir, registra na daily de hoje em "Notas livres".

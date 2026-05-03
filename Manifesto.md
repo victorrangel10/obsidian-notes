@@ -121,7 +121,7 @@ Não em `Categorias` — porque estado muda, e Categorias é classificação.
 |---|---|
 | **Bases** (core) | Views/queries dinâmicas de notas filtradas por property/categoria |
 | **obsidian-tracker** | Gráficos numéricos (line, bar, summary) lendo properties das dailies |
-| **Templater** | Templates dinâmicos com sintaxe `undefined` (datas, locale, lógica) |
+| **Templater** | Templates dinâmicos com tokens de data/locale/lógica processados na criação do arquivo |
 | **Periodic Notes** | Cria daily e weekly automáticos com template aplicado |
 | **obsidian-tasks-plugin** | Tasks com prazo, recorrência (`🔁`), queries inline |
 | **kanban-bases-view** | Adiciona view tipo kanban dentro de Bases |

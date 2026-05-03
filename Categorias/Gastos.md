@@ -5,3 +5,5 @@ Categorias:
   - "[[Finanças]]"
 ---
 ![[Gastos.base]]
+
+

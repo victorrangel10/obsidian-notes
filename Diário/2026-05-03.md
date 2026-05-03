@@ -1,0 +1,23 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+peso: 
+gasto: 
+agua: 0
+treino: false
+dieta: false
+leitura: false
+Categorias:
+  - "[[Diário]]"
+---
+
+# <% tp.date.now("dddd, DD [de] MMMM") %>
+
+⬅️ [[<% tp.date.now("YYYY-MM-DD", -1) %>|Ontem]] | [[<% tp.date.now("YYYY-[W]ww") %>|Semana]] | [[<% tp.date.now("YYYY-MM-DD", 1) %>|Amanhã]] ➡️
+
+## Notas livres
+
+
+## Reflexão
+
+- O que rolou bem?
+- O que poderia ter sido melhor?

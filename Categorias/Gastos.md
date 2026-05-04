@@ -42,3 +42,4 @@ SORT key DESC
 ## Detalhamento
 
 ![[Gastos.base]]
+

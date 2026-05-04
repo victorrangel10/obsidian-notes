@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "Diário/2026-05-03.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "2026-05-03"
             }
           }
         ]
@@ -255,12 +255,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c59d8e69de0e54d",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Home.md",
     "Home.md.tmp.4881.1777888783478",
     "Home.md.tmp.4881.1777888696057",
     "Referências/A arte de decidir/AULA 1.md",
-    "Home.md",
     "Anexos/Gastos/2026-05-04 - MeatPack.md",
     "Diário/2026-05-03.md",
     "Diário/2026-05-04.md",
@@ -294,7 +294,6 @@
     "Categorias/Gastos.md.tmp.57748.1777834392693",
     "Categorias/Gastos.md.tmp.57748.1777834240309",
     "Manifesto.md.tmp.57748.1777834133839",
-    "Categorias/Gastos.md.tmp.57748.1777834108467",
     "Untitled.canvas",
     "obsidian/Anexos/Pasted image 20260421211254.png"
   ]

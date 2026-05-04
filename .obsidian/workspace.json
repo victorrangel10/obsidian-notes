@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1e71cf5c38c22088",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "68e89c6ed7670b2e",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Diário/2026-05-04.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-05-04"
             }
           }
         ]
@@ -84,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "3da135ca50d7d608",
@@ -222,6 +227,16 @@
               "icon": "lucide-ghost",
               "title": "advanced-tables-toolbar"
             }
+          },
+          {
+            "id": "68e7501881d891b3",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
+            }
           }
         ],
         "currentTab": 4
@@ -243,14 +258,18 @@
       "omnisearch:Omnisearch": false,
       "notebook-navigator:Notebook Navigator": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false,
       "obsidian-kanban:Create new board": false,
       "obsidian-git:Open Git source control": false,
-      "homepage:Open homepage": false
+      "homepage:Open homepage": false,
+      "obsidian-day-planner:Open Timeline": false,
+      "obsidian-day-planner:Open Multi-Day View": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "68e89c6ed7670b2e",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Home.md",
+    "Diário/2026-05-04.md",
     "Categorias/Metas.md",
     "Categorias/Saúde.md",
     "Categorias/Organização.md",
@@ -269,14 +288,12 @@
     "Projetos/Perder 7kg.md",
     "Treino PPL.md",
     "Plano Financeiro.md",
-    "Home.md",
     "Categorias/Semanas.md",
     "Categorias/Vídeos.md",
     "Categorias/Cursos.md",
     "Diário/2026-05-01.md",
     "Dieta.md",
     "Referências/curso.dev.md",
-    "Diário/2026-05-04.md",
     "Diário/2026-05-03.md",
     "Diário/2026-05-02.md",
     "Diário/2026-04-30.md",

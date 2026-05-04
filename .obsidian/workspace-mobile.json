@@ -1,0 +1,256 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "33ba1d12669abaad",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "41d038a176d9fd85",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "2f8f5d98322e823e",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "275737a13177708e",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "e3483aa8b69bd175",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "All properties"
+        }
+      },
+      {
+        "id": "3f5763ec27c80127",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "281fc0215d48bad0",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "867f38afcdeaf412",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Diário/2026-05-03.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "f7a05b1fec5adc29",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Diário/2026-05-03.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "05a79fedb1d1eded",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Diário/2026-05-03.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      },
+      {
+        "id": "b971f78d0f3ce67e",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {},
+          "icon": "lucide-ghost",
+          "title": "calendar"
+        }
+      },
+      {
+        "id": "c736a3fdb6cd424e",
+        "type": "leaf",
+        "state": {
+          "type": "planner-timeline",
+          "state": {},
+          "icon": "lucide-ghost",
+          "title": "planner-timeline"
+        }
+      },
+      {
+        "id": "cea508fc0db3a0fe",
+        "type": "leaf",
+        "state": {
+          "type": "git-view",
+          "state": {},
+          "icon": "git-pull-request",
+          "title": "Source Control"
+        }
+      },
+      {
+        "id": "04255844d3183128",
+        "type": "leaf",
+        "state": {
+          "type": "planner-timeline",
+          "state": {},
+          "icon": "calendar-with-checkmark",
+          "title": "Timeline"
+        }
+      }
+    ],
+    "currentTab": 5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "omnisearch:Omnisearch": false,
+      "notebook-navigator:Notebook Navigator": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-git:Open Git source control": false,
+      "homepage:Open homepage": false,
+      "obsidian-day-planner:Open Timeline": false,
+      "obsidian-day-planner:Open Multi-Day View": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "Diário/2026-05-03.md",
+    "conflict-files-obsidian-git.md",
+    "Treino PPL.md",
+    "Categorias/Semanas.md",
+    "Categorias/Metas.md",
+    "Categorias/Organização.md",
+    "Categorias/Áreas.md",
+    "Categorias/Gastos.md",
+    "Categorias/Tarefas.md",
+    "Categorias/Saúde.md",
+    "Lista de Compras.md",
+    "Manifesto.md",
+    "Home.md",
+    "Anexos/Pasted image 20260503161159.jpg",
+    "Anexos/Gastos/2026-05-03 - The Best Açaí.md",
+    "Anexos/Gastos/2026-05-03 - Van Convento.md",
+    "Anexos/Gastos/2026-05-04 - MeatPack.md",
+    "Anexos/Gastos/2026-05-03 - Uber.md",
+    "Anexos/Gastos",
+    "Templates/Gasto.md",
+    "Plano Financeiro.md",
+    "Bases/Gastos.base",
+    "Bases/Semana.base",
+    "Bases/Vídeos.base",
+    "Bases/Áreas.base",
+    "Bases/Diário.base",
+    "Bases/Cursos.base",
+    "Bases/Finanças.base",
+    "Bases/Metas.base",
+    "Bases/Saúde.base",
+    "Dieta.md",
+    "Untitled.md",
+    "Categorias/Área.md",
+    "Áreas/Saúde/Treino PPL.md",
+    "Áreas/Saúde/Dieta Recomposição.md",
+    "Áreas/Saúde.md",
+    "Áreas/Finanças/Plano Financeiro.md"
+  ]
+}

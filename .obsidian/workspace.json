@@ -222,6 +222,16 @@
               "icon": "lucide-ghost",
               "title": "advanced-tables-toolbar"
             }
+          },
+          {
+            "id": "68e7501881d891b3",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
+            }
           }
         ],
         "currentTab": 4
@@ -246,7 +256,9 @@
       "periodic-notes:Open today": false,
       "obsidian-kanban:Create new board": false,
       "obsidian-git:Open Git source control": false,
-      "homepage:Open homepage": false
+      "homepage:Open homepage": false,
+      "obsidian-day-planner:Open Timeline": false,
+      "obsidian-day-planner:Open Multi-Day View": false
     }
   },
   "active": "68e89c6ed7670b2e",

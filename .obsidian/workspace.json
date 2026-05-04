@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "Plano Financeiro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Plano Financeiro"
             }
           }
         ]
@@ -257,15 +257,16 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Treino PPL.md",
+    "Categorias/Organização.md",
     "Projetos/Perder 7kg.md",
+    "Home.md",
     "Categorias/Saúde.md",
     "Categorias/Gastos.md",
-    "Categorias/Organização.md",
     "Categorias/Semanas.md",
     "Categorias/Tarefas.md",
     "Categorias/Vídeos.md",
     "Categorias/Cursos.md",
-    "Home.md",
     "Diário/2026-05-01.md",
     "Dieta.md",
     "Referências/curso.dev.md",
@@ -282,7 +283,6 @@
     "Referências/A arte de decidir/Rigorismo.md",
     "Referências/A arte de decidir/Referências Quaresma.md",
     "Referências/A arte de decidir/Prudência.md",
-    "Referências/A arte de decidir/Os conselheiros da prudência.md",
     "Referências/Capturas",
     "Referências/A arte de decidir",
     "Referências",

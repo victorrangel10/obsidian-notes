@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Home.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -219,6 +219,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Home.md",
     "Diário/2026-05-03.md",
     "conflict-files-obsidian-git.md",
     "Treino PPL.md",
@@ -231,7 +232,6 @@
     "Categorias/Saúde.md",
     "Lista de Compras.md",
     "Manifesto.md",
-    "Home.md",
     "Anexos/Pasted image 20260503161159.jpg",
     "Anexos/Gastos/2026-05-03 - The Best Açaí.md",
     "Anexos/Gastos/2026-05-03 - Van Convento.md",

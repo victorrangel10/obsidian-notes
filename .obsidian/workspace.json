@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diário/2026-05-04.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-04"
+              "title": "Home"
             }
           }
         ]
@@ -257,6 +257,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Diário/2026-05-04.md",
     "Home.md",
     "Dieta.md",
     "Diário/2026-05-03.md",
@@ -264,7 +265,6 @@
     "Home.md.tmp.4881.1777888696057",
     "Referências/A arte de decidir/AULA 1.md",
     "Anexos/Gastos/2026-05-04 - MeatPack.md",
-    "Diário/2026-05-04.md",
     "Templates/Semanal.md",
     "Templates/Template de Curso.md",
     "Templates/Meta.md",

@@ -62,11 +62,23 @@ dv.paragraph(`**Últimos 7 dias:** 🏋️ Treino ${treino}/7 · 🍽️ Dieta $
 
 ---
 
-## 💸 Gastos do mês
+## 💸 Gastos
+
+### Total geral
 
 ```dataview
 TABLE WITHOUT ID
-  sum(rows.valor) AS "Total (R$)",
+  sum(rows.valor) AS "Total geral (R$)",
+  length(rows) AS "Qtd"
+FROM "Anexos/Gastos"
+GROUP BY ""
+```
+
+### Total do mês
+
+```dataview
+TABLE WITHOUT ID
+  sum(rows.valor) AS "Total mês (R$)",
   length(rows) AS "Qtd"
 FROM "Anexos/Gastos"
 WHERE dateformat(date(data), "yyyy-MM") = dateformat(date(today), "yyyy-MM")

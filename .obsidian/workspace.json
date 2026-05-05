@@ -80,8 +80,8 @@
             "state": {
               "type": "notebook-navigator",
               "state": {},
-              "icon": "notebook-navigator",
-              "title": "Notebook Navigator"
+              "icon": "lucide-ghost",
+              "title": "notebook-navigator"
             }
           }
         ]
@@ -166,8 +166,8 @@
             "state": {
               "type": "planner-timeline",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Timeline"
+              "icon": "lucide-ghost",
+              "title": "planner-timeline"
             }
           },
           {
@@ -213,8 +213,8 @@
             "state": {
               "type": "planner-timeline",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Timeline"
+              "icon": "lucide-ghost",
+              "title": "planner-timeline"
             }
           },
           {
@@ -223,8 +223,18 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
+            }
+          },
+          {
+            "id": "68e7501881d891b3",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
             }
           }
         ],
@@ -257,6 +267,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Home.md",
+    "Diário/2026-05-04.md",
     "Categorias/Metas.md",
     "Categorias/Saúde.md",
     "Categorias/Organização.md",
@@ -275,14 +287,12 @@
     "Projetos/Perder 7kg.md",
     "Treino PPL.md",
     "Plano Financeiro.md",
-    "Home.md",
     "Categorias/Semanas.md",
     "Categorias/Vídeos.md",
     "Categorias/Cursos.md",
     "Diário/2026-05-01.md",
     "Dieta.md",
     "Referências/curso.dev.md",
-    "Diário/2026-05-04.md",
     "Diário/2026-05-03.md",
     "Diário/2026-05-02.md",
     "Diário/2026-04-30.md",

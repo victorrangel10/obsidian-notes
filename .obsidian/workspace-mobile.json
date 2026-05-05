@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Categorias/Gastos.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gastos"
+              "title": "Home"
             }
           }
         ]
@@ -219,6 +219,15 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "/Templates/Daily.md",
+    "/Templates",
+    "/Diário/2026-05-04.md",
+    "/Diário/2026-05-03.md",
+    "/Diário/2026-05-02.md",
+    "/Diário/2026-05-01.md",
+    "/Diário/2026-04-30.md",
+    "/Diário",
+    "Categorias/Gastos.md",
     "Home.md",
     "Diário/2026-05-04.md",
     "Diário/2026-05-01.md",
@@ -239,22 +248,13 @@
     "Referências/Capturas/ASSISTI DEATH NOTE - Escreveu, matou..md",
     "Referências/Capturas/How to Actually Get Better at Chess No-BS Guide.md",
     "Referências/São Tomás de Aquino.md",
-    "Referências/Como aumentar a testosterona na prática.md",
-    "Referências/Skill - Obsidian Vault.md",
-    "Referências/curso.dev.md",
-    "Referências/Monochampion.md",
-    "Referências/Terceira Ponte.md",
     "Referências/A arte de decidir",
-    "Referências/Treino de força.md",
-    "Referências/Testo 1k.md",
     "Referências/Capturas",
     "Referências",
     "/Referências/Capturas",
     "/Referências/A arte de decidir",
     "/Referências",
-    "/Diário",
     "Anexos/Pasted image 20260503161159.jpg",
-    "Anexos/Gastos",
-    "Bases/Gastos.base"
+    "Anexos/Gastos"
   ]
 }

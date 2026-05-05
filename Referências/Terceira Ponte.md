@@ -5,4 +5,3 @@ tags:
 Categorias:
   - "[[Lugares]]"
 ---
-[](geo:)

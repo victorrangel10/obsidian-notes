@@ -12,11 +12,11 @@ views:
       - descricao
       - categoria_gasto
     sort:
+      - property: data
+        direction: DESC
       - property: valor
         direction: DESC
       - property: formula.Total
-        direction: DESC
-      - property: data
         direction: DESC
   - type: table
     name: Por categoria

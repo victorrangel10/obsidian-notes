@@ -4,37 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "26abba9d9ade466c",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "e08b33908fa4b41a",
             "type": "leaf",
             "state": {
-              "type": "map",
+              "type": "markdown",
               "state": {
-                "name": "Default",
-                "mapZoom": 1,
-                "mapCenter": {
-                  "lat": 40.44694705960048,
-                  "lng": -180.70312500000003
-                },
-                "query": "",
-                "queryError": false,
-                "chosenMapSource": 0,
-                "forceHistorySave": false,
-                "followActiveNote": false,
-                "followMyLocation": false,
-                "embeddedHeight": 300,
-                "autoFit": false,
-                "lock": false,
-                "showLinks": false,
-                "linkColor": "red",
-                "markerLabels": "off",
-                "editMode": false
+                "file": "Referências/Terceira Ponte.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "map-pin",
-              "title": "Interactive Map View"
+              "icon": "lucide-file",
+              "title": "Terceira Ponte"
             }
           }
         ]
@@ -271,7 +255,7 @@
       "obsidian-map-view:Open map view": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "e08b33908fa4b41a",
   "lastOpenFiles": [
     "Referências/Terceira Ponte.md",
     "Referências/Skill - Obsidian Vault.md",

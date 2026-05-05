@@ -393,19 +393,22 @@ Workflow:
 
 Cada meta tem tracker block embutido lendo properties das notas relevantes:
 
-- **Casamento - Juntar 50%** → `valor` cumulativo das notas em `Gastos/` (bar chart)
+- **Casamento - Juntar 50%** → soma cumulativa de aportes com `categoria=casamento` em `Anexos/Movimentações/`
 - **Perder 7kg** → `peso` ao longo do tempo, das dailies (line chart)
 
-Logar gasto via `Gastos/` (Templater hotkey) alimenta automaticamente o tracker da Casamento. Preencher peso na daily alimenta o tracker de Perder 7kg.
+Registrar movimentação via Templater hotkey alimenta os dashboards de Finanças e o tracker da Casamento. Preencher peso na daily alimenta o tracker de Perder 7kg.
 
-### Logar gastos
+### Logar movimentações
 
-Hotkey configurada (Settings → Hotkeys → "Templater: Create new note from template Gasto") dispara prompts em sequência:
-1. Valor (R$)
-2. Descrição
-3. Categoria (dropdown: alimentação, transporte, lazer, etc)
+Hotkey configurada (Settings → Hotkeys → "Templater: Create new note from template Movimentação") dispara prompts em sequência:
+1. Direção (saída / entrada / aporte / resgate)
+2. Valor (R$)
+3. Descrição
+4. Categoria (dropdown muda conforme direção)
+5. Fonte (se entrada) ou Destino (se aporte/resgate)
+6. Data e hora
 
-Templater cria a nota em `Gastos/<data> - <descricao>.md` automaticamente. Você nunca abre o arquivo. Visão consolidada em `Categorias/Gasto.md`.
+Templater cria a nota em `Anexos/Movimentações/<data> - <descricao>.md` automaticamente. Você nunca abre o arquivo. Visão consolidada em `Categorias/Movimentações.md` e dashboard em `Categorias/Finanças.md`.
 
 ---
 

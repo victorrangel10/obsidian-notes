@@ -3,6 +3,7 @@ type: skill
 data_criacao: 2026-05-03
 Categorias:
   - "[[Organização]]"
+  - "[[Skill]]"
 ---
 
 # Skill: Obsidian Vault

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "535bd2ad60f708e1",
+        "id": "992a65c4d474c82d",
         "type": "tabs",
         "children": [
           {
-            "id": "c140335c11dc4afc",
+            "id": "129ecc904dec1c0c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/Meta.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Meta"
+              "title": "New tab"
             }
           }
         ]
@@ -255,7 +251,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "c140335c11dc4afc",
+  "active": "3c59d8e69de0e54d",
   "lastOpenFiles": [
     "Categorias/Metas.md",
     "Categorias/Organização.md",

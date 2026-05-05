@@ -20,15 +20,15 @@ Categorias:
 
 ## 1. Situação atual
 
-| Item | Valor / Status |
-|---|---|
-| Renda mensal | R$ 3.000 |
-| Mora com pais | R$ 0 fixo casa |
-| Moto Yamaha R15 (quitada) | R$ 300/mês (gasolina + manutenção) |
-| Dívidas | Nenhuma |
-| Reserva guardada | R$ 3.000 |
-| A receber | R$ 2.800 |
-| **Total líquido disponível** | **R$ 5.800** |
+| Item                         | Valor / Status                     |
+| ---------------------------- | ---------------------------------- |
+| Renda mensal                 | R$ 3.000                           |
+| Mora com pais                | R$ 0 fixo casa                     |
+| Moto Yamaha R15 (quitada)    | R$ 300/mês (gasolina + manutenção) |
+| Dívidas                      | Nenhuma                            |
+| Reserva guardada             | R$ 3.000                           |
+| A receber                    | R$ 2.800                           |
+| **Total líquido disponível** | **R$ 5.800**                       |
 
 ## 2. Distribuição mensal sugerida (R$ 3.000)
 

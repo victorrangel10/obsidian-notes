@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anexos/Movimentações/2026-05-05 - Curso.dev.md",
+                "file": "Categorias/Movimentações.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-05 - Curso.dev"
+              "title": "Movimentações"
             }
           }
         ]
@@ -257,18 +257,19 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Anexos/Movimentações/2026-05-05 - Salário abril.md",
+    "Categorias/Finanças.md",
+    "Templates/Movimentação.md",
+    "Anexos/Movimentações/2026-05-05 - Plano de saúde.md",
     "Anexos/Movimentações/2026-05-05 - Curso.dev.md",
+    "Anexos/Movimentações/2026-05-05 - Salário abril.md",
     "Anexos/Movimentações/2026-05-04 - Soro Fisiológico.md",
     "Anexos/Movimentações/2026-05-04 - Uber.md",
     "Anexos/Movimentações/2026-05-05 - Salário maio.md",
     "Templates/Movimentação.md.tmp.78024.1778017950141",
-    "Templates/Movimentação.md",
     "Anexos/Movimentações/2026-05-05 - Salário.md",
     "Anexos/Pasted image 20260421211254.png",
     "Templates/Meta.md",
     "Projetos/Casamento - Juntar 50%.md",
-    "Categorias/Finanças.md",
     "Projetos/Casamento - Juntar 50%.md.tmp.78024.1778017220560",
     "Projetos/Casamento - Juntar 50%.md.tmp.78024.1778017213056",
     "Templates/Semanal.md.tmp.78024.1778017210803",
@@ -293,7 +294,6 @@
     "Referências/Pe. José Eduardo.md",
     "Referências/A arte de decidir/A Arte de Decidir.md",
     "Categorias/Cursos.md",
-    "Categorias/Conceitos.md",
     "Anexos/Pasted image 20260503161159.jpg",
     "Untitled.canvas",
     "obsidian/Anexos/Pasted image 20260421211254.png"

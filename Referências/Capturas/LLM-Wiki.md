@@ -1,14 +1,21 @@
 ---
+type: captura
+fonte: gist
 title: LLM-Wiki
 source: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
-author:
-  - karpathy
+autor:
+  - "[[karpathy]]"
 published:
-created: 2026-05-04
+data_criacao: 2026-05-04
 description:
+status: pendente
+rating:
 tags:
   - clippings
-Categorias: "[[Ensaio]]"
+  - llm
+  - ai
+Categorias:
+  - "[[Ensaio]]"
 ---
 
 # LLM Wiki

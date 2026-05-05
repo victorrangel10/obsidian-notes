@@ -1,7 +1,6 @@
 filters:
   and:
     - '!file.inFolder("Templates")'
-
 views:
   - type: table
     name: Table
@@ -9,13 +8,17 @@ views:
       and:
         - Categorias.contains(link("Cursos"))
     order:
-      - file.link
+      - file.name
       - autor
       - status
       - data_inicio
       - rating
       - tags
     sort:
+      - property: file.name
+        direction: ASC
+      - property: status
+        direction: DESC
       - property: file.mtime
         direction: DESC
     summaries:

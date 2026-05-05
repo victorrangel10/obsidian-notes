@@ -8,9 +8,9 @@ views:
         - Categorias.contains(link("Gastos"))
     order:
       - valor
-      - categoria_gasto
-      - descricao
       - data
+      - descricao
+      - categoria_gasto
     sort:
       - property: valor
         direction: DESC

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diário/2026-05-04.md",
+                "file": "Manifesto.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-04"
+              "title": "Manifesto"
             }
           }
         ]
@@ -257,6 +257,7 @@
   },
   "active": "129ecc904dec1c0c",
   "lastOpenFiles": [
+    "Diário/2026-05-04.md",
     "Templates/Daily.md",
     "Categorias/Metas.md",
     "Referências/Skill - Obsidian Vault.md.tmp.12940.1777948316990",
@@ -286,7 +287,6 @@
     "Anexos/Pasted image 20260421211254.png",
     "Diário/2026-05-03.md",
     "Diário/2026-05-02.md",
-    "Diário/2026-05-04.md",
     "Diário/2026-05-05.md",
     "Templates/Gasto.md",
     "Untitled.md",

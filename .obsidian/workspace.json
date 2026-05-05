@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7ddffec2621b1902",
+        "id": "962cc6219b723602",
         "type": "tabs",
         "children": [
           {
-            "id": "3d40de8cedcc0b7b",
+            "id": "04ae638f979c2e1e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -255,12 +255,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3d40de8cedcc0b7b",
+  "active": "04ae638f979c2e1e",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Categorias/Movimentações.md",
     "Anexos/Movimentações/2026-05-05 - O que faltou pra ficar com 1500 \"livre\".md",
     "Anexos/Movimentações/2026-05-05 - Devolução de resgate do plano de saúde.md",
     "Anexos/Movimentações/2026-05-05 - Caixinha Maio.md",
-    "Categorias/Movimentações.md",
     "Categorias/Movimentações.md.tmp.78024.1778018582812",
     "Home.md",
     "Categorias/Finanças.md",
@@ -293,7 +294,6 @@
     "Plano Financeiro.md",
     "Ciclovia Terceira Ponte.md",
     "Referências/Terceira Ponte.md",
-    "Referências/Skill - Obsidian Vault.md",
     "Anexos/Pasted image 20260503161159.jpg",
     "Untitled.canvas",
     "obsidian/Anexos/Pasted image 20260421211254.png"

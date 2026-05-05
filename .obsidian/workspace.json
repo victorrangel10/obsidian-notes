@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diário/2026-05-04.md",
+                "file": "Diário/2026-05-02.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-04"
+              "title": "2026-05-02"
             }
           }
         ]
@@ -257,6 +257,7 @@
   },
   "active": "c140335c11dc4afc",
   "lastOpenFiles": [
+    "Diário/2026-05-01.md",
     "Diário/2026-05-04.md",
     "Categorias/Gastos.md",
     "Untitled.md",
@@ -285,7 +286,6 @@
     "Categorias/Semanas.md",
     "Categorias/Vídeos.md",
     "Categorias/Cursos.md",
-    "Diário/2026-05-01.md",
     "Dieta.md",
     "Referências/curso.dev.md",
     "Diário/2026-05-02.md",

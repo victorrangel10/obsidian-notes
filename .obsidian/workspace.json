@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anexos/Movimentações/2026-05-05 - Salário maio.md",
+                "file": "Anexos/Movimentações/2026-05-05 - Salário abril.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-05 - Salário maio"
+              "title": "2026-05-05 - Salário abril"
             }
           }
         ]
@@ -255,12 +255,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c59d8e69de0e54d",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Anexos/Movimentações/2026-05-04 - Soro Fisiológico.md",
+    "Anexos/Movimentações/2026-05-04 - Uber.md",
+    "Anexos/Movimentações/2026-05-05 - Salário abril.md",
+    "Anexos/Movimentações/2026-05-05 - Salário maio.md",
     "Templates/Movimentação.md.tmp.78024.1778017950141",
     "Templates/Movimentação.md",
-    "Anexos/Movimentações/2026-05-04 - Uber.md",
-    "Anexos/Movimentações/2026-05-05 - Salário maio.md",
     "Anexos/Movimentações/2026-05-05 - Salário.md",
     "Anexos/Pasted image 20260421211254.png",
     "Templates/Meta.md",
@@ -275,9 +277,7 @@
     "Diário/2026-05-02.md.tmp.78024.1778016683390",
     "Diário/2026-05-01.md.tmp.78024.1778016682519",
     "Diário/2026-04-30.md.tmp.78024.1778016681639",
-    "Manifesto.md.tmp.78024.1778016659437",
     "Categorias/Gastos.md",
-    "Anexos/Movimentações/2026-05-04 - Soro Fisiológico.md",
     "Anexos/Movimentações/2026-05-04 - MeatPack.md",
     "Anexos/Movimentações/2026-05-03 - Van Convento.md",
     "Anexos/Movimentações/2026-05-03 - Uber.md",
@@ -294,7 +294,6 @@
     "Categorias/Cursos.md",
     "Categorias/Conceitos.md",
     "Anexos/Pasted image 20260503161159.jpg",
-    "Untitled.md",
     "Untitled.canvas",
     "obsidian/Anexos/Pasted image 20260421211254.png"
   ]

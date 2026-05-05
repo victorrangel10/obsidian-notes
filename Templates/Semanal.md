@@ -26,19 +26,51 @@ line:
     xAxisTickLabelFormat: "DD/MM"
 ```
 
-```tracker
-searchType: frontmatter
-searchTarget: valor
-folder: Anexos/Gastos
-dateField: data
-startDate: 2026-05-03
-endDate: 2026-05-09
-accum: true
-bar:
-    title: "Gasto cumulativo"
-    yAxisLabel: "R$"
-    yAxisTickLabelFormat: ".0f"
-    xAxisTickLabelFormat: "DD/MM"
+```dataviewjs
+const page = dv.current();
+const startDate = moment(page.inicio.toString());
+const endDate = moment(page.fim.toString());
+
+const movs = dv.pages('"Anexos/Movimentações"')
+  .where(p => p.direcao === "saída")
+  .where(p => {
+    const d = moment(p.data.toString());
+    return d.isSameOrAfter(startDate, 'day') && d.isSameOrBefore(endDate, 'day');
+  })
+  .sort(p => p.data, 'asc');
+
+let cumsum = 0;
+const labels = [];
+const data = [];
+for (const m of movs) {
+  cumsum += m.valor || 0;
+  labels.push(moment(m.data.toString()).format("DD/MM"));
+  data.push(Number(cumsum.toFixed(2)));
+}
+
+if (labels.length === 0) {
+  dv.paragraph("_Sem saídas registradas na semana._");
+} else {
+  const chart = {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Saídas cumulativas (R$)',
+        data: data,
+        borderColor: 'rgba(255, 99, 132, 1)',
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        tension: 0.2,
+        fill: true
+      }]
+    },
+    options: {
+      scales: { y: { beginAtZero: true } }
+    }
+  };
+  window.renderChart(chart, this.container);
+  dv.paragraph(`**Total semana:** R$ ${cumsum.toFixed(2)} · **${movs.length}** saídas`);
+}
 ```
 
 ```tracker

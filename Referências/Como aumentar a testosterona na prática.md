@@ -11,7 +11,7 @@ Ao acordar e próximo ao meio dia
 ## Exposição ao frio
 Melhora a circulação sanguínea nas gônadas
 
-## [[Treino de força]]
+## Treino de força
 -  Cargas altas/Progresão de carga
 -  Pouco volume
 -  Evitar fadiga/cardio excessivo

@@ -32,18 +32,18 @@ Categorias:
 
 ## 2. Distribuição mensal sugerida (R$ 3.000)
 
-| # | Área | R$ | % | Onde alocar |
-|---|---|---|---|---|
-| 1 | Moto (gasolina + manutenção) | 300 | 10% | Conta principal |
-| 2 | Casamento (aporte mensal) | 1.000 | 33% | Tesouro Selic 2028 |
-| 3 | Namoro (cartão/conta separada) | 400 | 13% | Cartão dedicado |
-| 4 | Lazer pessoal + comer fora | 250 | 8% | Conta principal |
-| 5 | Roupa + cuidado pessoal | 150 | 5% | Conta principal |
-| 6 | Investimento longo prazo | 500 | 17% | Tesouro IPCA+ ou ETF |
-| 7 | Desenvolvimento (curso, livro) | 150 | 5% | Conta principal |
-| 8 | Buffer imprevistos | 250 | 8% | Conta principal |
-| | **TOTAL** | **3.000** | **100%** | |
-| | **TOTAL POUPADO (casamento + longo prazo)** | **1.500** | **50%** | |
+| #   | Área                                        | R$        | %        | Onde alocar          |
+| --- | ------------------------------------------- | --------- | -------- | -------------------- |
+| 1   | Moto (gasolina + manutenção)                | 300       | 10%      | Conta principal      |
+| 2   | Casamento (aporte mensal)                   | 1.000     | 33%      | Tesouro Selic 2028   |
+| 3   | Namoro (cartão/conta separada)              | 400       | 13%      | Cartão dedicado      |
+| 4   | Lazer pessoal + comer fora                  | 250       | 8%       | Conta principal      |
+| 5   | Roupa + cuidado pessoal                     | 150       | 5%       | Conta principal      |
+| 6   | Investimento longo prazo                    | 500       | 17%      | Tesouro IPCA+ ou ETF |
+| 7   | Desenvolvimento (curso, livro)              | 150       | 5%       | Conta principal      |
+| 8   | Buffer imprevistos                          | 250       | 8%       | Conta principal      |
+|     | **TOTAL**                                   | **3.000** | **100%** |                      |
+|     | **TOTAL POUPADO (casamento + longo prazo)** | **1.500** | **50%**  |                      |
 
 ## 3. Estratégia dos R$ 5.800 iniciais
 

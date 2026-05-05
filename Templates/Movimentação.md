@@ -1,4 +1,9 @@
 <%*
+  if (tp.file.folder(true).startsWith("Templates")) {
+    new Notice("⚠️ Não rode este template direto. Crie nota nova em Anexos/Movimentações/.");
+    return;
+  }
+
   const dataCriacao = tp.date.now("YYYY-MM-DD HH:mm");
 
   const direcao = await tp.system.suggester(

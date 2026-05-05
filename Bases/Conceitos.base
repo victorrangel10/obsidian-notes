@@ -7,14 +7,11 @@ views:
     name: Table
     filters:
       and:
-        - Categorias.contains(link("Cursos"))
+        - Categorias.contains(link("Conceitos"))
     order:
       - file.link
-      - autor
-      - status
-      - data_inicio
-      - rating
       - tags
+      - file.mtime
     sort:
       - property: file.mtime
         direction: DESC

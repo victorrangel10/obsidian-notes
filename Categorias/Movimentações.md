@@ -66,9 +66,10 @@ SORT data DESC
 
 ```dataview
 TABLE WITHOUT ID
-  dateformat(date(data), "MMM/yyyy") AS "Mês",
-  direcao AS "Direção",
-  sum(rows.valor) AS "Total (R$)"
+  dateformat(date(rows[0].data), "MMM/yyyy") AS "Mês",
+  rows[0].direcao AS "Direção",
+  sum(rows.valor) AS "Total (R$)",
+  length(rows) AS "Qtd"
 FROM "Anexos/Movimentações"
 GROUP BY dateformat(date(data), "yyyy-MM") + " · " + direcao
 SORT key DESC

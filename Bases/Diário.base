@@ -11,7 +11,10 @@ views:
       - treino
       - dieta
       - leitura
+      - date
     sort:
+      - property: date
+        direction: ASC
       - property: file.basename
         direction: DESC
     summaries:

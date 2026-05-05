@@ -2,7 +2,10 @@
 let title = tp.file.title;
 if (!moment(title, "YYYY-MM-DD", true).isValid()) {
   title = tp.date.now("YYYY-MM-DD");
-  await tp.file.rename(title);
+}
+const targetPath = `Diário/${title}`;
+if (tp.file.path(true) !== `${targetPath}.md`) {
+  await tp.file.move(targetPath);
 }
 const heading = moment(title, "YYYY-MM-DD")
   .locale("pt-br")

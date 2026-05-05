@@ -10,7 +10,7 @@ tags:
   - "clippings"
 Categorias: "[[Ensaio]]"
 ---
-```
+
 # LLM Wiki
 
 A pattern for building personal knowledge bases using LLMs.

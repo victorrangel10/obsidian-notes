@@ -19,8 +19,8 @@
       "template": "Templates/Daily.md"
     },
     {
-      "folder": "Anexos/Gastos",
-      "template": "Templates/Gasto.md"
+      "folder": "Anexos/Movimentações",
+      "template": "Templates/Movimentação.md"
     }
   ],
   "enable_file_templates": false,

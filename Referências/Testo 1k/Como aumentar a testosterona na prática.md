@@ -1,5 +1,12 @@
 ---
-Curso: "[[Testo 1k]]"
+type: aula
+data_criacao: 2026-05-05 22:00
+curso: "[[Testo 1k]]"
+ordem:
+tags:
+  - hormonal
+  - suplementacao
+  - testosterona
 ---
 
 ## Sono de qualidade

@@ -1,9 +1,8 @@
 filters:
   and:
     - '!file.inFolder("Templates")'
-    - 'type == "aula"'
-    - 'curso == this.file.link'
-
+    - type == "aula"
+    - curso == this.file.link
 views:
   - type: cards
     name: Aulas

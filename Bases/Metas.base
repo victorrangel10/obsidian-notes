@@ -5,7 +5,7 @@ views:
       and:
         - Categorias.contains(link("Metas"))
     order:
-      - file.link
+      - file.name
       - status
       - prazo
       - alvo

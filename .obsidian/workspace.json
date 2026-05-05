@@ -11,13 +11,14 @@
             "id": "c140335c11dc4afc",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Bases/Diário.base",
-                "viewName": "Diário"
+                "file": "Templates/Meta.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "Diário"
+              "icon": "lucide-file",
+              "title": "Meta"
             }
           }
         ]
@@ -256,11 +257,14 @@
   },
   "active": "c140335c11dc4afc",
   "lastOpenFiles": [
+    "Categorias/Metas.md",
+    "Categorias/Organização.md",
     "Categorias/Diário.md",
+    "Categorias/Finanças.md",
+    "Bases/Metas.base",
     "Bases/Diário.base",
     "Diário/2026-04-30.md",
     "Diário/2026-05-01.md",
-    "Bases/Metas.base",
     "Referências/Capturas/LLM-Wiki.md",
     "Manifesto.md.tmp.12940.1777947768749",
     "Templates/Meta.md.tmp.12940.1777947764211",
@@ -284,14 +288,11 @@
     "Templates/Daily.md",
     "Untitled.md",
     "Anexos/Gastos/2026-05-04 - Uber.md",
-    "Categorias/Metas.md",
     "Plano Financeiro.md",
-    "Categorias/Finanças.md",
     "Anexos/Gastos/2026-05-04 - Soro Fisiológico.md",
     "Lista de Compras.md",
     "Home.md",
     "Categorias/Saúde.md",
-    "Categorias/Organização.md",
     "Anexos/Pasted image 20260503161159.jpg",
     "Untitled.canvas",
     "obsidian/Anexos/Pasted image 20260421211254.png"

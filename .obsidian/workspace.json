@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Categorias/Movimentações.md",
+                "file": "Anexos/Movimentações/2026-05-05 - Salário abril.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Movimentações"
+              "title": "2026-05-05 - Salário abril"
             }
           }
         ]
@@ -255,15 +255,19 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "3c59d8e69de0e54d",
   "lastOpenFiles": [
-    "Categorias/Finanças.md",
-    "Templates/Movimentação.md",
     "Anexos/Movimentações/2026-05-05 - Plano de saúde.md",
     "Anexos/Movimentações/2026-05-05 - Curso.dev.md",
-    "Anexos/Movimentações/2026-05-05 - Salário abril.md",
-    "Anexos/Movimentações/2026-05-04 - Soro Fisiológico.md",
     "Anexos/Movimentações/2026-05-04 - Uber.md",
+    "Anexos/Movimentações/2026-05-04 - Soro Fisiológico.md",
+    "Anexos/Movimentações/2026-05-03 - Van Convento.md",
+    "Anexos/Movimentações/2026-05-03 - Uber.md",
+    "Anexos/Movimentações/2026-05-03 - The Best Açaí.md",
+    "Anexos/Movimentações/2026-05-05 - Salário abril.md",
+    "Categorias/Movimentações.md",
+    "Categorias/Finanças.md",
+    "Templates/Movimentação.md",
     "Anexos/Movimentações/2026-05-05 - Salário maio.md",
     "Templates/Movimentação.md.tmp.78024.1778017950141",
     "Anexos/Movimentações/2026-05-05 - Salário.md",
@@ -281,10 +285,6 @@
     "Diário/2026-04-30.md.tmp.78024.1778016681639",
     "Categorias/Gastos.md",
     "Anexos/Movimentações/2026-05-04 - MeatPack.md",
-    "Anexos/Movimentações/2026-05-03 - Van Convento.md",
-    "Anexos/Movimentações/2026-05-03 - Uber.md",
-    "Anexos/Movimentações/2026-05-03 - The Best Açaí.md",
-    "Categorias/Movimentações.md",
     "Plano Financeiro.md",
     "Home.md",
     "Ciclovia Terceira Ponte.md",

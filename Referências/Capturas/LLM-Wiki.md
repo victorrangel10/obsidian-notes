@@ -1,13 +1,13 @@
 ---
-title: "LLM-Wiki"
-source: "https://gist.githubusercontent.com/karpathy/442a6bf555914893e9891c11519de94f/raw/ac46de1ad27f92b28ac95459c782c07f6b8c964a/llm-wiki.md"
+title: LLM-Wiki
+source: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 author:
-  - "karpathy"
+  - karpathy
 published:
 created: 2026-05-04
 description:
 tags:
-  - "clippings"
+  - clippings
 Categorias: "[[Ensaio]]"
 ---
 

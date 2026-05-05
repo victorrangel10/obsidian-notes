@@ -26,6 +26,6 @@ Categorias:
 
 # <% heading %>
 
-## 💸 Gastos do dia
+## 💸 Movimentações do dia
 
-![[Gastos.base#Do dia]]
+![[Movimentações.base#Do dia]]

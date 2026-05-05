@@ -102,9 +102,11 @@ Templater templates pra criação automática de novos arquivos:
 
 Imagens e binários colados em notas.
 
-### `Anexos/Gastos/`
+### `Anexos/Movimentações/`
 
-Pasta de notas de gasto individual. Cada gasto = uma nota com frontmatter (`valor`, `descricao`, `data`, `categoria_gasto`). Criadas via Templater hotkey + prompts (sem fricção). Visão consolidada em `Categorias/Gastos.md`. Tracker da meta Casamento lê dessa pasta.
+Pasta de notas de movimentação financeira individual (livro-razão unificado). Cada movimentação = uma nota com frontmatter (`direcao`, `valor`, `descricao`, `data`, `categoria`, opcional `fonte` ou `destino`). Criadas via Templater hotkey + prompts (sem fricção). Visão consolidada em `Categorias/Movimentações.md`. Dashboard mensal em `Categorias/Finanças.md`.
+
+`direcao` discrimina: `entrada` (renda externa), `saída` (gasto/consumo), `aporte` (poupança/investimento), `resgate` (saída de investimento).
 
 Convenção: você nunca abre os arquivos individuais. Sempre acessa via view consolidada.
 
@@ -140,7 +142,7 @@ Categorias:
 | `[[Finanças]]` | Notas relacionadas a finanças (plano financeiro) |
 | `[[Cursos]]` | Notas/anotações de cursos |
 | `[[Vídeos]]` | Vídeos pra ver |
-| `[[Gastos]]` | Cada nota de gasto individual em `Gastos/` |
+| `[[Movimentações]]` | Cada nota de transação financeira em `Anexos/Movimentações/` (entrada, saída, aporte, resgate) |
 | `[[Organização]]` | Meta-notas sobre o vault (manifesto, skills) |
 | `[[Conceitos]]` | Termos, ideias, definições referenciadas |
 | `[[Pessoas]]` | Pessoas referenciadas (autores, mestres, etc) |
@@ -214,7 +216,7 @@ Categorias:
 ---
 ```
 
-> Nota: `gasto` removido. Gastos viraram notas individuais em `Gastos/` (ver schema abaixo).
+> Nota: `gasto` removido. Movimentações viraram notas individuais em `Anexos/Movimentações/` (ver schema abaixo).
 
 ### Weekly (`Diário/YYYY-Www.md`)
 
@@ -244,20 +246,31 @@ Categorias:
 ---
 ```
 
-### Gasto (`Gastos/<data> - <descricao>.md`)
+### Movimentação (`Anexos/Movimentações/<data> - <descricao>.md`)
+
+Livro-razão unificado: entradas, saídas, aportes, resgates numa única estrutura.
 
 ```yaml
 ---
-type: gasto
+type: movimentacao
+direcao: saída            # entrada | saída | aporte | resgate
 data: YYYY-MM-DD
+hora: HH:mm
 data_criacao: YYYY-MM-DD HH:mm
-valor: 25.50              # número, R$
+valor: 25.50              # número, R$ (sempre positivo; sinal é dado por `direcao`)
 descricao: Almoço shopping
-categoria_gasto: alimentação    # alimentação | transporte | lazer | roupa | moto | saúde | desenvolvimento | outros
+categoria: alimentação    # vocabulário muda por direção (ver Templates/Movimentação.md)
+fonte: Inbazz             # opcional, só pra direcao=entrada
+destino: Tesouro Selic 2028  # opcional, só pra direcao=aporte ou resgate
 Categorias:
-  - "[[Gastos]]"
+  - "[[Movimentações]]"
 ---
 ```
+
+**Categorias por direção:**
+- `entrada`: salário, restituição, freela, 13º, extra, outros
+- `saída`: alimentação, transporte, lazer, roupa, moto, saúde, desenvolvimento, namoro, buffer, outros
+- `aporte` / `resgate`: casamento, longo_prazo, reserva, pos_casamento, outros
 
 ### Documento de categoria (vault root, Referências, etc)
 

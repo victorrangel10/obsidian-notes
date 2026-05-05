@@ -62,7 +62,7 @@ dv.paragraph(`**Últimos 7 dias:** 🏋️ Treino ${treino}/7 · 🍽️ Dieta $
 
 ---
 
-## 💸 Gastos
+## 💸 Gastos (saídas)
 
 ### Total geral
 
@@ -70,7 +70,8 @@ dv.paragraph(`**Últimos 7 dias:** 🏋️ Treino ${treino}/7 · 🍽️ Dieta $
 TABLE WITHOUT ID
   sum(rows.valor) AS "Total geral (R$)",
   length(rows) AS "Qtd"
-FROM "Anexos/Gastos"
+FROM "Anexos/Movimentações"
+WHERE direcao = "saída"
 GROUP BY ""
 ```
 
@@ -80,8 +81,9 @@ GROUP BY ""
 TABLE WITHOUT ID
   sum(rows.valor) AS "Total mês (R$)",
   length(rows) AS "Qtd"
-FROM "Anexos/Gastos"
-WHERE dateformat(date(data), "yyyy-MM") = dateformat(date(today), "yyyy-MM")
+FROM "Anexos/Movimentações"
+WHERE direcao = "saída"
+  AND data.year = date(today).year AND data.month = date(today).month
 GROUP BY ""
 ```
 
@@ -89,12 +91,13 @@ GROUP BY ""
 
 ```dataview
 TABLE WITHOUT ID
-  categoria_gasto AS "Categoria",
+  categoria AS "Categoria",
   sum(rows.valor) AS "Total (R$)",
   length(rows) AS "Qtd"
-FROM "Anexos/Gastos"
-WHERE dateformat(date(data), "yyyy-MM") = dateformat(date(today), "yyyy-MM")
-GROUP BY categoria_gasto
+FROM "Anexos/Movimentações"
+WHERE direcao = "saída"
+  AND data.year = date(today).year AND data.month = date(today).month
+GROUP BY categoria
 SORT sum(rows.valor) DESC
 LIMIT 3
 ```

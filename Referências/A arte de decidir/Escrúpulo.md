@@ -1,5 +1,11 @@
 ---
-Curso: "[[A Arte de Decidir]]"
+type: conceito
+data_criacao: 2026-05-05 22:00
+tags:
+  - moral
+  - espiritualidade
+Categorias:
+  - "[[Conceitos]]"
 ---
 
 
@@ -17,9 +23,6 @@ Buscar a intimidade divina na Comunhão, nos sacramentos, na vida oracional.
 O que Deus quer de mim não é uma lista de tarefas bem feitas, mas o meu coração.
 
 Deus nos ama e é infinitamente misericordioso conosco. O que importa para Deus é termos relacionamento com Ele, e não os nossos pecados ou ações.. Ele é infinitamente misericordioso e muito maior que os nossos erros.
-
-
-
 
 
 

@@ -1,6 +1,13 @@
 ---
-Curso: "[[A Arte de Decidir]]"
+type: conceito
+data_criacao: 2026-05-05 22:00
+tags:
+  - virtudes
+  - prudencia
+Categorias:
+  - "[[Conceitos]]"
 ---
+
 Os 3 atos que constituem a virtude da prudencia são 
 
 deliberação - o estudo da matéria
@@ -32,6 +39,3 @@ Na parte do **juízo**, temos:
 	
 5- Raciocínio
 	 É o momento 'laborioso' do cálculo prudencial. Se devo agir, como agir, etc.
-
-
-

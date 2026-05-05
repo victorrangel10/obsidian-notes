@@ -1,8 +1,14 @@
 ---
-Curso: "[[A Arte de Decidir]]"
+type: aula
+data_criacao: 2026-05-05 22:00
+curso: "[[A Arte de Decidir]]"
+ordem: 1
+tags:
+  - prudencia
+  - virtudes
 ---
 
-*simplex* - _sem (uma só) e _-plex_ (dobra, raiz de _plicare_),
+*simplex* - _sem (uma só) e _-plex_ (dobra, raiz de _plicare_),
 
 Um homem simples é um homem que não tem dobras.
 

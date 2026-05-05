@@ -20,19 +20,8 @@
               "icon": "lucide-file",
               "title": "2026-05-04"
             }
-          },
-          {
-            "id": "bc95ae3e6de929b1",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -266,7 +255,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "bc95ae3e6de929b1",
+  "active": "c140335c11dc4afc",
   "lastOpenFiles": [
     "Diário/2026-05-04.md",
     "Categorias/Gastos.md",

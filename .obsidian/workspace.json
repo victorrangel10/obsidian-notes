@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Referências/Skill - Obsidian Vault.md",
+                "file": "Categorias/Saúde.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Skill - Obsidian Vault"
+              "title": "Saúde"
             }
           }
         ]
@@ -257,6 +257,8 @@
   },
   "active": "129ecc904dec1c0c",
   "lastOpenFiles": [
+    "Categorias/Semanas.md",
+    "Referências/Skill - Obsidian Vault.md",
     "Manifesto.md",
     "Diário/2026-05-04.md",
     "Templates/Daily.md",
@@ -269,7 +271,6 @@
     "Bases/Finanças.base.tmp.12940.1777948250968",
     "Categorias/Cursos.md",
     "Categorias/Diário.md",
-    "Categorias/Semanas.md",
     "Bases/Saúde.base.tmp.12940.1777948245776",
     "Categorias/Gastos.md",
     "Bases/Cursos.base.tmp.12940.1777948241674",
@@ -293,7 +294,6 @@
     "Untitled.md",
     "Anexos/Gastos/2026-05-04 - Uber.md",
     "Plano Financeiro.md",
-    "Anexos/Gastos/2026-05-04 - Soro Fisiológico.md",
     "Anexos/Pasted image 20260503161159.jpg",
     "Untitled.canvas",
     "obsidian/Anexos/Pasted image 20260421211254.png"

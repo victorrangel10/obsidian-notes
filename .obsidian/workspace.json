@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projetos/Casamento - Juntar 50%.md",
+                "file": "Templates/Movimentação.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Casamento - Juntar 50%"
+              "title": "Movimentação"
             }
           }
         ]
@@ -257,6 +257,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Templates/Meta.md",
+    "Projetos/Casamento - Juntar 50%.md",
     "Categorias/Finanças.md",
     "Projetos/Casamento - Juntar 50%.md.tmp.78024.1778017220560",
     "Projetos/Casamento - Juntar 50%.md.tmp.78024.1778017213056",
@@ -293,7 +295,6 @@
     "Untitled.md",
     "Anexos/Gastos/2026-05-03 - The Best Açaí.md",
     "Anexos/Gastos/2026-05-03 - Uber.md",
-    "Anexos/Gastos/2026-05-03 - Van Convento.md",
     "Untitled.canvas",
     "obsidian/Anexos/Pasted image 20260421211254.png"
   ]

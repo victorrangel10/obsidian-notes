@@ -10,9 +10,7 @@ views:
     order:
       - title
       - published
-      - status
       - rating
-      - Autor
       - tags
     sort:
       - property: file.mtime

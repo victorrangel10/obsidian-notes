@@ -124,9 +124,8 @@ Categorias:
 ```
 
 **Não usar:**
-- ❌ Strings: `Categorias: [saúde]`
-- ❌ Tags inline no body: `#saúde`
-- ❌ A property `tags` nativa do Obsidian
+- ❌ Strings: `Categorias: [saúde]` (sempre array de wikilinks)
+- ❌ Categoria inline no body: `#saúde` — usar property `Categorias`
 
 **Por que wiki links:** os filters de Bases usam `Categorias.contains(link("X"))`. Cada link aponta pra uma nota em `Categorias/` que embeda a Base. Backlinks aparecem de graça.
 
@@ -143,7 +142,9 @@ Categorias:
 | `[[Vídeos]]` | Vídeos pra ver |
 | `[[Gastos]]` | Cada nota de gasto individual em `Gastos/` |
 | `[[Organização]]` | Meta-notas sobre o vault (manifesto, skills) |
-| Livre (`[[Pessoa]]`, `[[Tema]]`) | Referências de conhecimento |
+| `[[Conceitos]]` | Termos, ideias, definições referenciadas |
+| `[[Pessoas]]` | Pessoas referenciadas (autores, mestres, etc) |
+| `[[Lugares]]` | Lugares referenciados |
 
 Uma nota pode ter múltiplas categorias. Ex: nota de treino que também é referência sobre fisiologia → `Categorias: ["[[Saúde]]", "[[Tema]]"]`. Aparece em ambas as views.
 
@@ -152,6 +153,28 @@ Uma nota pode ter múltiplas categorias. Ex: nota de treino que também é refer
 status: ativa | pausada | concluida
 ```
 Não em `Categorias` — estado muda, classificação não.
+
+---
+
+## Convenção de Tags (a property)
+
+Property `tags` (nativa do Obsidian) **coexiste** com `Categorias`. Resolvem problemas ortogonais:
+
+- **`Categorias`** — estrutura. Onde a nota vive, qual view ela alimenta. Vocabulário fechado (ver tabela acima). Drive de Bases.
+- **`tags`** — tópicos cross-cutting. "Sobre o quê é essa nota?" Vocabulário livre. Drive de busca/Tag Pane/Dataview.
+
+Exemplo: nota sobre suplementação pra testosterona pode ter `Categorias: ["[[Cursos]]"]` (estrutural — é um curso) e `tags: [suplementacao, hormonal]` (tópicos — pra encontrar quando buscar por "hormonal" sem importar se é curso, vídeo ou conceito).
+
+```yaml
+tags:
+  - filosofia
+  - tomismo
+```
+
+**Regras:**
+- Vocabulário **livre** — descobre orgânico via Tag Pane. Consolida duplicatas só quando inflação aparecer (>50 tags ativas).
+- Sem hierarquia — `tags: [filosofia]`, não `tags: [area/filosofia]`. Nesting cria fricção, busca já encontra substring.
+- Frontmatter é o lugar canônico. Inline no body OK pra anotações pontuais.
 
 ---
 

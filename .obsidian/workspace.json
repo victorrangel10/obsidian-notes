@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Plano Financeiro.md",
+                "file": "Categorias/Finanças.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Plano Financeiro"
+              "title": "Finanças"
             }
           }
         ]
@@ -257,6 +257,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Plano Financeiro.md",
     "Home.md",
     "Ciclovia Terceira Ponte.md",
     "Referências/Terceira Ponte.md",
@@ -294,7 +295,6 @@
     "Templates/Pessoa.md",
     "Templates/Conceito.md",
     "Templates/Aula.md",
-    "Referências/curso.dev.md",
     "Untitled.canvas",
     "obsidian/Anexos/Pasted image 20260421211254.png"
   ]

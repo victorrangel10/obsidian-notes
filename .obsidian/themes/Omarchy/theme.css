@@ -1,56 +1,56 @@
-/* Omarchy Theme for Obsidian - Flexoki Dark */
+/* Omarchy Theme for Obsidian */
 
 .theme-dark, .theme-light {
   /* Core colors */
-  --background-primary: #100F0F;
-  --background-primary-alt: #100F0F;
-  --background-secondary: #100F0F;
-  --background-secondary-alt: #100F0F;
-  --text-normal: #CECDC3;
+  --background-primary: #FFFCF0;
+  --background-primary-alt: #FFFCF0;
+  --background-secondary: #FFFCF0;
+  --background-secondary-alt: #FFFCF0;
+  --text-normal: #100F0F;
 
   /* Selection colors */
-  --text-selection: #403E3C;
+  --text-selection: #CECDC3;
 
   /* Border color */
-  --background-modifier-border: #6F6E69;
+  --background-modifier-border: #100F0F;
 
   /* Semantic heading colors */
-  --text-title-h1: #AF3029;
-  --text-title-h2: #66800B;
-  --text-title-h3: #AD8301;
+  --text-title-h1: #D14D41;
+  --text-title-h2: #879A39;
+  --text-title-h3: #D0A215;
   --text-title-h4: #205EA6;
-  --text-title-h5: #A02F6F;
-  --text-title-h6: #A02F6F;
+  --text-title-h5: #CE5D97;
+  --text-title-h6: #CE5D97;
 
   /* Links and accents */
   --text-link: #205EA6;
-  --text-accent: #4385BE;
-  --text-accent-hover: #4385BE;
-  --interactive-accent: #4385BE;
-  --interactive-accent-hover: #4385BE;
+  --text-accent: #205EA6;
+  --text-accent-hover: #205EA6;
+  --interactive-accent: #205EA6;
+  --interactive-accent-hover: #205EA6;
 
   /* Muted text */
-  --text-muted: #6F6E69;
-  --text-faint: #6F6E69;
+  --text-muted: color-mix(in srgb, #100F0F 70%, transparent);
+  --text-faint: color-mix(in srgb, #100F0F 55%, transparent);
 
   /* Code */
-  --code-normal: #24837B;
+  --code-normal: #3AA99F;
 
   /* Errors and success */
-  --text-error: #AF3029;
-  --text-error-hover: #AF3029;
-  --text-success: #66800B;
+  --text-error: #D14D41;
+  --text-error-hover: #D14D41;
+  --text-success: #879A39;
 
-  /* Tags - use bright cyan on dark background for better contrast */
+  /* Tags */
   --tag-color: #3AA99F;
-  --tag-background: #403E3C;
+  --tag-background: #100F0F;
 
   /* Graph */
-  --graph-line: #6F6E69;
-  --graph-node: #4385BE;
+  --graph-line: #100F0F;
+  --graph-node: #205EA6;
   --graph-node-focused: #205EA6;
-  --graph-node-tag: #24837B;
-  --graph-node-attachment: #66800B;
+  --graph-node-tag: #3AA99F;
+  --graph-node-attachment: #879A39;
 }
 
 /* Headers */
@@ -63,14 +63,14 @@
 
 /* Code blocks */
 .markdown-rendered code {
-  color: #24837B;
+  color: #3AA99F;
 }
 
 /* Syntax highlighting */
-.cm-s-obsidian span.cm-keyword { color: #AF3029; }
-.cm-s-obsidian span.cm-string { color: #66800B; }
-.cm-s-obsidian span.cm-number { color: #AD8301; }
-.cm-s-obsidian span.cm-comment { color: #6F6E69; }
+.cm-s-obsidian span.cm-keyword { color: #D14D41; }
+.cm-s-obsidian span.cm-string { color: #879A39; }
+.cm-s-obsidian span.cm-number { color: #D0A215; }
+.cm-s-obsidian span.cm-comment { color: #100F0F; }
 .cm-s-obsidian span.cm-operator { color: #205EA6; }
 .cm-s-obsidian span.cm-def { color: #205EA6; }
 
@@ -81,7 +81,7 @@
 
 /* Blockquotes */
 .markdown-rendered blockquote {
-  border-left-color: #4385BE;
+  border-left-color: #205EA6;
 }
 
 /* Active elements */

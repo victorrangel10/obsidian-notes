@@ -78,6 +78,7 @@ Categorias:
 - Vivem em `Bases/` (top-level no vault root)
 - Embedded em notas de `Categorias/` via transclusão (`![[NomeDaBase.base]]`)
 - Filter syntax: `Categorias.contains(link("Nome"))`
+- **Toda base deve ter filter global `!file.inFolder("Templates")`** pra não incluir os templates (que tem `Categorias` no frontmatter como exemplo) nas views
 - **Kanban view: criar via UI do Obsidian, não escrever YAML manual** — schema do plugin `kanban-bases-view` é instável e não documentado. Tentar adivinhar gera erros tipo `groupBy must be an object`.
 
 ## obsidian-tracker

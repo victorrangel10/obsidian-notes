@@ -4,3 +4,11 @@ views:
     filters:
       and:
         - Categorias.contains(link("Cursos"))
+    order:
+      - file.link
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    summaries:
+      file.link: Filled

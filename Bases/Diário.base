@@ -4,3 +4,19 @@ views:
     filters:
       and:
         - Categorias.contains(link("Diário"))
+    order:
+      - file.link
+      - peso
+      - agua
+      - treino
+      - dieta
+      - leitura
+    sort:
+      - property: file.basename
+        direction: DESC
+    summaries:
+      peso: Average
+      agua: Sum
+      treino: Checked
+      dieta: Checked
+      leitura: Checked

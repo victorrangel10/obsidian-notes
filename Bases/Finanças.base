@@ -4,4 +4,11 @@ views:
     filters:
       and:
         - Categorias.contains(link("Finanças"))
-    sort: []
+    order:
+      - file.link
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    summaries:
+      file.link: Filled

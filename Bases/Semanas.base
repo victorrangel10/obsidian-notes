@@ -3,4 +3,4 @@ views:
     name: Semana
     filters:
       and:
-        - Categorias.contains(link("Semana"))
+        - Categorias.contains(link("Semanas"))

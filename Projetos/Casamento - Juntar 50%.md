@@ -7,7 +7,7 @@ aporte_mensal: 1000
 aporte_inicial: 2800
 status: ativa
 Categorias:
-  - "[[Meta]]"
+  - "[[Metas]]"
 ---
 
 # Casamento - Juntar 50%

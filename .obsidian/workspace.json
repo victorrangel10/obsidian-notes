@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Categorias/Gastos.md",
+                "file": "Diário/2026-05-04.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gastos"
+              "title": "2026-05-04"
             }
           }
         ]
@@ -257,9 +257,9 @@
   },
   "active": "c140335c11dc4afc",
   "lastOpenFiles": [
+    "Categorias/Gastos.md",
     "Untitled.md",
     "Anexos/Gastos/2026-05-04 - Uber.md",
-    "Categorias/Gastos.md",
     "Categorias/Metas.md",
     "Diário/2026-05-04.md",
     "Plano Financeiro.md",

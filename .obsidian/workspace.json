@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Template de Curso.md",
+                "file": "Manifesto.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Template de Curso"
+              "title": "Manifesto"
             }
           }
         ]
@@ -257,6 +257,7 @@
   },
   "active": "129ecc904dec1c0c",
   "lastOpenFiles": [
+    "Templates/Template de Curso.md",
     "Dieta.md",
     "Home.md",
     "Lista de Compras.md",
@@ -293,7 +294,6 @@
     "Anexos/Gastos/2026-05-03 - The Best Açaí.md",
     "Referências/Capturas/ASSISTI DEATH NOTE - Escreveu, matou..md",
     "Anexos/Pasted image 20260421211254.png",
-    "Diário/2026-05-03.md",
     "Anexos/Pasted image 20260503161159.jpg",
     "Untitled.canvas",
     "obsidian/Anexos/Pasted image 20260421211254.png"

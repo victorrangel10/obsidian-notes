@@ -6,7 +6,7 @@ prazo: 2026-12-31
 alvo: 69.6
 status: ativa
 Categorias:
-  - "[[Meta]]"
+  - "[[Metas]]"
 ---
 
 # Perder 7kg

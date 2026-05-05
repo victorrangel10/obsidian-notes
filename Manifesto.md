@@ -136,7 +136,7 @@ Categorias:
 |---|---|
 | `[[Diário]]` | Toda nota daily |
 | `[[Semanas]]` | Toda nota weekly |
-| `[[Meta]]` | Toda nota em `Projetos/` |
+| `[[Metas]]` | Toda nota em `Projetos/` |
 | `[[Saúde]]` | Notas relacionadas a saúde (treino, dieta, exames) |
 | `[[Finanças]]` | Notas relacionadas a finanças (plano financeiro) |
 | `[[Cursos]]` | Notas/anotações de cursos |
@@ -217,7 +217,7 @@ prazo: YYYY-MM-DD
 alvo: <número>
 status: ativa
 Categorias:
-  - "[[Meta]]"
+  - "[[Metas]]"
 ---
 ```
 

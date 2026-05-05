@@ -6,7 +6,7 @@ prazo:
 alvo: 
 status: ativa
 Categorias:
-  - "[[Meta]]"
+  - "[[Metas]]"
 ---
 
 # <% tp.file.title %>

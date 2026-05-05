@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "2026-05-04"
             }
+          },
+          {
+            "id": "bc95ae3e6de929b1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -255,13 +266,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "c140335c11dc4afc",
+  "active": "bc95ae3e6de929b1",
   "lastOpenFiles": [
+    "Diário/2026-05-04.md",
     "Categorias/Gastos.md",
     "Untitled.md",
     "Anexos/Gastos/2026-05-04 - Uber.md",
     "Categorias/Metas.md",
-    "Diário/2026-05-04.md",
     "Plano Financeiro.md",
     "Categorias/Finanças.md",
     "Categorias/Diário.md",

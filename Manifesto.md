@@ -272,6 +272,82 @@ Categorias:
 ---
 ```
 
+### Curso (`Referências/<curso>/<curso>.md` ou `Referências/<curso>.md`)
+
+```yaml
+---
+type: curso
+data_criacao: YYYY-MM-DD HH:mm
+autor:
+  - "[[Pessoa]]"
+plataforma: youtube           # youtube | udemy | curso.dev | presencial | outro
+status: pendente              # pendente | em_andamento | concluido | abandonado
+data_inicio: YYYY-MM-DD
+data_finalizacao: YYYY-MM-DD
+rating:                       # 1-5, opcional
+tags:
+  - topico
+Categorias:
+  - "[[Cursos]]"
+---
+```
+
+Body inclui `![[Aulas.base]]` pra view de cards das aulas filhas.
+
+### Aula (`Referências/<curso>/<aula>.md`)
+
+```yaml
+---
+type: aula
+data_criacao: YYYY-MM-DD HH:mm
+curso: "[[Nome do Curso]]"
+ordem:                        # opcional, número da aula
+tags:
+  - topico
+---
+```
+
+Aulas **não têm `Categorias`** — são acessadas via parent course page que embeda `![[Aulas.base]]`. A base filtra `type == "aula" AND curso == this.file.link`.
+
+### Conceito / Pessoa / Lugar (`Referências/<nome>.md`)
+
+Schema único, `type` distingue:
+
+```yaml
+---
+type: conceito                # ou: pessoa | lugar
+data_criacao: YYYY-MM-DD HH:mm
+tags:
+  - topico
+Categorias:
+  - "[[Conceitos]]"           # ou "[[Pessoas]]" / "[[Lugares]]"
+---
+```
+
+### Captura (`Referências/Capturas/<nome>.md`)
+
+Output do Web Clipper. Schema canônico:
+
+```yaml
+---
+type: captura
+fonte: video                  # video | artigo | gist | post
+title: ...
+source: <url>
+autor:
+  - "[[Autor]]"
+published: YYYY-MM-DD
+data_criacao: YYYY-MM-DD HH:mm
+status: pendente              # pendente | lido
+rating:                       # opcional
+tags:
+  - clippings
+  - topico-real               # tópico real, não só "clippings"
+Categorias:
+  - "[[Vídeos]]"              # ou outra
+---
+```
+
 ---
 
 ## Processos

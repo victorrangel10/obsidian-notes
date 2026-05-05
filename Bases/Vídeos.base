@@ -12,6 +12,7 @@ views:
       - published
       - rating
       - tags
+      - source
     sort:
       - property: file.mtime
         direction: DESC

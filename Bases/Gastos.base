@@ -28,3 +28,15 @@ views:
         direction: ASC
       - property: data
         direction: DESC
+  - type: table
+    name: Do dia
+    filters:
+      and:
+        - Categorias.contains(link("Gastos"))
+        - data == this.date
+    order:
+      - file.link
+      - valor
+      - categoria_gasto
+    summaries:
+      valor: Sum

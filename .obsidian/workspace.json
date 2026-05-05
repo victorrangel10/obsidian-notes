@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Daily.md",
+                "file": "Diário/2026-05-05.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily"
+              "title": "2026-05-05"
             }
           }
         ]
@@ -232,8 +232,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 484.5,
-    "collapsed": true
+    "width": 484.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -257,12 +256,17 @@
   },
   "active": "c140335c11dc4afc",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Diário/2026-05-04.md",
+    "Diário/2026-05-05.md",
+    "Diário/2026-04-30.md",
+    "Categorias/Gastos.md",
+    "Templates/Daily.md.tmp.12940.1777946373422",
+    "Templates/Gasto.md",
     "Templates/Daily.md",
+    "Bases/Gastos.base.tmp.12940.1777946346076",
+    "Untitled.md",
     "Diário/2026-05-02.md",
     "Diário/2026-05-01.md",
-    "Diário/2026-05-04.md",
-    "Categorias/Gastos.md",
     "Anexos/Gastos/2026-05-04 - Uber.md",
     "Categorias/Metas.md",
     "Plano Financeiro.md",
@@ -288,11 +292,6 @@
     "Categorias/Semanas.md",
     "Categorias/Vídeos.md",
     "Categorias/Cursos.md",
-    "Dieta.md",
-    "Referências/curso.dev.md",
-    "Diário/2026-04-30.md",
-    "Referências/Capturas",
-    "Referências/A arte de decidir",
     "Anexos/Pasted image 20260421211254.png",
     "Anexos/Pasted image 20260503161159.jpg",
     "Untitled.canvas",

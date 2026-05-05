@@ -12,4 +12,8 @@ Categorias:
 
 # <% moment(tp.file.title, "YYYY-MM-DD").locale("pt-br").format("dddd, DD [de] MMMM").replace(/^./, c => c.toUpperCase()) %>
 
+## 💸 Gastos do dia
+
+![[Gastos.base#Do dia]]
+
 

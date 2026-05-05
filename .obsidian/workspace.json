@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anexos/Movimentações/2026-05-05 - Salário abril.md",
+                "file": "Anexos/Movimentações/2026-05-05 - Plano de saúde.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-05 - Salário abril"
+              "title": "2026-05-05 - Plano de saúde"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 601.5
   },
   "right": {
     "id": "3da135ca50d7d608",
@@ -255,8 +255,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c59d8e69de0e54d",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Anexos/Movimentações/2026-05-05 - Salário abril.md",
     "Anexos/Movimentações/2026-05-05 - Plano de saúde.md",
     "Anexos/Movimentações/2026-05-05 - Curso.dev.md",
     "Anexos/Movimentações/2026-05-04 - Uber.md",
@@ -264,7 +265,6 @@
     "Anexos/Movimentações/2026-05-03 - Van Convento.md",
     "Anexos/Movimentações/2026-05-03 - Uber.md",
     "Anexos/Movimentações/2026-05-03 - The Best Açaí.md",
-    "Anexos/Movimentações/2026-05-05 - Salário abril.md",
     "Categorias/Movimentações.md",
     "Categorias/Finanças.md",
     "Templates/Movimentação.md",

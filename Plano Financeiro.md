@@ -130,7 +130,59 @@ Tudo no **Inter** via Caixinhas (Meus Objetivos), com livro-razão unificado em 
 - [ ] Distribuir salário 🔁 every month on the 5th 📅 2026-06-05
 - [x] Distribuir salário 🔁 every month on the 5th 📅 2026-05-05 ✅ 2026-05-05
 
-> Ao marcar como feito, obsidian-tasks recria automaticamente pro mês seguinte. Valores na seção 2. Após distribuir, registra na daily de hoje em "Notas livres".
+> Ao marcar como feito, obsidian-tasks recria automaticamente pro mês seguinte. Valores na seção 2. Após distribuir, registra movimentações em [[Movimentações]].
+
+## 10. Movimentações (livro-razão unificado)
+
+Toda transação financeira é registrada em `Anexos/Movimentações/` via Templater. Schema unificado: `direcao` discrimina entrada / saída / aporte / resgate.
+
+- View consolidada: [[Movimentações]]
+- Dashboard mensal: [[Finanças]] (totais, saldo, % poupança vs meta)
+- Tracker de progresso da meta: [[Casamento - Juntar 50%]] (aportes cumulativos)
+
+Categorias por direção definidas no template `Templates/Movimentação.md`. Documentação completa do schema no [[Manifesto]].
+
+## 11. Histórico de Decisões
+
+Log cronológico de decisões financeiras. Cada entrada: tema, contexto resumido, escolha, motivo. Permite revisar o porquê meses depois.
+
+### 2026-04-18 — Plano financeiro inicial criado
+Definida meta casamento R$ 25k em 24 meses, distribuição 50/50 poupança/gastos, regras comportamentais 1-5.
+
+### 2026-04-20 — Análise de extrato Inter (21/03 a 20/04)
+Identificado descontrole em alimentação fora: R$ 730 em 20 dias = projeção R$ 1.161/mês (39% renda) vs orçamento R$ 250 (8%). Decisão: abril mantém 30% poupança (R$ 900 CDB), maio inicia 50%.
+
+### 2026-05-05 — Schema unificado de movimentações
+**Contexto:** sistema antigo só rastreava gastos. Faltava rastrear entradas, aportes, resgates.
+**Decisão:** refactor de `Gastos` pra `Movimentações`, livro-razão unificado estilo double-entry. Direção discrimina tipo (entrada/saída/aporte/resgate).
+**Motivo:** trackear 100% do dinheiro. Permitir saldo/% poupança calculáveis. Padrão da indústria contábil.
+
+### 2026-05-05 — Almofada R$ 1.100 conta principal (NOVA REGRA)
+**Contexto:** loop atual "recebe → paga fatura → fica sem → usa cartão → fatura cresce" é frágil. Sempre 30 dias atrasado em pagamento.
+**Decisão:** mantém R$ 1.100 fixos em conta corrente como almofada pra cobrir mês inteiro de discricionários (moto, lazer, roupa, dev, buffer) via débito/Pix. Cartão bloqueado por trava física.
+**Motivo:** quebra loop, robustez de caixa, paga gasto na hora (mental: confronta "tenho dinheiro?"). Custo de oportunidade R$ 13 em 24 meses (Caixinha Inter rende 100% CDI vs Tesouro Selic). Trivial vs benefício.
+**Implementação:** **criada hoje** aportando os extras parcialmente (curso + plano) ao invés de seguir 70/30 à risca. Esta foi a movimentação inicial pra estabelecer a almofada — não é regra retroativa. A partir de junho, regime estável: salário R$ 3.000 → R$ 1.500 poupança + R$ 400 namoro + R$ 1.100 almofada.
+
+### 2026-05-05 — Caixinha Inter ao invés de Tesouro Selic 2028 (casamento)
+**Contexto:** plano original (18/04) mandava Tesouro Selic 2028 pra meta casamento.
+**Decisão:** mantém aportes na Caixinha Inter (100% CDI). Tesouro fica como opção futura se saldo passar de R$ 10k.
+**Motivo:** diferença de rendimento em 24 meses sobre R$ 25k ≈ R$ 150 (líquido). Trivial. Atrito de abrir conta investimento + mover dinheiro não compensa. Liquidez D+0 ajuda em emergências.
+
+### 2026-05-05 — Tesouro IPCA+ pra Longo Prazo (futuro)
+**Contexto:** Caixinha Inter rende ~Selic nominal. Pra horizonte 20+ anos, inflação corrói rendimento real.
+**Decisão:** quando abrir Tesouro Direto, migrar saldo "Longo Prazo" da Caixinha Inter pra Tesouro IPCA+ 2030 ou 2035. Aportes futuros vão direto pro Tesouro.
+**Motivo:** Tesouro IPCA+ garante taxa real (IPCA + 6%). Em décadas, diferença vs nominal é dramática.
+
+### 2026-05-05 — Categoria `buffer` distinta de `reserva` (NOVA REGRA)
+**Contexto:** ao registrar dinheiro reservado pra multas e parte da fatura próxima, classificou como "reserva". Conflito conceitual com reserva de emergência (regra 5, intocável).
+**Decisão:** categoria nova `buffer` pra dinheiro reservado pra **gasto futuro previsto** (multas, parcelas a vencer, fatura). `reserva` fica exclusiva pra emergência real.
+**Motivo:** preserva conceito de reserva intocável. Buffer pode ser usado no momento certo sem quebrar regra.
+
+### 2026-05-05 — Trava física do cartão ativada
+**Contexto:** plano (regra 6) mencionava trava mas não estava operacional.
+**Decisão:** trava ativada no app Inter. Default = bloqueado.
+**Motivo:** disciplina mental falha. Trava é forçada. Almofada (regra 7) só funciona se cartão está bloqueado por padrão.
+
 ---
 
 > Plano pessoal · Revisar trimestralmente · Ajustar ao surgirem mudanças de renda, meta ou prazo.
@@ -139,3 +191,5 @@ Tudo no **Inter** via Caixinhas (Meus Objetivos), com livro-razão unificado em 
 
 - [[Casamento - Juntar 50%]]
 - [[Finanças]]
+- [[Movimentações]]
+- [[Manifesto]]

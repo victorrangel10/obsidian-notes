@@ -127,3 +127,5 @@ views:
       - valor
     summaries:
       valor: Unique
+    columnSize:
+      note.valor: 94

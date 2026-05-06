@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diário/2026-05-06.md",
+                "file": "System Design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-06"
+              "title": "System Design"
             }
           }
         ]
@@ -268,8 +268,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Home.md",
     "Diário/2026-05-06.md",
+    "System Design.md",
+    "Home.md",
     "Anexos/Movimentações/2026-05-06 - Curso System Design Augusto Galego.md",
     "Anexos/Movimentações/2026-05-06 - Saldo pra comprar curso system design.md",
     "Anexos/Movimentações/2026-05-06 - Plano de saúde maio.md",
@@ -294,7 +295,6 @@
     "Referências/Escrúpulo.md",
     "Referências/Ciclovia Terceira Ponte.md",
     "Referências/Capturas/LLM-Wiki.md",
-    "Referências/Capturas/Accounting for Computer Scientists — Martin Kleppmann’s blog.md",
     "Bases/Semanas.base",
     "Bases/Pessoas.base",
     "Bases/Movimentações.base",

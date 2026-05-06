@@ -151,5 +151,3 @@ Thatâ€™s the end of our whirlwind tour through the world of accounting. If youâ€
 If you found this post useful, please [support me on Patreon](https://www.patreon.com/martinkl) so that I can write more like it!
 
 To get notified when I write something new, [follow me on Bluesky](https://bsky.app/profile/martin.kleppmann.com) or [Mastodon](https://nondeterministic.computer/@martin), or enter your email address:
-
-<iframe src="https://martinkl.substack.com/embed" width="520" height="200" frameborder="0"></iframe>

@@ -17,5 +17,5 @@ views:
     sort:
       - property: ordem
         direction: ASC
-  - type: table
-    name: View
+  - type: cards
+    name: System Design

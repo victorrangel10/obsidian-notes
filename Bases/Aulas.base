@@ -1,6 +1,7 @@
 filters:
   and:
     - '!file.inFolder("Templates")'
+    - type == "aula"
 views:
   - type: cards
     name: Aulas
@@ -18,5 +19,8 @@ views:
         direction: ASC
   - type: cards
     name: System Design
-  - type: table
+  - type: cards
     name: A Arte de Decidir
+    filters:
+      and:
+        - curso == link("A Arte de Decidir")

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anexos/Movimentações/2026-05-05 - Namoro - Maio.md",
+                "file": "Categorias/Movimentações.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-05 - Namoro - Maio"
+              "title": "Movimentações"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 354.5
+    "width": 200
   },
   "right": {
     "id": "3da135ca50d7d608",
@@ -257,8 +257,11 @@
   },
   "active": "1c859ef2cd735b7f",
   "lastOpenFiles": [
-    "Home.md",
+    "Categorias/Metas.md",
+    "Categorias/Lugares.md",
+    "Categorias/Finanças.md",
     "Anexos/Movimentações/2026-05-05 - Namoro - Maio.md",
+    "Home.md",
     "Anexos/Movimentações/2026-05-05 - Gasolina.md",
     "Plano Financeiro.md.tmp.78024.1778033990494",
     "Manifesto.md.tmp.78024.1778033984783",
@@ -289,9 +292,6 @@
     "Categorias/Pessoas.md",
     "Categorias/Organização.md",
     "Categorias/Movimentações.md",
-    "Categorias/Metas.md",
-    "Categorias/Lugares.md",
-    "Categorias/Finanças.md",
     "Categorias/Diário.md",
     "Anexos/Pasted image 20260505212554.png",
     "Anexos/Pasted image 20260505212539.png",

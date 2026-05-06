@@ -19,11 +19,17 @@ const movs = dv.pages('"Anexos/Movimentações"').where(p => {
 });
 
 const sum = (dir) => movs.where(p => p.direcao === dir).map(p => p.valor || 0).array().reduce((a,b) => a+b, 0);
+const sumWhere = (predicate) => movs.where(predicate).map(p => p.valor || 0).array().reduce((a,b) => a+b, 0);
 
 const entradas = sum("entrada");
 const saidas = sum("saída");
 const aportes = sum("aporte");
 const resgates = sum("resgate");
+const transferencias = sum("transferencia");
+
+const saidasDebito = sumWhere(p => p.direcao === "saída" && p.forma_pagamento === "débito");
+const saidasCredito = sumWhere(p => p.direcao === "saída" && p.forma_pagamento === "crédito");
+const saidasSemPagamento = sumWhere(p => p.direcao === "saída" && !p.forma_pagamento);
 
 const saldo = entradas - saidas - aportes + resgates;
 const taxaPoupanca = entradas > 0 ? ((aportes - resgates) / entradas * 100) : 0;
@@ -39,9 +45,13 @@ dv.table(
   ["Métrica", "Valor"],
   [
     ["💰 Entradas", `R$ ${entradas.toFixed(2)}`],
-    ["💸 Saídas", `R$ ${saidas.toFixed(2)}`],
+    ["💸 Saídas total", `R$ ${saidas.toFixed(2)}`],
+    ["　↳ 🏦 Débito", `R$ ${saidasDebito.toFixed(2)}`],
+    ["　↳ 💳 Crédito (vai pra fatura)", `R$ ${saidasCredito.toFixed(2)}`],
+    ["　↳ ❓ Sem forma definida", `R$ ${saidasSemPagamento.toFixed(2)}`],
     ["📥 Aportes", `R$ ${aportes.toFixed(2)}`],
     ["📤 Resgates", `R$ ${resgates.toFixed(2)}`],
+    ["🔄 Transferências (não contam como gasto)", `R$ ${transferencias.toFixed(2)}`],
     ["**Saldo do mês**", `**R$ ${saldo.toFixed(2)}**`],
     ["**% Poupança**", `**${taxaPoupanca.toFixed(1)}%** (meta ${meta}%)`],
     ["Status", statusMeta]
@@ -52,7 +62,7 @@ dv.table(
 ## Documentos ativos
 
 - [[Plano Financeiro]] — distribuição mensal, reserva, investimentos, projeção do casamento
-- [[Movimentações]] — tracker de todas transações (entradas, saídas, aportes, resgates)
+- [[Movimentações]] — tracker de todas transações (entradas, saídas, aportes, resgates, transferências)
 
 ## Metas vinculadas
 

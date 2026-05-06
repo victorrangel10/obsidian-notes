@@ -72,19 +72,27 @@ Tesouro Selic 2028. A partir do mês 1, soma R$ 1.000/mês.
 ## 5. Regras comportamentais (evitar furo)
 
 1. **Dia 5 do mês:** distribuir salário. Primeiro poupança, depois gastos. Nunca o inverso.
-2. **Namoro com R$ 400 fixo:** acabou, acabou. Sem "tiro da reserva só essa vez".
+2. **Namoro com R$ 400 fixo:** acabou, acabou. Sem "tiro da reserva só essa vez". Conta/cartão dedicado, limite = orçamento.
 3. **Dinheiro extra** (13º, freela, IR): 70% casamento, 30% longo prazo. Zero lifestyle.
 4. **Aumento salarial futuro:** 50% pra meta, 50% longo prazo. Segura inflação do estilo de vida.
 5. **Reserva de emergência:** intocável exceto pra emergência real (saúde, desemprego, acidente). Usou? Repõe antes de voltar a aportar.
+6. **Cartão de crédito:** trava física no app do Inter. Default = bloqueado. Só ativa pra compra específica. Não confia em disciplina mental.
+7. **Almofada R$ 1.100 conta principal:** mantém R$ 1.100 em conta corrente pra cobrir mês inteiro de discricionários (moto, lazer, roupa, dev, buffer) via débito/Pix. Quebra loop "recebe → paga fatura → fica sem". Não vaza pra lifestyle — é infraestrutura de fluxo de caixa.
+8. **Buffer ≠ Reserva:** dinheiro reservado pra **gasto futuro previsto** (multas, parcelas a vencer, fatura próxima) é categoria `buffer`, não `reserva`. Reserva é exclusiva pra emergência real.
 
 ## 6. Estrutura prática (sem abrir 5 contas)
 
-Use **Nubank Caixinhas** ou **Inter Meus Objetivos**:
+Tudo no **Inter** via Caixinhas (Meus Objetivos), com livro-razão unificado em [[Movimentações]] (ver seção 10).
 
-- Caixinha **Reserva** → R$ 3.000 parado, liquidez diária
-- Caixinha **Casamento** → R$ 2.800 inicial + R$ 1.000/mês
-- Caixinha **Moto Manutenção** → R$ 100/mês acumulando
-- Conta/cartão separado pro **Namoro** → limite = R$ 400
+| Caixinha Inter | Saldo alvo | Origem |
+|---|---|---|
+| Reserva | R$ 3.000 | Reserva original. Intocável. 100% CDI liquidez diária. |
+| Casamento | R$ 2.800 inicial + R$ 1.000/mês | Aporte recorrente do salário + 70% dos extras |
+| Longo Prazo | R$ 500/mês | Aporte recorrente. Migrar pra Tesouro IPCA+ quando abrir Tesouro Direto. |
+| Buffer | variável | Multas, parcelas a vencer, gastos previstos. Resgatado quando o gasto efetivo acontece. |
+
+**Conta dedicada Namoro** → limite = R$ 400.
+**Conta principal** → R$ 1.100 fixos como almofada do mês (regra 7).
 
 ## 7. Pontos de atenção
 
@@ -94,15 +102,28 @@ Use **Nubank Caixinhas** ou **Inter Meus Objetivos**:
 
 **Conversa com a namorada:** alinhar se contribui e como dividir custos do casamento e pós. Pode mudar o plano.
 
-## 8. Próximos passos (primeiros 30 dias)
+## 8. Próximos passos
 
-- [ ] Abrir conta de investimentos (XP, Rico, NuInvest, Inter)
-- [ ] Aplicar R$ 3.000 em CDB liquidez diária 100% CDI (reserva)
-- [ ] Aplicar R$ 2.800 em Tesouro Selic 2028 (casamento)
-- [ ] Configurar caixinhas no banco
-- [ ] Criar cartão/conta dedicada pro namoro (limite R$ 400)
-- [ ] Agendar transferência automática dia 5: R$ 1.000 casamento + R$ 500 longo prazo
-- [ ] Anotar todos os gastos por 30 dias pra validar orçamento
+### Concluído (até 2026-05-05)
+
+- [x] Reserva R$ 3.000 em CDB Inter liquidez diária ✅
+- [x] Configurar Caixinhas Inter (Casamento, Longo Prazo, Reserva, Buffer) ✅
+- [x] Trava do cartão Inter ativada ✅
+- [x] Sistema de livro-razão unificado [[Movimentações]] funcional ✅
+- [x] Almofada R$ 1.100 estabelecida (regra 7) ✅
+- [x] Aporte mensal manual dia 5 ✅
+
+### Pendente
+
+- [ ] Transferir R$ 400 do namoro pra conta/cartão dedicado
+- [ ] Abrir conta no Tesouro Direto (via Inter Invest)
+- [ ] Migrar saldo "Longo Prazo" da Caixinha Inter pra Tesouro IPCA+ 2030
+- [ ] Aportes futuros de longo prazo direto pro Tesouro IPCA+
+
+### Diferido (não urgente)
+
+- [ ] Avaliar Tesouro Selic 2028 pra Casamento se saldo passar de R$ 10k (custódia B3 começa a doer)
+- [ ] Conversa com a namorada sobre custos pós-casamento (regra 12 meses antes)
 
 ## 9. Rotina mensal (recorrente)
 

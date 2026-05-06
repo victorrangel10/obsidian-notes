@@ -8,6 +8,7 @@ valor: 25
 descricao: Fatura Inter - almoço fora
 categoria: alimentação
 forma_pagamento: crédito
+pago_em: 2026-05-05
 Categorias:
   - "[[Movimentações]]"
 ---

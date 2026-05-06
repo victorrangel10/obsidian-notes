@@ -8,6 +8,7 @@ valor: 53.99
 descricao: Fatura Inter - parcela 4/5 short
 categoria: roupa
 forma_pagamento: crédito
+pago_em: 2026-05-05
 Categorias:
   - "[[Movimentações]]"
 ---

@@ -17,6 +17,10 @@ properties:
     displayName: Fonte
   destino:
     displayName: Destino
+  forma_pagamento:
+    displayName: Pagamento
+  pago_em:
+    displayName: Pago em
 views:
   - type: table
     name: Todas

@@ -8,6 +8,7 @@ valor: 1296.01
 descricao: Fatura Inter - pendente detalhe
 categoria: outros
 forma_pagamento: crédito
+pago_em: 2026-05-05
 Categorias:
   - "[[Movimentações]]"
 ---

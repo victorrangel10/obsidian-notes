@@ -1,7 +1,6 @@
 filters:
   and:
     - '!file.inFolder("Templates")'
-    - curso == "System Design"
 views:
   - type: cards
     name: Aulas
@@ -19,3 +18,5 @@ views:
         direction: ASC
   - type: cards
     name: System Design
+  - type: table
+    name: A Arte de Decidir

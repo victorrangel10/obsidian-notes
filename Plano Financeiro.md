@@ -128,7 +128,7 @@ Tudo no **Inter** via Caixinhas (Meus Objetivos), com livro-razão unificado em 
 ## 9. Rotina mensal (recorrente)
 
 
-
+- [ ] Pagar 116 pra caixinha - Curso System Design ⏫ 🔁 every month ➕ 2026-05-06 🛫 2026-06-05 📅 2026-08-05
 - [ ] Distribuir salário 🔁 every month on the 5th 📅 2026-06-05
 - [x] Distribuir salário 🔁 every month on the 5th 📅 2026-05-05 ✅ 2026-05-05
 

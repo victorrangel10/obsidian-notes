@@ -1,7 +1,7 @@
 filters:
   and:
     - '!file.inFolder("Templates")'
-    - curso == link("A Arte de Decidir")
+    - curso == "System Design"
 views:
   - type: cards
     name: Aulas

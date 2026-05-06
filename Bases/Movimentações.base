@@ -69,7 +69,7 @@ views:
     summaries:
       valor: Sum
   - type: table
-    name: Saídas crédito (a virar fatura)
+    name: Saídas no crédito
     filters:
       and:
         - direcao == "saída"

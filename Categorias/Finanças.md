@@ -47,7 +47,7 @@ dv.table(
     ["💰 Entradas", `R$ ${entradas.toFixed(2)}`],
     ["💸 Saídas total", `R$ ${saidas.toFixed(2)}`],
     ["　↳ 🏦 Débito", `R$ ${saidasDebito.toFixed(2)}`],
-    ["　↳ 💳 Crédito (vai pra fatura)", `R$ ${saidasCredito.toFixed(2)}`],
+    ["　↳ 💳 Crédito", `R$ ${saidasCredito.toFixed(2)}`],
     ["　↳ ❓ Sem forma definida", `R$ ${saidasSemPagamento.toFixed(2)}`],
     ["📥 Aportes", `R$ ${aportes.toFixed(2)}`],
     ["📤 Resgates", `R$ ${resgates.toFixed(2)}`],

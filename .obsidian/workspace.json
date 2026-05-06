@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Categorias/Tarefas.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tarefas"
+              "title": "Home"
             }
           }
         ]
@@ -257,8 +257,12 @@
   },
   "active": "04ae638f979c2e1e",
   "lastOpenFiles": [
-    "Categorias/Vídeos.md",
+    "Bases/Movimentações.base.tmp.78024.1778033204150",
+    "Anexos/Movimentações/2026-05-05 - Fatura Inter - pendente detalhe.md.tmp.78024.1778033202129",
+    "Anexos/Movimentações/2026-05-05 - Fatura Inter - almoço fora.md.tmp.78024.1778033200982",
+    "Anexos/Movimentações/2026-05-05 - Fatura Inter - parcela 4-5 short.md.tmp.78024.1778033199845",
     "Categorias/Tarefas.md",
+    "Categorias/Vídeos.md",
     "Categorias/Semanas.md",
     "Categorias/Saúde.md",
     "Categorias/Pessoas.md",
@@ -278,9 +282,6 @@
     "Categorias/Conceitos.md",
     "Plano Financeiro.md",
     "Anexos/Movimentações/2026-05-03 - The Best Açaí.md.tmp.78024.1778033066497",
-    "Categorias/Finanças.md.tmp.78024.1778033034901",
-    "Categorias/Finanças.md.tmp.78024.1778033033674",
-    "Manifesto.md.tmp.78024.1778033003715",
     "Dieta.md",
     "Home.md",
     "Lista de Compras.md",

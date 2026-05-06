@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "Anexos/Movimentações/2026-05-05 - Gasolina.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "2026-05-05 - Gasolina"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 354.5
   },
   "right": {
     "id": "3da135ca50d7d608",
@@ -255,8 +255,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c59d8e69de0e54d",
+  "active": "1c859ef2cd735b7f",
   "lastOpenFiles": [
+    "Home.md",
     "Plano Financeiro.md.tmp.78024.1778033990494",
     "Manifesto.md.tmp.78024.1778033984783",
     "Anexos/Movimentações/2026-05-05 - Fatura Inter (mês passado).md",
@@ -274,13 +275,11 @@
     "Referências/Testo 1k/Como aumentar a testosterona na prática.md",
     "Referências/virtude.md",
     "Referências/Escrúpulo.md",
-    "Untitled.base",
     "Referências/Abertura curso A arte de decidir.md",
     "Referências/Rigorismo.md",
     "Referências/Prudência.md",
     "Referências/Os conselheiros da prudência.md",
     "Referências/O processo de deliberação.md",
-    "Home.md",
     "Categorias/Tarefas.md",
     "Categorias/Vídeos.md",
     "Categorias/Semanas.md",

@@ -32,18 +32,24 @@ Categorias:
 
 ## 2. Distribuição mensal sugerida (R$ 3.000)
 
-| #   | Área                                        | R$        | %        | Onde alocar          |
-| --- | ------------------------------------------- | --------- | -------- | -------------------- |
-| 1   | Moto (gasolina + manutenção)                | 300       | 10%      | Conta principal      |
-| 2   | Casamento (aporte mensal)                   | 1.000     | 33%      | Tesouro Selic 2028   |
-| 3   | Namoro (cartão/conta separada)              | 400       | 13%      | Cartão dedicado      |
-| 4   | Lazer pessoal + comer fora                  | 250       | 8%       | Conta principal      |
-| 5   | Roupa + cuidado pessoal                     | 150       | 5%       | Conta principal      |
-| 6   | Investimento longo prazo                    | 500       | 17%      | Tesouro IPCA+ ou ETF |
-| 7   | Desenvolvimento (curso, livro)              | 150       | 5%       | Conta principal      |
-| 8   | Buffer imprevistos                          | 250       | 8%       | Conta principal      |
-|     | **TOTAL**                                   | **3.000** | **100%** |                      |
-|     | **TOTAL POUPADO (casamento + longo prazo)** | **1.500** | **50%**  |                      |
+| #   | Área                                        | R$        | %        | Onde alocar                                    |
+| --- | ------------------------------------------- | --------- | -------- | ---------------------------------------------- |
+| 1   | Moto (gasolina + manutenção)                | 300       | 10%      | Conta principal (almofada)                     |
+| 2   | Casamento (aporte mensal)                   | 1.000     | 33%      | Caixinha Inter "Casamento" ¹                   |
+| 3   | Namoro                                      | 400       | 13%      | Conta/cartão dedicado                          |
+| 4   | Lazer pessoal + comer fora                  | 250       | 8%       | Conta principal (almofada)                     |
+| 5   | Roupa + cuidado pessoal                     | 150       | 5%       | Conta principal (almofada)                     |
+| 6   | Investimento longo prazo                    | 500       | 17%      | Caixinha Inter "Longo Prazo" → Tesouro IPCA+ ² |
+| 7   | Desenvolvimento (curso, livro)              | 150       | 5%       | Conta principal (almofada)                     |
+| 8   | Buffer imprevistos                          | 250       | 8%       | Conta principal (almofada)                     |
+|     | **TOTAL**                                   | **3.000** | **100%** |                                                |
+|     | **TOTAL POUPADO (casamento + longo prazo)** | **1.500** | **50%**  |                                                |
+|     | **ALMOFADA conta principal (1+4+5+7+8)**    | **1.100** | **37%**  |                                                |
+|     | **Conta namoro dedicada**                   | **400**   | **13%**  |                                                |
+
+¹ Decisão 2026-05-05: Caixinha Inter (100% CDI) ao invés de Tesouro Selic 2028. Diferença de rendimento em 24 meses sobre meta R$ 25k ≈ R$ 150. Trivial. Atrito de abrir conta investimento não compensa. Ver "Histórico de Decisões".
+
+² Casamento (24 meses): diferença Caixinha Inter vs Tesouro é trivial. Longo prazo (20+ anos): Tesouro IPCA+ é dramaticamente superior por proteger contra inflação. Migração planejada quando abrir Tesouro Direto.
 
 ## 3. Estratégia dos R$ 5.800 iniciais
 

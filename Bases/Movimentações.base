@@ -17,8 +17,6 @@ properties:
     displayName: Fonte
   destino:
     displayName: Destino
-  forma_pagamento:
-    displayName: Pagamento
 views:
   - type: table
     name: Todas
@@ -34,8 +32,7 @@ views:
         direction: DESC
       - property: hora
         direction: DESC
-    summaries:
-      valor: Sum
+    summaries: {}
   - type: table
     name: Entradas
     filters:
@@ -61,40 +58,6 @@ views:
       - data
       - descricao
       - categoria
-      - forma_pagamento
-      - valor
-    sort:
-      - property: data
-        direction: DESC
-    summaries:
-      valor: Sum
-  - type: table
-    name: Saídas no crédito
-    filters:
-      and:
-        - direcao == "saída"
-        - forma_pagamento == "crédito"
-    order:
-      - data
-      - descricao
-      - categoria
-      - valor
-    sort:
-      - property: data
-        direction: DESC
-    summaries:
-      valor: Sum
-  - type: table
-    name: Transferências
-    filters:
-      and:
-        - direcao == "transferencia"
-    order:
-      - data
-      - descricao
-      - categoria
-      - fonte
-      - destino
       - valor
     sort:
       - property: data

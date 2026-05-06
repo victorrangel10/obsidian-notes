@@ -5,6 +5,9 @@ filters:
 views:
   - type: cards
     name: Aulas
+    filters:
+      and:
+        - type == "aula"
     order:
       - file.name
       - tags

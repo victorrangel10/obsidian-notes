@@ -9,8 +9,11 @@ Categorias:
 
 # 🏠 Home
 
-<div class="dashboard-row dashboard-row-4">
-<div class="card">
+--- start-multi-column: kpis
+```column-settings
+Number of Columns: 4
+Largest Column: standard
+```
 
 #### 📅 Hoje
 
@@ -25,8 +28,7 @@ if (file) {
 }
 ```
 
-</div>
-<div class="card">
+--- column-end ---
 
 #### ⚖️ Peso
 
@@ -44,8 +46,7 @@ if (dailies.length > 0) {
 }
 ```
 
-</div>
-<div class="card">
+--- column-end ---
 
 #### 💰 Saldo conta
 
@@ -69,8 +70,7 @@ const cls = saldo >= 1100 ? "kpi-positive" : saldo >= 500 ? "" : "kpi-warning";
 dv.paragraph(`<div class="kpi-value ${cls}">R$ ${saldo.toFixed(2)}</div><div class="kpi-sub">alvo R$ 1.100/mês</div>`);
 ```
 
-</div>
-<div class="card">
+--- column-end ---
 
 #### 💸 Gastos mês
 
@@ -85,11 +85,13 @@ const credito = movs.where(m => m.forma_pagamento === "crédito").array().reduce
 dv.paragraph(`<div class="kpi-value">R$ ${total.toFixed(2)}</div><div class="kpi-sub">crédito: R$ ${credito.toFixed(2)} (vai pra fatura)</div>`);
 ```
 
-</div>
-</div>
+--- end-multi-column
 
-<div class="dashboard-row dashboard-row-2">
-<div class="card">
+--- start-multi-column: graficos
+```column-settings
+Number of Columns: 2
+Largest Column: standard
+```
 
 #### 📈 Peso · últimos 30 dias
 
@@ -121,8 +123,7 @@ if (last30.length === 0) {
 }
 ```
 
-</div>
-<div class="card">
+--- column-end ---
 
 #### 💧 Água · últimos 7 dias
 
@@ -152,11 +153,7 @@ if (last7.length === 0) {
 }
 ```
 
-</div>
-</div>
-
-<div class="dashboard-row">
-<div class="card">
+--- end-multi-column
 
 #### 🔥 Hábitos · últimos 30 dias
 
@@ -180,7 +177,6 @@ for (let i = 29; i >= 0; i--) {
 const container = dv.el('div', '', { cls: 'heatmap' });
 container.innerHTML = cells.join('');
 
-// summary últimos 30 dias
 const last30 = dv.pages('"Diário"').sort(p => p.date, 'desc').array().slice(0, 30);
 const treino = last30.filter(p => p.treino === true).length;
 const dieta = last30.filter(p => p.dieta === true).length;
@@ -191,11 +187,11 @@ const legend = dv.el('div', '', { cls: 'heatmap-legend' });
 legend.innerHTML = `Menos <div class="heatmap-legend-cell"></div><div class="heatmap-legend-cell level-1"></div><div class="heatmap-legend-cell level-2"></div><div class="heatmap-legend-cell level-3"></div> Mais`;
 ```
 
-</div>
-</div>
-
-<div class="dashboard-row dashboard-row-2">
-<div class="card">
+--- start-multi-column: gastos-tasks
+```column-settings
+Number of Columns: 2
+Largest Column: standard
+```
 
 #### 💼 Caixinhas mês (gasto vs orçamento)
 
@@ -234,11 +230,10 @@ const html = Object.keys(orcamentos).map(cat => {
   </div>`;
 }).join('');
 
-// gastos em categorias sem orçamento
 const semOrcamento = Object.keys(gastos).filter(c => !orcamentos[c]);
 let extra = '';
 if (semOrcamento.length > 0) {
-  extra = '<div class="caixinha-row" style="margin-top: 12px; opacity: 0.7;"><div class="caixinha-label"><span>Sem orçamento fixo:</span></div>';
+  extra = '<div class="caixinha-row" style="margin-top: 12px; opacity: 0.7;"><div class="caixinha-label"><span><em>Sem orçamento fixo:</em></span></div>';
   semOrcamento.forEach(c => {
     extra += `<div class="caixinha-label"><span>${c}</span><span>R$ ${gastos[c].toFixed(2)}</span></div>`;
   });
@@ -248,8 +243,7 @@ if (semOrcamento.length > 0) {
 dv.el('div', '', {}).innerHTML = html + extra;
 ```
 
-</div>
-<div class="card">
+--- column-end ---
 
 #### ✅ Tasks pendentes
 
@@ -260,11 +254,7 @@ sort by due
 limit 8
 ```
 
-</div>
-</div>
-
-<div class="dashboard-row">
-<div class="card">
+--- end-multi-column
 
 #### 📥 Inbox
 
@@ -278,6 +268,3 @@ if (count === 0) {
   dv.list(inbox.map(p => p.file.link));
 }
 ```
-
-</div>
-</div>

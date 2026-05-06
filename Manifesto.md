@@ -248,20 +248,21 @@ Categorias:
 
 ### Movimentação (`Anexos/Movimentações/<data> - <descricao>.md`)
 
-Livro-razão unificado: entradas, saídas, aportes, resgates numa única estrutura.
+Livro-razão unificado: entradas, saídas, aportes, resgates, transferências numa única estrutura.
 
 ```yaml
 ---
 type: movimentacao
-direcao: saída            # entrada | saída | aporte | resgate
+direcao: saída            # entrada | saída | aporte | resgate | transferencia
 data: YYYY-MM-DD
 hora: HH:mm
 data_criacao: YYYY-MM-DD HH:mm
 valor: 25.50              # número, R$ (sempre positivo; sinal é dado por `direcao`)
 descricao: Almoço shopping
 categoria: alimentação    # vocabulário muda por direção (ver Templates/Movimentação.md)
-fonte: Inbazz             # opcional, só pra direcao=entrada
-destino: Tesouro Selic 2028  # opcional, só pra direcao=aporte ou resgate
+forma_pagamento: crédito  # opcional, só pra direcao=saída: débito | crédito
+fonte: Inbazz             # opcional, pra direcao=entrada ou transferencia (origem)
+destino: Tesouro Selic 2028  # opcional, pra direcao=aporte, resgate ou transferencia (destino)
 Categorias:
   - "[[Movimentações]]"
 ---
@@ -271,6 +272,17 @@ Categorias:
 - `entrada`: salário, restituição, freela, 13º, extra, outros
 - `saída`: alimentação, transporte, lazer, roupa, moto, saúde, desenvolvimento, namoro, buffer, outros
 - `aporte` / `resgate`: casamento, longo_prazo, reserva, pos_casamento, outros
+- `transferencia`: pagamento_fatura, transferencia_caixinha, outros
+
+**Forma de pagamento (apenas direcao=saída):**
+- `débito`: dinheiro sai da conta na hora (débito direto, Pix, dinheiro)
+- `crédito`: gasto vai pra fatura do cartão Inter (paga depois)
+
+**Transferência (`direcao=transferencia`):**
+Movimento interno entre contas/caixinhas que NÃO é gasto novo. Exemplos:
+- Pagamento de fatura: `categoria=pagamento_fatura, fonte=Conta Inter, destino=Cartão Inter (passivo)`. Os gastos do cartão já foram contados como `saída` quando ocorreram, então pagar a fatura não duplica.
+- Transferência entre caixinhas: `categoria=transferencia_caixinha, fonte=Caixinha A, destino=Caixinha B`.
+- Transferências NÃO contam como saída no dashboard. São neutras pro patrimônio.
 
 ### Documento de categoria (vault root, Referências, etc)
 

@@ -61,6 +61,40 @@ views:
       - data
       - descricao
       - categoria
+      - forma_pagamento
+      - valor
+    sort:
+      - property: data
+        direction: DESC
+    summaries:
+      valor: Sum
+  - type: table
+    name: Saídas crédito (a virar fatura)
+    filters:
+      and:
+        - direcao == "saída"
+        - forma_pagamento == "crédito"
+    order:
+      - data
+      - descricao
+      - categoria
+      - valor
+    sort:
+      - property: data
+        direction: DESC
+    summaries:
+      valor: Sum
+  - type: table
+    name: Transferências
+    filters:
+      and:
+        - direcao == "transferencia"
+    order:
+      - data
+      - descricao
+      - categoria
+      - fonte
+      - destino
       - valor
     sort:
       - property: data

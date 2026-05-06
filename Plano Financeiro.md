@@ -183,6 +183,12 @@ Identificado descontrole em alimentação fora: R$ 730 em 20 dias = projeção R
 **Decisão:** trava ativada no app Inter. Default = bloqueado.
 **Motivo:** disciplina mental falha. Trava é forçada. Almofada (regra 7) só funciona se cartão está bloqueado por padrão.
 
+### 2026-05-05 — Forma de pagamento + direção transferência
+**Contexto:** sistema atual não diferencia gasto via débito (sai da conta na hora) vs gasto via crédito (vai pra fatura). Resultado: ao pagar fatura, ou duplica gastos (se já registrou cada compra) ou perde detalhe categórico (se registra só a fatura).
+**Decisão:** adicionado campo `forma_pagamento: débito | crédito` em cada saída. Adicionada nova `direcao=transferencia` pra registrar pagamento de fatura sem duplicar gastos.
+**Motivo:** resolve o problema do cartão sem ir pra double-entry completo (custo 2-3h vs 10-12h). Cada compra no crédito vira saída na data real. Pagamento de fatura é transferência interna (Cartão → Conta), não conta como nova despesa no dashboard. Gasto fica registrado uma vez só, na data correta, com categoria correta.
+**Trade-off aceito:** não modela o passivo "Cartão Inter" como conta separada (double-entry faria). View "Saídas crédito (a virar fatura)" no Base permite ver quanto vai virar fatura no próximo ciclo.
+
 ---
 
 > Plano pessoal · Revisar trimestralmente · Ajustar ao surgirem mudanças de renda, meta ou prazo.

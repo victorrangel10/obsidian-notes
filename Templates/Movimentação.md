@@ -7,8 +7,8 @@
   const dataCriacao = tp.date.now("YYYY-MM-DD HH:mm");
 
   const direcao = await tp.system.suggester(
-    ["💸 Saída", "💰 Entrada", "📥 Aporte", "📤 Resgate"],
-    ["saída", "entrada", "aporte", "resgate"]
+    ["💸 Saída", "💰 Entrada", "📥 Aporte", "📤 Resgate", "🔄 Transferência"],
+    ["saída", "entrada", "aporte", "resgate", "transferencia"]
   );
   if (!direcao) {
     new Notice("Direção não escolhida. Abortado.");
@@ -32,7 +32,8 @@
     "saída": ["alimentação", "transporte", "lazer", "roupa", "moto", "saúde", "desenvolvimento", "namoro", "buffer", "outros"],
     "entrada": ["salário", "restituição", "freela", "13º", "extra", "outros"],
     "aporte": ["casamento", "longo_prazo", "reserva", "pos_casamento", "outros"],
-    "resgate": ["casamento", "longo_prazo", "reserva", "pos_casamento", "outros"]
+    "resgate": ["casamento", "longo_prazo", "reserva", "pos_casamento", "outros"],
+    "transferencia": ["pagamento_fatura", "transferencia_caixinha", "outros"]
   };
 
   const categorias = categoriasPorDirecao[direcao];
@@ -44,17 +45,27 @@
 
   let fonte = "";
   let destino = "";
+  let formaPagamento = "";
 
   if (direcao === "entrada") {
     fonte = await tp.system.prompt("Fonte (ex: Inbazz, cliente X) — opcional", "");
   }
 
+  if (direcao === "saída") {
+    formaPagamento = await tp.system.suggester(
+      ["🏦 Débito", "💳 Crédito"],
+      ["débito", "crédito"]
+    );
+    if (!formaPagamento) {
+      new Notice("Forma de pagamento não escolhida. Abortado.");
+      return;
+    }
+  }
+
   if (direcao === "aporte" || direcao === "resgate") {
     const destinos = ["Tesouro Selic 2028", "Tesouro IPCA+", "CDB Inter Liquidez Diária", "Caixinha Inter", "Outros"];
     destino = await tp.system.suggester(destinos, destinos);
-    if (!destino) {
-      destino = "";
-    }
+    if (!destino) { destino = ""; }
   }
 
   const data = await tp.system.prompt("Data (YYYY-MM-DD)", tp.date.now("YYYY-MM-DD"));
@@ -78,6 +89,9 @@ valor: ${valor}
 descricao: ${descricao}
 categoria: ${categoria}`;
 
+  if (formaPagamento) {
+    frontmatter += `\nforma_pagamento: ${formaPagamento}`;
+  }
   if (fonte) {
     frontmatter += `\nfonte: ${fonte}`;
   }

@@ -9,7 +9,7 @@ published:
 data_criacao: 2026-05-04
 description:
 status: pendente
-rating:
+rating: "5"
 tags:
   - clippings
   - llm

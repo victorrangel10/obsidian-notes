@@ -121,7 +121,7 @@ views:
       and:
         - data == this.date
     order:
-      - file.link
+      - file.name
       - direcao
       - categoria
       - valor

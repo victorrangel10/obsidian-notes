@@ -15,7 +15,7 @@ tags:
   - llm
   - ai
 Categorias:
-  - "[[Ensaio]]"
+  - "[[Ensaios]]"
 ---
 
 # LLM Wiki

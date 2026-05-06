@@ -11,13 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Bases/Conceitos.base",
-                "viewName": "Table"
+                "file": "Referências/Capturas/LLM-Wiki.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "Conceitos"
+              "icon": "lucide-file",
+              "title": "LLM-Wiki"
             }
           }
         ]
@@ -266,8 +267,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Anexos/Conceitos-arte-de-decidir.base",
+    "Bases/Ensaios.base",
     "Bases/Conceitos.base",
+    "Anexos/Conceitos-arte-de-decidir.base",
     "Anexos/Pasted image 20260421211254.png",
     "Anexos/Pasted image 20260505212554.png",
     "Referências/Capturas/Accounting for Computer Scientists — Martin Kleppmann’s blog.md",

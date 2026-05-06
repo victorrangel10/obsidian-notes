@@ -4,20 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0dbf0228d31508e1",
+        "id": "33d2ec9d51dce9fc",
         "type": "tabs",
         "children": [
           {
-            "id": "1c859ef2cd735b7f",
+            "id": "132df0ac3d4280e0",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Untitled.base",
-                "viewName": "Conceitos"
+                "file": "Categorias/Finanças.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-grid",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "Finanças"
             }
           }
         ]
@@ -254,8 +255,9 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "1c859ef2cd735b7f",
+  "active": "132df0ac3d4280e0",
   "lastOpenFiles": [
+    "Anexos/Conceitos-arte-de-decidir.base",
     "Categorias/Movimentações.md",
     "Categorias/Finanças.md.tmp.78024.1778034483245",
     "Categorias/Finanças.md.tmp.78024.1778034468926",

@@ -2,5 +2,8 @@
   "interfaceFontFamily": "SFMono Nerd Font Mono,Inter,Source Code Pro,Adwaita Mono",
   "cssTheme": "Omarchy",
   "accentColor": "",
-  "textFontFamily": "SFMono Nerd Font Mono,Geist,Inter"
+  "textFontFamily": "SFMono Nerd Font Mono,Geist,Inter",
+  "enabledCssSnippets": [
+    "dashboard"
+  ]
 }

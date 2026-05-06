@@ -48,7 +48,7 @@ Every node in this graph is an *account* in accountant-speak (whether or not it 
 
 1. At the beginning of time, the value at each node is zero.
 2. At each node, for each incoming edge, add the edge’s label to the node’s value; for each outgoing edge, subtract the edge’s label from the value.
-
+![[Pasted image 20260505212458.png]]
 After you’ve processed all the edges, the value at each node is that account’s balance. Our graph now looks like this:Note that the account balances have two nice properties:
 
 1. Because every transaction appears twice – once positive and once negative – the sum of all account balances is always zero.
@@ -60,9 +60,20 @@ These properties are useful for sanity-checking your numbers; if they are violat
 
 Strengthened by a bagel and a burrito, you go out and talk to some potential customers. And hey, they love your product! It has a price tag of $5,000, and you sell it to two big enterprise customers. One pays you right away (good stuff!); the other gives you $2,500 up front, but insists that before they pay the rest, you need to implement that additional feature you foolishly promised.
 
-So you received $5,000 + $2,500 in cash from your customers, wired straight the company bank account. Let’s add that to the graph:But that’s not quite right. The price was $5,000 for each customer, and now it looks like you charged two different prices. How do we represent our arrangement with customer 2?
+So you received $5,000 + $2,500 in cash from your customers, wired straight the company bank account. Let’s add that to the graph:
 
-The solution is to deconstruct the deal into two separate transactions: the sale (in which the buyer agrees to buy, but no actual money changes hands) and the payment (when the cash actually hits your bank account). We can draw it like this:See what I’ve done here? I’ve just made up a new node, generically called it “sales”, and added the actual $5,000 sales as a transaction from this “sales” account to the customer accounts. Adding this extra node hasn’t changed your bank balance.
+
+![[Pasted image 20260505212515.png]]
+
+But that’s not quite right. The price was $5,000 for each customer, and now it looks like you charged two different prices. How do we represent our arrangement with customer 2?
+
+The solution is to deconstruct the deal into two separate transactions: the sale (in which the buyer agrees to buy, but no actual money changes hands) and the payment (when the cash actually hits your bank account). We can draw it like this:
+
+
+![[Pasted image 20260505212528.png]]
+
+
+See what I’ve done here? I’ve just made up a new node, generically called it “sales”, and added the actual $5,000 sales as a transaction from this “sales” account to the customer accounts. Adding this extra node hasn’t changed your bank balance.
 
 This makes sense when you think about the intuitive meaning of the balances. The balance of each customer’s account is the amount they owe you: customer 1 has fully paid up (their incoming and outgoing transactions add up to the same), so their balance is zero; customer 2 has contractually agreed to give you $5,000, but has so far only given you half of that, so their balance is $2,500.
 
@@ -76,7 +87,12 @@ Not only have you made some sales, but now you also receive a $20,000 investment
 
 Then you get set up with a company accountant, and they talk lots of jargon at you. For some strange reason they are obsessed with correctly accounting for your office chair; they want it to depreciate over four years, i.e. its value is gradually reduced to zero over the course of that time. Fair enough, you say (even though you couldn’t care less what your chair will be worth in four years’ time — surely by that time you’ll be the next Google or Facebook, and you’ll have other things to worry about than chairs).
 
-The resulting graph now looks like this:Note how I have represented the transactions:
+The resulting graph now looks like this:
+
+![[Pasted image 20260505212539.png]]
+
+
+Note how I have represented the transactions:
 
 - I have lumped together your founder investment with that of Y Combinator, under the heading of “capital”. Put simply, this is money you got into the company by selling your company’s shares, rather than by selling a product or service to a customer. As usual, you can split founders and YC into separate accounts if you feel like it.
 - I’ve represented payroll (salaries) as just money straight out of the bank account. In reality it’s a bit more complicated due to taxes, healthcare, benefits, etc. but the principles stay the same. It’s just more nodes and edges in the graph.
@@ -86,7 +102,11 @@ The resulting graph now looks like this:Note how I have represented the transact
 
 At this point, if you’re getting weary, I don’t blame you. But the good news: we’ve finished building our graph! Now I will show you how this graph representation maps to two standard financial statements most commonly used in managing a company: the profit and loss statement (“P&L”), and the balance sheet. This is useful, because as a startup founder you’ll sooner or later have to discuss these documents with your investors/advisors, and so you might as well learn what the hell they mean.
 
-In order to produce these statements, I need to get out the crayons. Here is the same graph as before, with the nodes coloured in:Explaining the colours (putting the accounting terminology in brackets, since you’re likely to encounter these words):
+In order to produce these statements, I need to get out the crayons. Here is the same graph as before, with the nodes coloured in:
+
+![[Pasted image 20260505212554.png]]
+
+Explaining the colours (putting the accounting terminology in brackets, since you’re likely to encounter these words):
 
 - Green for **stuff that you have** (*“assets”*), e.g. money in the bank, or things which you bought and you could sell again, such as furniture. Also green for people/companies who **owe you money** (*“debtors”*, such as Customer 2), and people/companies to whom **you owe money** (*“liabilities”/”creditors”*, such as your upcoming credit card bill for that burrito).
 - Blue for **sales of your product/service** (*“revenue”*) and **money you spent** that you’re not going to get back (*“expenses”/”overheads”*). The office chair is green, because you could sell it again if you wanted to, but the bagel is blue, because once you’ve bought (and eaten) the bagel, that’s it – no going back.

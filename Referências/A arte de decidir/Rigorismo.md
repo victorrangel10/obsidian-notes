@@ -5,4 +5,5 @@ tags:
   - moral
 Categorias:
   - "[[Conceitos]]"
+curso: "[[A Arte de Decidir]]"
 ---

@@ -6,6 +6,7 @@ tags:
   - espiritualidade
 Categorias:
   - "[[Conceitos]]"
+curso: "[[A Arte de Decidir]]"
 ---
 
 

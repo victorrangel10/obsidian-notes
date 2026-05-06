@@ -5,6 +5,7 @@ tags:
   - virtudes
 Categorias:
   - "[[Conceitos]]"
+curso: "[[A Arte de Decidir]]"
 ---
 
 partes da virtude

@@ -1,7 +1,6 @@
 filters:
   and:
     - '!file.inFolder("Templates")'
-    - type == "aula"
     - curso == link("A Arte de Decidir")
 views:
   - type: cards

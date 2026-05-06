@@ -6,6 +6,7 @@ tags:
   - prudencia
 Categorias:
   - "[[Conceitos]]"
+curso: "[[A Arte de Decidir]]"
 ---
 
 Os 3 atos que constituem a virtude da prudencia são 

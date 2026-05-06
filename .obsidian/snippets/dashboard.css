@@ -43,29 +43,32 @@
 
 .caixinha-label > span:last-child {
   color: var(--text-muted);
-  white-space: nowrap;
+  font-size: 0.9em;
+  text-align: right;
 }
 
 .progress-bar {
-  background: var(--background-modifier-border, #444);
+  background: #2a2a2a;
   border-radius: 4px;
-  height: 8px;
+  height: 10px;
   overflow: hidden;
+  width: 100%;
+  display: block;
 }
 
 .progress-bar-fill {
   height: 100%;
-  background: var(--interactive-accent, #4a9eff);
+  background: #4a9eff;
   transition: width 0.3s;
-  min-width: 2px;
+  display: block;
 }
 
 .progress-bar-fill.warning {
-  background: var(--color-orange, #f0a020);
+  background: #f0a020;
 }
 
 .progress-bar-fill.danger {
-  background: var(--color-red, #e04040);
+  background: #e04040;
 }
 
 /* Heatmap GitHub-style */

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Categorias/Ensaios.md",
+                "file": "Categorias/Finanças.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ensaios"
+              "title": "Finanças"
             }
           }
         ]
@@ -267,8 +267,8 @@
   },
   "active": "228c12687b4a64e6",
   "lastOpenFiles": [
-    "Categorias/Diário.md",
     "Categorias/Ensaios.md",
+    "Categorias/Diário.md",
     "Categorias/Cursos.md",
     "Categorias/Finanças.md",
     "Referências/Capturas/LLM-Wiki.md",

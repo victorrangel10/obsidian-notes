@@ -2,10 +2,8 @@ filters:
   and:
     - '!file.inFolder("Templates")'
     - Categorias.contains(link("Movimentações"))
-
 formulas:
   Total: valor
-
 properties:
   direcao:
     displayName: Direção
@@ -14,12 +12,11 @@ properties:
   descricao:
     displayName: Descrição
   valor:
-    displayName: "R$"
+    displayName: R$
   fonte:
     displayName: Fonte
   destino:
     displayName: Destino
-
 views:
   - type: table
     name: Todas
@@ -37,12 +34,11 @@ views:
         direction: DESC
     summaries:
       valor: Sum
-
   - type: table
     name: Entradas
     filters:
       and:
-        - 'direcao == "entrada"'
+        - direcao == "entrada"
     order:
       - data
       - descricao
@@ -54,12 +50,11 @@ views:
         direction: DESC
     summaries:
       valor: Sum
-
   - type: table
     name: Saídas
     filters:
       and:
-        - 'direcao == "saída"'
+        - direcao == "saída"
     order:
       - data
       - descricao
@@ -70,12 +65,11 @@ views:
         direction: DESC
     summaries:
       valor: Sum
-
   - type: table
     name: Aportes
     filters:
       and:
-        - 'direcao == "aporte"'
+        - direcao == "aporte"
     order:
       - data
       - descricao
@@ -87,12 +81,11 @@ views:
         direction: DESC
     summaries:
       valor: Sum
-
   - type: table
     name: Resgates
     filters:
       and:
-        - 'direcao == "resgate"'
+        - direcao == "resgate"
     order:
       - data
       - descricao
@@ -104,23 +97,21 @@ views:
         direction: DESC
     summaries:
       valor: Sum
-
   - type: table
     name: Saídas por categoria
     filters:
       and:
-        - 'direcao == "saída"'
+        - direcao == "saída"
+    groupBy:
+      property: categoria
+      direction: ASC
     order:
       - file.link
       - categoria
       - data
       - valor
-    groupBy:
-      property: categoria
-      direction: ASC
     summaries:
       valor: Sum
-
   - type: table
     name: Do dia
     filters:

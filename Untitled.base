@@ -4,6 +4,6 @@ filters:
     - type != "aula"
 views:
   - type: cards
-    name: Table
+    name: Conceitos
     order:
       - file.name

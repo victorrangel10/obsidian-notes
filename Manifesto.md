@@ -261,6 +261,7 @@ valor: 25.50              # número, R$ (sempre positivo; sinal é dado por `dir
 descricao: Almoço shopping
 categoria: alimentação    # vocabulário muda por direção (ver Templates/Movimentação.md)
 forma_pagamento: crédito  # opcional, só pra direcao=saída: débito | crédito
+pago_em: 2026-05-05       # opcional, só pra direcao=saída forma_pagamento=crédito. Vazio = ainda na fatura aberta. Preenchido = data do pagamento da fatura.
 fonte: Inbazz             # opcional, pra direcao=entrada ou transferencia (origem)
 destino: Tesouro Selic 2028  # opcional, pra direcao=aporte, resgate ou transferencia (destino)
 Categorias:

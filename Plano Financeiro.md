@@ -183,6 +183,11 @@ Identificado descontrole em alimentação fora: R$ 730 em 20 dias = projeção R
 **Decisão:** trava ativada no app Inter. Default = bloqueado.
 **Motivo:** disciplina mental falha. Trava é forçada. Almofada (regra 7) só funciona se cartão está bloqueado por padrão.
 
+### 2026-05-05 — Campo `pago_em` em saídas no crédito
+**Contexto:** dashboard mostrava saídas no crédito acumuladas, sem distinguir já pagas (em fatura paga) de pendentes (vão pra próxima fatura).
+**Decisão:** campo opcional `pago_em: YYYY-MM-DD` em saídas com forma_pagamento=crédito. Vazio = ainda na fatura aberta. Preenchido = data do pagamento.
+**Trabalho manual aceito:** quando paga fatura, atualiza `pago_em` em cada gasto coberto. Tedioso pra muitos gastos, mas escala (~30/mês). Trade-off vs modelar passivo Cartão Inter (double-entry completo).
+
 ### 2026-05-05 — Forma de pagamento + direção transferência
 **Contexto:** sistema atual não diferencia gasto via débito (sai da conta na hora) vs gasto via crédito (vai pra fatura). Resultado: ao pagar fatura, ou duplica gastos (se já registrou cada compra) ou perde detalhe categórico (se registra só a fatura).
 **Decisão:** adicionado campo `forma_pagamento: débito | crédito` em cada saída. Adicionada nova `direcao=transferencia` pra registrar pagamento de fatura sem duplicar gastos.

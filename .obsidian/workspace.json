@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "3da135ca50d7d608",
@@ -268,8 +267,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Diário/2026-05-06.md",
+    "Templates/Template de Curso.md",
     "System Design.md",
+    "Diário/2026-05-06.md",
     "Home.md",
     "Anexos/Movimentações/2026-05-06 - Curso System Design Augusto Galego.md",
     "Anexos/Movimentações/2026-05-06 - Saldo pra comprar curso system design.md",
@@ -294,7 +294,6 @@
     "Referências/O processo de deliberação.md",
     "Referências/Escrúpulo.md",
     "Referências/Ciclovia Terceira Ponte.md",
-    "Referências/Capturas/LLM-Wiki.md",
     "Bases/Semanas.base",
     "Bases/Pessoas.base",
     "Bases/Movimentações.base",

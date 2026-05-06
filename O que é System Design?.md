@@ -13,7 +13,9 @@ Tudo começa a partir de requisitos de negócio, uma aplicação precisa atender
 Pode ser dividido em Alto Nível e Baixo nível:
  
  
- Alto nível: Escalabilidade, Dis
+ Alto nível: Escalabilidade, Disponibilidade, Resiliência, API Gateways, Cache, DB, etc.
+
+Baixo nível: Módulos, serviços, schemas, algoritmos, etc.
 
 
 

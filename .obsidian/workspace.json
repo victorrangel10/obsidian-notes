@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5
+    "width": 275.5
   },
   "right": {
     "id": "3da135ca50d7d608",
@@ -255,7 +255,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c59d8e69de0e54d",
+  "active": "04ae638f979c2e1e",
   "lastOpenFiles": [
     "Anexos/Movimentações/2026-05-05 - Gastos pré salário.md",
     "Anexos/Movimentações/2026-05-05 - 2 multas - guardando até o dia de pagar.md",

@@ -11,10 +11,13 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "bases",
+              "state": {
+                "file": "Anexos/Conceitos-arte-de-decidir.base",
+                "viewName": "Conceitos"
+              },
+              "icon": "lucide-layout-grid",
+              "title": "Conceitos-arte-de-decidir"
             }
           }
         ]
@@ -263,6 +266,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Anexos/Pasted image 20260421211254.png",
+    "Anexos/Pasted image 20260505212554.png",
+    "Referências/Capturas/Accounting for Computer Scientists — Martin Kleppmann’s blog.md",
+    "O que é System Design?.md",
     "Referências/A Arte de Decidir.md",
     "System Design.md",
     "Referências/Abertura curso A arte de decidir.md",
@@ -270,7 +277,6 @@
     "Anexos/Movimentações/2026-05-06 - Plano de saúde maio.md",
     "Anexos/Movimentações/2026-05-06 - Saldo pra comprar curso system design.md",
     "Diário/2026-05-06.md",
-    "O que é System Design?.md",
     "Plano Financeiro.md",
     "Templates/Template de Curso.md",
     "Home.md",
@@ -288,15 +294,12 @@
     "Referências/Testo 1k/Como aumentar a testosterona na prática.md",
     "Referências/Testo 1k",
     "Referências/Rigorismo.md",
-    "Referências/Prudência.md",
-    "Referências/Pe. José Eduardo.md",
     "Bases/Semanas.base",
     "Bases/Pessoas.base",
     "Bases/Movimentações.base",
     "Bases/Lugares.base",
     "Bases/Conceitos.base",
     "Bases/Aulas.base",
-    "Anexos/Pasted image 20260505212554.png",
     "Anexos/Pasted image 20260505212539.png",
     "Anexos/Pasted image 20260505212528.png",
     "Anexos/Pasted image 20260505212515.png",
@@ -305,7 +308,6 @@
     "Anexos/Movimentações",
     "Anexos/Conceitos-arte-de-decidir.base",
     "Bases/Vídeos.base",
-    "Anexos/Pasted image 20260421211254.png",
     "Anexos/Pasted image 20260503161159.jpg",
     "Untitled.canvas",
     "obsidian/Anexos/Pasted image 20260421211254.png"

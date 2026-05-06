@@ -16,7 +16,6 @@ Categorias:
   - "[[Cursos]]"
 ---
 
-# Untitled
 
 ## Aulas
 

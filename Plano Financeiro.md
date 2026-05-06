@@ -127,6 +127,8 @@ Tudo no **Inter** via Caixinhas (Meus Objetivos), com livro-razão unificado em 
 
 ## 9. Rotina mensal (recorrente)
 
+
+
 - [ ] Distribuir salário 🔁 every month on the 5th 📅 2026-06-05
 - [x] Distribuir salário 🔁 every month on the 5th 📅 2026-05-05 ✅ 2026-05-05
 

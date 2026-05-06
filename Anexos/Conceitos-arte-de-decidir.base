@@ -1,9 +1,0 @@
-filters:
-  and:
-    - curso == link("A Arte de Decidir")
-    - type != "aula"
-views:
-  - type: cards
-    name: Conceitos
-    order:
-      - file.name

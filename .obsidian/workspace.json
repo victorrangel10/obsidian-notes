@@ -13,11 +13,11 @@
             "state": {
               "type": "bases",
               "state": {
-                "file": "Anexos/Conceitos-arte-de-decidir.base",
-                "viewName": "Conceitos"
+                "file": "Bases/Conceitos.base",
+                "viewName": "Table"
               },
-              "icon": "lucide-layout-grid",
-              "title": "Conceitos-arte-de-decidir"
+              "icon": "lucide-table",
+              "title": "Conceitos"
             }
           }
         ]
@@ -266,6 +266,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Anexos/Conceitos-arte-de-decidir.base",
+    "Bases/Conceitos.base",
     "Anexos/Pasted image 20260421211254.png",
     "Anexos/Pasted image 20260505212554.png",
     "Referências/Capturas/Accounting for Computer Scientists — Martin Kleppmann’s blog.md",
@@ -298,7 +300,6 @@
     "Bases/Pessoas.base",
     "Bases/Movimentações.base",
     "Bases/Lugares.base",
-    "Bases/Conceitos.base",
     "Bases/Aulas.base",
     "Anexos/Pasted image 20260505212539.png",
     "Anexos/Pasted image 20260505212528.png",
@@ -306,7 +307,6 @@
     "Anexos/Pasted image 20260505212458.png",
     "Anexos/Pasted image 20260505212442.png",
     "Anexos/Movimentações",
-    "Anexos/Conceitos-arte-de-decidir.base",
     "Bases/Vídeos.base",
     "Anexos/Pasted image 20260503161159.jpg",
     "Untitled.canvas",

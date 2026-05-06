@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Categorias/Finanças.md",
+                "file": "Categorias/Movimentações.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Finanças"
+              "title": "Movimentações"
             }
           }
         ]
@@ -257,6 +257,7 @@
   },
   "active": "04ae638f979c2e1e",
   "lastOpenFiles": [
+    "Categorias/Finanças.md",
     "Categorias/Movimentações.md",
     "Referências/Capturas/Accounting for Computer Scientists — Martin Kleppmann’s blog.md",
     "Anexos/Movimentações/2026-05-05 - Fatura Inter - pendente detalhe.md",
@@ -284,7 +285,6 @@
     "Anexos/Movimentações/2026-05-05 - Caixinha Maio.md",
     "Categorias/Movimentações.md.tmp.78024.1778018582812",
     "Home.md",
-    "Categorias/Finanças.md",
     "Categorias/Diário.md",
     "Anexos/Movimentações/2026-05-05 - Plano de saúde.md",
     "Anexos/Movimentações/2026-05-05 - Salário abril.md",

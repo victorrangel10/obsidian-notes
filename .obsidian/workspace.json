@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 229.5
   },
   "right": {
     "id": "3da135ca50d7d608",
@@ -256,7 +255,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "3c59d8e69de0e54d",
   "lastOpenFiles": [
     "Diário/2026-05-06.md",
     "Home.md",

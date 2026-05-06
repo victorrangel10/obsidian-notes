@@ -115,7 +115,7 @@ Tudo no **Inter** via Caixinhas (Meus Objetivos), com livro-razão unificado em 
 
 ### Pendente
 
-- [ ] Transferir R$ 400 do namoro pra conta/cartão dedicado
+- [x] Transferir R$ 400 do namoro pra conta/cartão dedicado ✅ 2026-05-05
 - [ ] Abrir conta no Tesouro Direto (via Inter Invest)
 - [ ] Migrar saldo "Longo Prazo" da Caixinha Inter pra Tesouro IPCA+ 2030
 - [ ] Aportes futuros de longo prazo direto pro Tesouro IPCA+

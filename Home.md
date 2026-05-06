@@ -247,11 +247,11 @@ dv.el('div', '', {}).innerHTML = html + extra;
 
 #### ✅ Tasks pendentes
 
-```tasks
-not done
-due before tomorrow
-sort by due
-limit 8
+```dataview
+TASK
+WHERE !completed
+SORT due ASC
+LIMIT 8
 ```
 
 --- end-multi-column

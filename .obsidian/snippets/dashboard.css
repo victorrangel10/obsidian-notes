@@ -1,148 +1,109 @@
 /* ============================================
    Dashboard CSS - Home.md
-   Ativar em Settings → Appearance → CSS Snippets
+   Estilos pra heatmap, progress bars, KPIs
    Aplicado quando frontmatter tem cssclasses: [dashboard]
    ============================================ */
 
-.dashboard .dashboard-row {
-  display: grid;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.dashboard .dashboard-row-2 {
-  grid-template-columns: 1fr 1fr;
-}
-
-.dashboard .dashboard-row-3 {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.dashboard .dashboard-row-4 {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-@media (max-width: 900px) {
-  .dashboard .dashboard-row-4 {
-    grid-template-columns: 1fr 1fr;
-  }
-  .dashboard .dashboard-row-3 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .dashboard .dashboard-row-4,
-  .dashboard .dashboard-row-3,
-  .dashboard .dashboard-row-2 {
-    grid-template-columns: 1fr;
-  }
-}
-
-.dashboard .card {
-  padding: 14px 16px;
-  border: 1px solid var(--background-modifier-border);
-  border-radius: 8px;
-  background: var(--background-secondary);
-  overflow: hidden;
-}
-
-.dashboard .card h2,
-.dashboard .card h3,
-.dashboard .card h4 {
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 0.95em;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.dashboard .kpi-value {
+/* KPIs */
+.kpi-value {
   font-size: 1.8em;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.2;
   margin: 4px 0;
 }
 
-.dashboard .kpi-sub {
+.kpi-sub {
   font-size: 0.85em;
   color: var(--text-muted);
   margin-top: 2px;
 }
 
-.dashboard .kpi-positive { color: var(--color-green); }
-.dashboard .kpi-negative { color: var(--color-red); }
-.dashboard .kpi-warning { color: var(--color-orange); }
+.kpi-positive { color: var(--color-green, #2dba4e); }
+.kpi-negative { color: var(--color-red, #e04040); }
+.kpi-warning { color: var(--color-orange, #f0a020); }
 
 /* Progress bars (caixinhas) */
-.dashboard .caixinha-row {
-  margin-bottom: 10px;
+.caixinha-row {
+  margin-bottom: 12px;
 }
 
-.dashboard .caixinha-label {
+.caixinha-label {
   font-size: 0.85em;
   margin-bottom: 4px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 12px;
 }
 
-.dashboard .progress-bar {
-  background: var(--background-modifier-border);
+.caixinha-label > span:first-child {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.caixinha-label > span:last-child {
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.progress-bar {
+  background: var(--background-modifier-border, #444);
   border-radius: 4px;
   height: 8px;
   overflow: hidden;
 }
 
-.dashboard .progress-bar-fill {
+.progress-bar-fill {
   height: 100%;
-  background: var(--interactive-accent);
+  background: var(--interactive-accent, #4a9eff);
   transition: width 0.3s;
+  min-width: 2px;
 }
 
-.dashboard .progress-bar-fill.warning {
+.progress-bar-fill.warning {
   background: var(--color-orange, #f0a020);
 }
 
-.dashboard .progress-bar-fill.danger {
+.progress-bar-fill.danger {
   background: var(--color-red, #e04040);
 }
 
 /* Heatmap GitHub-style */
-.dashboard .heatmap {
+.heatmap {
   display: grid;
   grid-template-columns: repeat(30, 1fr);
   gap: 3px;
   margin: 8px 0;
 }
 
-.dashboard .heatmap-cell {
+.heatmap-cell {
   aspect-ratio: 1;
-  background: var(--background-modifier-border);
+  background: var(--background-modifier-border, #ebedf0);
   border-radius: 2px;
   cursor: help;
 }
 
-.dashboard .heatmap-cell.level-1 { background: #9be9a8; }
-.dashboard .heatmap-cell.level-2 { background: #40c463; }
-.dashboard .heatmap-cell.level-3 { background: #216e39; }
+.heatmap-cell.level-1 { background: #9be9a8; }
+.heatmap-cell.level-2 { background: #40c463; }
+.heatmap-cell.level-3 { background: #216e39; }
 
-.theme-dark .dashboard .heatmap-cell { background: #161b22; }
-.theme-dark .dashboard .heatmap-cell.level-1 { background: #0e4429; }
-.theme-dark .dashboard .heatmap-cell.level-2 { background: #006d32; }
-.theme-dark .dashboard .heatmap-cell.level-3 { background: #26a641; }
+.theme-dark .heatmap-cell { background: #161b22; }
+.theme-dark .heatmap-cell.level-1 { background: #0e4429; }
+.theme-dark .heatmap-cell.level-2 { background: #006d32; }
+.theme-dark .heatmap-cell.level-3 { background: #26a641; }
 
-.dashboard .heatmap-legend {
+.heatmap-legend {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   align-items: center;
   font-size: 0.75em;
   color: var(--text-muted);
   margin-top: 8px;
 }
 
-.dashboard .heatmap-legend-cell {
+.heatmap-legend-cell {
   width: 12px;
   height: 12px;
   border-radius: 2px;
+  background: var(--background-modifier-border);
 }

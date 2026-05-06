@@ -7,6 +7,7 @@ data_criacao: 2026-05-05 19:30
 valor: 1296.01
 descricao: Fatura Inter - pendente detalhe
 categoria: outros
+forma_pagamento: débito
 Categorias:
   - "[[Movimentações]]"
 ---

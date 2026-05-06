@@ -8,6 +8,40 @@ Categorias:
 
 Área permanente de gestão financeira: renda, gastos, reserva, investimentos, metas.
 
+## Saldo conta corrente (calculado)
+
+```dataviewjs
+// Saldo inicial em 2026-05-05 (pré-salário). Ajustar se descobrir saldo diferente no início do tracking.
+const saldoInicial = 0;
+const dataInicio = "2026-05-05";
+
+const movs = dv.pages('"Anexos/Movimentações"').where(p => {
+  if (!p.data) return false;
+  return moment(p.data.toString()).isSameOrAfter(dataInicio);
+});
+
+let saldo = saldoInicial;
+
+movs.forEach(m => {
+  const v = m.valor || 0;
+  if (m.direcao === "entrada") {
+    saldo += v;
+  } else if (m.direcao === "saída" && m.forma_pagamento === "débito") {
+    saldo -= v;
+  } else if (m.direcao === "aporte") {
+    saldo -= v;
+  } else if (m.direcao === "resgate") {
+    saldo += v;
+  } else if (m.direcao === "transferencia") {
+    if (m.fonte === "Conta Inter") saldo -= v;
+    if (m.destino === "Conta Inter") saldo += v;
+  }
+});
+
+dv.paragraph(`### **R$ ${saldo.toFixed(2)}**`);
+dv.paragraph(`_Calculado de ${dataInicio} até hoje. ${movs.length} movimentações consideradas. Se diverge do extrato, falta lançamento._`);
+```
+
 ## Dashboard mês atual
 
 ```dataviewjs

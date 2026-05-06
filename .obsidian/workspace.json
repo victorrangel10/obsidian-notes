@@ -11,14 +11,13 @@
             "id": "1c859ef2cd735b7f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "Categorias/Movimentações.md",
-                "mode": "source",
-                "source": false
+                "file": "Untitled.base",
+                "viewName": "Conceitos"
               },
-              "icon": "lucide-file",
-              "title": "Movimentações"
+              "icon": "lucide-layout-grid",
+              "title": "Untitled"
             }
           }
         ]
@@ -257,6 +256,9 @@
   },
   "active": "1c859ef2cd735b7f",
   "lastOpenFiles": [
+    "Categorias/Movimentações.md",
+    "Categorias/Finanças.md.tmp.78024.1778034483245",
+    "Categorias/Finanças.md.tmp.78024.1778034468926",
     "Categorias/Metas.md",
     "Categorias/Lugares.md",
     "Categorias/Finanças.md",
@@ -274,8 +276,6 @@
     "Anexos/Movimentações/2026-05-05 - Fatura Inter - parcela 4-5 short.md.tmp.78024.1778033955224",
     "Bases/Movimentações.base.tmp.78024.1778033747406",
     "Anexos/Movimentações/2026-05-05 - Fatura Inter - pendente detalhe.md.tmp.78024.1778033736244",
-    "Anexos/Movimentações/2026-05-05 - Fatura Inter - almoço fora.md.tmp.78024.1778033734697",
-    "Anexos/Movimentações/2026-05-05 - Fatura Inter - parcela 4-5 short.md.tmp.78024.1778033733572",
     "Referências/A Arte de Decidir.md",
     "Referências/Testo 1k/Como aumentar a testosterona na prática.md",
     "Referências/virtude.md",
@@ -291,8 +291,6 @@
     "Categorias/Saúde.md",
     "Categorias/Pessoas.md",
     "Categorias/Organização.md",
-    "Categorias/Movimentações.md",
-    "Categorias/Diário.md",
     "Anexos/Pasted image 20260505212554.png",
     "Anexos/Pasted image 20260505212539.png",
     "Anexos/Pasted image 20260505212528.png",

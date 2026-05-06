@@ -66,8 +66,8 @@ movs.forEach(m => {
     if (m.destino === "Conta Inter") saldo += v;
   }
 });
-const cls = saldo >= 1100 ? "kpi-positive" : saldo >= 500 ? "" : "kpi-warning";
-dv.paragraph(`<div class="kpi-value ${cls}">R$ ${saldo.toFixed(2)}</div><div class="kpi-sub">alvo R$ 1.100/mês</div>`);
+const cls = saldo < 0 ? "kpi-negative" : "";
+dv.paragraph(`<div class="kpi-value ${cls}">R$ ${saldo.toFixed(2)}</div>`);
 ```
 
 --- column-end ---

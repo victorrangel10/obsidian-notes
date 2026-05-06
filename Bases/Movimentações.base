@@ -126,4 +126,4 @@ views:
       - categoria
       - valor
     summaries:
-      valor: Sum
+      valor: Unique

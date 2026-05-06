@@ -222,20 +222,25 @@ const html = Object.keys(orcamentos).map(cat => {
   const orc = orcamentos[cat];
   const g = gastos[cat] || 0;
   const pct = (g / orc) * 100;
-  const cls = pct >= 100 ? 'danger' : pct >= 80 ? 'warning' : '';
+  const color = pct >= 100 ? '#e04040' : pct >= 80 ? '#f0a020' : '#4a9eff';
   const restante = (orc - g).toFixed(2);
-  return `<div class="caixinha-row">
-    <div class="caixinha-label"><span>${cat}</span><span>R$ ${g.toFixed(2)} / R$ ${orc.toFixed(2)} · resta R$ ${restante}</span></div>
-    <div class="progress-bar"><div class="progress-bar-fill ${cls}" style="width: ${Math.min(pct, 100)}%"></div></div>
+  return `<div style="margin-bottom: 12px;">
+    <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 0.85em; margin-bottom: 4px; align-items: center;">
+      <span style="font-weight: 600; text-transform: capitalize;">${cat}</span>
+      <span style="opacity: 0.7; text-align: right;">R$ ${g.toFixed(2)} / R$ ${orc.toFixed(2)} · resta R$ ${restante}</span>
+    </div>
+    <div style="background: #2a2a2a; border-radius: 4px; height: 10px; overflow: hidden; width: 100%;">
+      <div style="background: ${color}; height: 100%; width: ${Math.min(pct, 100)}%;"></div>
+    </div>
   </div>`;
 }).join('');
 
 const semOrcamento = Object.keys(gastos).filter(c => !orcamentos[c]);
 let extra = '';
 if (semOrcamento.length > 0) {
-  extra = '<div class="caixinha-row" style="margin-top: 12px; opacity: 0.7;"><div class="caixinha-label"><span><em>Sem orçamento fixo:</em></span></div>';
+  extra = '<div style="margin-top: 16px; opacity: 0.7; font-size: 0.85em;"><div><em>Sem orçamento fixo:</em></div>';
   semOrcamento.forEach(c => {
-    extra += `<div class="caixinha-label"><span>${c}</span><span>R$ ${gastos[c].toFixed(2)}</span></div>`;
+    extra += `<div style="display: flex; justify-content: space-between; margin-top: 4px;"><span style="text-transform: capitalize;">${c}</span><span>R$ ${gastos[c].toFixed(2)}</span></div>`;
   });
   extra += '</div>';
 }

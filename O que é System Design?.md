@@ -17,7 +17,6 @@ Pode ser dividido em Alto Nível e Baixo nível:
 
 Baixo nível: Módulos, serviços, schemas, algoritmos, etc.
 
-
-
+Normalmente o alto  nível é mais bem visto e mais requisitado.
 
 Entrevistas de emprego vão medir seu raciocínio, repertório, comunicação, colaboração e skills específicas para aquela dada vaga

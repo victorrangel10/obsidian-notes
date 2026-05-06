@@ -102,9 +102,11 @@ Templater templates pra criação automática de novos arquivos:
 
 Imagens e binários colados em notas.
 
-### `Anexos/Gastos/`
+### `Anexos/Movimentações/`
 
-Pasta de notas de gasto individual. Cada gasto = uma nota com frontmatter (`valor`, `descricao`, `data`, `categoria_gasto`). Criadas via Templater hotkey + prompts (sem fricção). Visão consolidada em `Categorias/Gastos.md`. Tracker da meta Casamento lê dessa pasta.
+Pasta de notas de movimentação financeira individual (livro-razão unificado). Cada movimentação = uma nota com frontmatter (`direcao`, `valor`, `descricao`, `data`, `categoria`, opcional `fonte` ou `destino`). Criadas via Templater hotkey + prompts (sem fricção). Visão consolidada em `Categorias/Movimentações.md`. Dashboard mensal em `Categorias/Finanças.md`.
+
+`direcao` discrimina: `entrada` (renda externa), `saída` (gasto/consumo), `aporte` (poupança/investimento), `resgate` (saída de investimento).
 
 Convenção: você nunca abre os arquivos individuais. Sempre acessa via view consolidada.
 
@@ -124,9 +126,8 @@ Categorias:
 ```
 
 **Não usar:**
-- ❌ Strings: `Categorias: [saúde]`
-- ❌ Tags inline no body: `#saúde`
-- ❌ A property `tags` nativa do Obsidian
+- ❌ Strings: `Categorias: [saúde]` (sempre array de wikilinks)
+- ❌ Categoria inline no body: `#saúde` — usar property `Categorias`
 
 **Por que wiki links:** os filters de Bases usam `Categorias.contains(link("X"))`. Cada link aponta pra uma nota em `Categorias/` que embeda a Base. Backlinks aparecem de graça.
 
@@ -136,14 +137,16 @@ Categorias:
 |---|---|
 | `[[Diário]]` | Toda nota daily |
 | `[[Semanas]]` | Toda nota weekly |
-| `[[Meta]]` | Toda nota em `Projetos/` |
+| `[[Metas]]` | Toda nota em `Projetos/` |
 | `[[Saúde]]` | Notas relacionadas a saúde (treino, dieta, exames) |
 | `[[Finanças]]` | Notas relacionadas a finanças (plano financeiro) |
 | `[[Cursos]]` | Notas/anotações de cursos |
 | `[[Vídeos]]` | Vídeos pra ver |
-| `[[Gastos]]` | Cada nota de gasto individual em `Gastos/` |
+| `[[Movimentações]]` | Cada nota de transação financeira em `Anexos/Movimentações/` (entrada, saída, aporte, resgate) |
 | `[[Organização]]` | Meta-notas sobre o vault (manifesto, skills) |
-| Livre (`[[Pessoa]]`, `[[Tema]]`) | Referências de conhecimento |
+| `[[Conceitos]]` | Termos, ideias, definições referenciadas |
+| `[[Pessoas]]` | Pessoas referenciadas (autores, mestres, etc) |
+| `[[Lugares]]` | Lugares referenciados |
 
 Uma nota pode ter múltiplas categorias. Ex: nota de treino que também é referência sobre fisiologia → `Categorias: ["[[Saúde]]", "[[Tema]]"]`. Aparece em ambas as views.
 
@@ -152,6 +155,28 @@ Uma nota pode ter múltiplas categorias. Ex: nota de treino que também é refer
 status: ativa | pausada | concluida
 ```
 Não em `Categorias` — estado muda, classificação não.
+
+---
+
+## Convenção de Tags (a property)
+
+Property `tags` (nativa do Obsidian) **coexiste** com `Categorias`. Resolvem problemas ortogonais:
+
+- **`Categorias`** — estrutura. Onde a nota vive, qual view ela alimenta. Vocabulário fechado (ver tabela acima). Drive de Bases.
+- **`tags`** — tópicos cross-cutting. "Sobre o quê é essa nota?" Vocabulário livre. Drive de busca/Tag Pane/Dataview.
+
+Exemplo: nota sobre suplementação pra testosterona pode ter `Categorias: ["[[Cursos]]"]` (estrutural — é um curso) e `tags: [suplementacao, hormonal]` (tópicos — pra encontrar quando buscar por "hormonal" sem importar se é curso, vídeo ou conceito).
+
+```yaml
+tags:
+  - filosofia
+  - tomismo
+```
+
+**Regras:**
+- Vocabulário **livre** — descobre orgânico via Tag Pane. Consolida duplicatas só quando inflação aparecer (>50 tags ativas).
+- Sem hierarquia — `tags: [filosofia]`, não `tags: [area/filosofia]`. Nesting cria fricção, busca já encontra substring.
+- Frontmatter é o lugar canônico. Inline no body OK pra anotações pontuais.
 
 ---
 
@@ -191,7 +216,7 @@ Categorias:
 ---
 ```
 
-> Nota: `gasto` removido. Gastos viraram notas individuais em `Gastos/` (ver schema abaixo).
+> Nota: `gasto` removido. Movimentações viraram notas individuais em `Anexos/Movimentações/` (ver schema abaixo).
 
 ### Weekly (`Diário/YYYY-Www.md`)
 
@@ -217,24 +242,48 @@ prazo: YYYY-MM-DD
 alvo: <número>
 status: ativa
 Categorias:
-  - "[[Meta]]"
+  - "[[Metas]]"
 ---
 ```
 
-### Gasto (`Gastos/<data> - <descricao>.md`)
+### Movimentação (`Anexos/Movimentações/<data> - <descricao>.md`)
+
+Livro-razão unificado: entradas, saídas, aportes, resgates, transferências numa única estrutura.
 
 ```yaml
 ---
-type: gasto
+type: movimentacao
+direcao: saída            # entrada | saída | aporte | resgate | transferencia
 data: YYYY-MM-DD
+hora: HH:mm
 data_criacao: YYYY-MM-DD HH:mm
-valor: 25.50              # número, R$
+valor: 25.50              # número, R$ (sempre positivo; sinal é dado por `direcao`)
 descricao: Almoço shopping
-categoria_gasto: alimentação    # alimentação | transporte | lazer | roupa | moto | saúde | desenvolvimento | outros
+categoria: alimentação    # vocabulário muda por direção (ver Templates/Movimentação.md)
+forma_pagamento: crédito  # opcional, só pra direcao=saída: débito | crédito
+pago_em: 2026-05-05       # opcional, só pra direcao=saída forma_pagamento=crédito. Vazio = ainda na fatura aberta. Preenchido = data do pagamento da fatura.
+fonte: Inbazz             # opcional, pra direcao=entrada ou transferencia (origem)
+destino: Tesouro Selic 2028  # opcional, pra direcao=aporte, resgate ou transferencia (destino)
 Categorias:
-  - "[[Gastos]]"
+  - "[[Movimentações]]"
 ---
 ```
+
+**Categorias por direção:**
+- `entrada`: salário, restituição, freela, 13º, extra, outros
+- `saída`: alimentação, transporte, lazer, roupa, moto, saúde, desenvolvimento, namoro, buffer, outros
+- `aporte` / `resgate`: casamento, longo_prazo, reserva, pos_casamento, outros
+- `transferencia`: pagamento_fatura, transferencia_caixinha, outros
+
+**Forma de pagamento (apenas direcao=saída):**
+- `débito`: dinheiro sai da conta na hora (débito direto, Pix, dinheiro)
+- `crédito`: gasto vai pra fatura do cartão Inter (paga depois)
+
+**Transferência (`direcao=transferencia`):**
+Movimento interno entre contas/caixinhas que NÃO é gasto novo. Exemplos:
+- Pagamento de fatura: `categoria=pagamento_fatura, fonte=Conta Inter, destino=Cartão Inter (passivo)`. Os gastos do cartão já foram contados como `saída` quando ocorreram, então pagar a fatura não duplica.
+- Transferência entre caixinhas: `categoria=transferencia_caixinha, fonte=Caixinha A, destino=Caixinha B`.
+- Transferências NÃO contam como saída no dashboard. São neutras pro patrimônio.
 
 ### Documento de categoria (vault root, Referências, etc)
 
@@ -246,6 +295,82 @@ type: documento
 data_criacao: YYYY-MM-DD HH:mm
 Categorias:
   - "[[Saúde]]"     # uma ou mais categorias existentes
+---
+```
+
+### Curso (`Referências/<curso>/<curso>.md` ou `Referências/<curso>.md`)
+
+```yaml
+---
+type: curso
+data_criacao: YYYY-MM-DD HH:mm
+autor:
+  - "[[Pessoa]]"
+plataforma: youtube           # youtube | udemy | curso.dev | presencial | outro
+status: pendente              # pendente | em_andamento | concluido | abandonado
+data_inicio: YYYY-MM-DD
+data_finalizacao: YYYY-MM-DD
+rating:                       # 1-5, opcional
+tags:
+  - topico
+Categorias:
+  - "[[Cursos]]"
+---
+```
+
+Body inclui `![[Aulas.base]]` pra view de cards das aulas filhas.
+
+### Aula (`Referências/<curso>/<aula>.md`)
+
+```yaml
+---
+type: aula
+data_criacao: YYYY-MM-DD HH:mm
+curso: "[[Nome do Curso]]"
+ordem:                        # opcional, número da aula
+tags:
+  - topico
+---
+```
+
+Aulas **não têm `Categorias`** — são acessadas via parent course page que embeda `![[Aulas.base]]`. A base filtra `type == "aula" AND curso == this.file.link`.
+
+### Conceito / Pessoa / Lugar (`Referências/<nome>.md`)
+
+Schema único, `type` distingue:
+
+```yaml
+---
+type: conceito                # ou: pessoa | lugar
+data_criacao: YYYY-MM-DD HH:mm
+tags:
+  - topico
+Categorias:
+  - "[[Conceitos]]"           # ou "[[Pessoas]]" / "[[Lugares]]"
+---
+```
+
+### Captura (`Referências/Capturas/<nome>.md`)
+
+Output do Web Clipper. Schema canônico:
+
+```yaml
+---
+type: captura
+fonte: video                  # video | artigo | gist | post
+title: ...
+source: <url>
+autor:
+  - "[[Autor]]"
+published: YYYY-MM-DD
+data_criacao: YYYY-MM-DD HH:mm
+status: pendente              # pendente | lido
+rating:                       # opcional
+tags:
+  - clippings
+  - topico-real               # tópico real, não só "clippings"
+Categorias:
+  - "[[Vídeos]]"              # ou outra
 ---
 ```
 
@@ -281,19 +406,22 @@ Workflow:
 
 Cada meta tem tracker block embutido lendo properties das notas relevantes:
 
-- **Casamento - Juntar 50%** → `valor` cumulativo das notas em `Gastos/` (bar chart)
+- **Casamento - Juntar 50%** → soma cumulativa de aportes com `categoria=casamento` em `Anexos/Movimentações/`
 - **Perder 7kg** → `peso` ao longo do tempo, das dailies (line chart)
 
-Logar gasto via `Gastos/` (Templater hotkey) alimenta automaticamente o tracker da Casamento. Preencher peso na daily alimenta o tracker de Perder 7kg.
+Registrar movimentação via Templater hotkey alimenta os dashboards de Finanças e o tracker da Casamento. Preencher peso na daily alimenta o tracker de Perder 7kg.
 
-### Logar gastos
+### Logar movimentações
 
-Hotkey configurada (Settings → Hotkeys → "Templater: Create new note from template Gasto") dispara prompts em sequência:
-1. Valor (R$)
-2. Descrição
-3. Categoria (dropdown: alimentação, transporte, lazer, etc)
+Hotkey configurada (Settings → Hotkeys → "Templater: Create new note from template Movimentação") dispara prompts em sequência:
+1. Direção (saída / entrada / aporte / resgate)
+2. Valor (R$)
+3. Descrição
+4. Categoria (dropdown muda conforme direção)
+5. Fonte (se entrada) ou Destino (se aporte/resgate)
+6. Data e hora
 
-Templater cria a nota em `Gastos/<data> - <descricao>.md` automaticamente. Você nunca abre o arquivo. Visão consolidada em `Categorias/Gasto.md`.
+Templater cria a nota em `Anexos/Movimentações/<data> - <descricao>.md` automaticamente. Você nunca abre o arquivo. Visão consolidada em `Categorias/Movimentações.md` e dashboard em `Categorias/Finanças.md`.
 
 ---
 

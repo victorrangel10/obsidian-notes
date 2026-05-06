@@ -2,4 +2,4 @@
 tags:
   - categorias
 ---
-![[Semana.base]]
+![[Semanas.base]]

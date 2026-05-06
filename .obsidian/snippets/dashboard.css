@@ -1,0 +1,112 @@
+/* ============================================
+   Dashboard CSS - Home.md
+   Estilos pra heatmap, progress bars, KPIs
+   Aplicado quando frontmatter tem cssclasses: [dashboard]
+   ============================================ */
+
+/* KPIs */
+.kpi-value {
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 4px 0;
+}
+
+.kpi-sub {
+  font-size: 0.85em;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.kpi-positive { color: var(--color-green, #2dba4e); }
+.kpi-negative { color: var(--color-red, #e04040); }
+.kpi-warning { color: var(--color-orange, #f0a020); }
+
+/* Progress bars (caixinhas) */
+.caixinha-row {
+  margin-bottom: 12px;
+}
+
+.caixinha-label {
+  font-size: 0.85em;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.caixinha-label > span:first-child {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.caixinha-label > span:last-child {
+  color: var(--text-muted);
+  font-size: 0.9em;
+  text-align: right;
+}
+
+.progress-bar {
+  background: #2a2a2a;
+  border-radius: 4px;
+  height: 10px;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #4a9eff;
+  transition: width 0.3s;
+  display: block;
+}
+
+.progress-bar-fill.warning {
+  background: #f0a020;
+}
+
+.progress-bar-fill.danger {
+  background: #e04040;
+}
+
+/* Heatmap GitHub-style */
+.heatmap {
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  gap: 3px;
+  margin: 8px 0;
+}
+
+.heatmap-cell {
+  aspect-ratio: 1;
+  background: var(--background-modifier-border, #ebedf0);
+  border-radius: 2px;
+  cursor: help;
+}
+
+.heatmap-cell.level-1 { background: #9be9a8; }
+.heatmap-cell.level-2 { background: #40c463; }
+.heatmap-cell.level-3 { background: #216e39; }
+
+.theme-dark .heatmap-cell { background: #161b22; }
+.theme-dark .heatmap-cell.level-1 { background: #0e4429; }
+.theme-dark .heatmap-cell.level-2 { background: #006d32; }
+.theme-dark .heatmap-cell.level-3 { background: #26a641; }
+
+.heatmap-legend {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.75em;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.heatmap-legend-cell {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background: var(--background-modifier-border);
+}

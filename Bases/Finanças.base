@@ -1,7 +1,17 @@
+filters:
+  and:
+    - '!file.inFolder("Templates")'
 views:
   - type: table
     name: Table
     filters:
       and:
         - Categorias.contains(link("Finanças"))
-    sort: []
+    order:
+      - file.name
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    summaries:
+      file.link: Filled

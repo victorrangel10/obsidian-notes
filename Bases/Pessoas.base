@@ -1,0 +1,18 @@
+filters:
+  and:
+    - '!file.inFolder("Templates")'
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Categorias.contains(link("Pessoas"))
+    order:
+      - file.name
+      - tags
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    summaries:
+      file.link: Filled

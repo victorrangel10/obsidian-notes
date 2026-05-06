@@ -1,6 +1,29 @@
+filters:
+  and:
+    - '!file.inFolder("Templates")'
+
 views:
   - type: table
     name: Diário
     filters:
       and:
         - Categorias.contains(link("Diário"))
+    order:
+      - file.link
+      - peso
+      - agua
+      - treino
+      - dieta
+      - leitura
+      - date
+    sort:
+      - property: date
+        direction: ASC
+      - property: file.basename
+        direction: DESC
+    summaries:
+      peso: Average
+      agua: Sum
+      treino: Checked
+      dieta: Checked
+      leitura: Checked

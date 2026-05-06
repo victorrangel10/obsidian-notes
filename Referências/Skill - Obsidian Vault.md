@@ -3,6 +3,7 @@ type: skill
 data_criacao: 2026-05-03
 Categorias:
   - "[[Organização]]"
+  - "[[Skill]]"
 ---
 
 # Skill: Obsidian Vault
@@ -67,17 +68,25 @@ Categorias:
 ```
 
 - **NUNCA usar:**
-  - Strings: `Categorias: [saúde]`
-  - Tags inline no body: `#saúde`
-  - A property `tags` nativa do Obsidian
+  - Strings: `Categorias: [saúde]` (sempre array de wikilinks)
+  - Categoria inline no body: `#saúde` — usar property `Categorias`
 - **Múltiplas categorias OK** — uma nota pode estar em várias views
 - **Estado de meta** vai em property separada `status` (`ativa` / `pausada` / `concluida`), não em Categorias
+
+## Property `tags`
+
+Coexiste com `Categorias`, resolve eixo ortogonal:
+- `Categorias` = estrutura (drive Bases / views fechadas)
+- `tags` = tópicos cross-cutting (drive busca / Tag Pane)
+
+Vocabulário **livre**, sem hierarquia (`tags: [filosofia]`, não `[area/filosofia]`). Frontmatter canônico, inline no body OK pra anotação pontual. Para detalhes e schemas (`type: curso/aula/conceito/pessoa/lugar/captura`), ver Manifesto.
 
 ## Bases (`.base` files)
 
 - Vivem em `Bases/` (top-level no vault root)
 - Embedded em notas de `Categorias/` via transclusão (`![[NomeDaBase.base]]`)
 - Filter syntax: `Categorias.contains(link("Nome"))`
+- **Toda base deve ter filter global `!file.inFolder("Templates")`** pra não incluir os templates (que tem `Categorias` no frontmatter como exemplo) nas views
 - **Kanban view: criar via UI do Obsidian, não escrever YAML manual** — schema do plugin `kanban-bases-view` é instável e não documentado. Tentar adivinhar gera erros tipo `groupBy must be an object`.
 
 ## obsidian-tracker

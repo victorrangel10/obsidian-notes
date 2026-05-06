@@ -1,6 +1,20 @@
+filters:
+  and:
+    - '!file.inFolder("Templates")'
 views:
   - type: table
     name: Table
     filters:
       and:
         - Categorias.contains(link("Vídeos"))
+    order:
+      - title
+      - published
+      - rating
+      - tags
+      - source
+    sort:
+      - property: file.mtime
+        direction: DESC
+    summaries:
+      file.link: Filled

@@ -16,5 +16,8 @@
   "obsidian-minimal-settings",
   "kanban-bases-view",
   "obsidian-doubleshift",
-  "dataview"
+  "dataview",
+  "obsidian-map-view",
+  "obsidian-charts",
+  "multi-column-markdown"
 ]

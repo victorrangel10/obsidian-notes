@@ -1,0 +1,19 @@
+filters:
+  and:
+    - '!file.inFolder("Templates")'
+    - curso == link("A Arte de Decidir")
+views:
+  - type: cards
+    name: Aulas
+    filters:
+      and:
+        - type == "aula"
+    order:
+      - file.name
+      - tags
+      - file.link
+      - data_criacao
+      - type
+    sort:
+      - property: ordem
+        direction: ASC

@@ -1,0 +1,10 @@
+filters:
+  and:
+    - '!file.inFolder("Templates")'
+
+views:
+  - type: table
+    name: Semanas
+    filters:
+      and:
+        - Categorias.contains(link("Semanas"))

@@ -1,0 +1,129 @@
+filters:
+  and:
+    - '!file.inFolder("Templates")'
+    - Categorias.contains(link("Movimentações"))
+formulas:
+  Total: valor
+properties:
+  direcao:
+    displayName: Direção
+  categoria:
+    displayName: Categoria
+  descricao:
+    displayName: Descrição
+  valor:
+    displayName: R$
+  fonte:
+    displayName: Fonte
+  destino:
+    displayName: Destino
+  forma_pagamento:
+    displayName: Pagamento
+  pago_em:
+    displayName: Pago em
+views:
+  - type: table
+    name: Todas
+    order:
+      - data
+      - hora
+      - direcao
+      - descricao
+      - categoria
+      - valor
+    sort:
+      - property: data
+        direction: DESC
+      - property: hora
+        direction: DESC
+    summaries: {}
+  - type: table
+    name: Entradas
+    filters:
+      and:
+        - direcao == "entrada"
+    order:
+      - data
+      - descricao
+      - categoria
+      - fonte
+      - valor
+    sort:
+      - property: data
+        direction: DESC
+    summaries:
+      valor: Sum
+  - type: table
+    name: Saídas
+    filters:
+      and:
+        - direcao == "saída"
+    order:
+      - data
+      - descricao
+      - categoria
+      - valor
+    sort:
+      - property: data
+        direction: DESC
+    summaries:
+      valor: Sum
+  - type: table
+    name: Aportes
+    filters:
+      and:
+        - direcao == "aporte"
+    order:
+      - data
+      - descricao
+      - categoria
+      - destino
+      - valor
+    sort:
+      - property: data
+        direction: DESC
+    summaries:
+      valor: Sum
+  - type: table
+    name: Resgates
+    filters:
+      and:
+        - direcao == "resgate"
+    order:
+      - data
+      - descricao
+      - categoria
+      - destino
+      - valor
+    sort:
+      - property: data
+        direction: DESC
+    summaries:
+      valor: Sum
+  - type: table
+    name: Saídas por categoria
+    filters:
+      and:
+        - direcao == "saída"
+    groupBy:
+      property: categoria
+      direction: ASC
+    order:
+      - file.link
+      - categoria
+      - data
+      - valor
+    summaries:
+      valor: Sum
+  - type: table
+    name: Do dia
+    filters:
+      and:
+        - data == this.date
+    order:
+      - file.link
+      - direcao
+      - categoria
+      - valor
+    summaries:
+      valor: Sum

@@ -1,15 +1,21 @@
 ---
+type: captura
+fonte: video
 title: How to Actually Get Better at Chess No-BS Guide
 source: https://www.youtube.com/watch?v=Vlpx04FeELI&t=229s
-author:
+autor:
   - "[[Rise Above Reality]]"
 published: 2025-05-12
-created: 2026-04-21
+data_criacao: 2026-04-21
 description: "How to Actually Get Better at Chess No-BS GuideChapters:0:00 - 0:29 - Intro0:30 - 2:22 - Strategy #12:23 - 3:09 - Strategy #23:10 - 4:01 - Strategy #34:02 - 4:32 - Strategy #44:33 - 5:25 - St"
+status: pendente
+rating:
 tags:
   - clippings
   - chess
-Categorias: "[[Vídeos]]"
+  - estrategia
+Categorias:
+  - "[[Vídeos]]"
 ---
 ![](https://www.youtube.com/watch?v=Vlpx04FeELI)
 
